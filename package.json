@@ -1,0 +1,62 @@
+{
+  "name": "upwork",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.4",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react-highcharts": "^16.0.3",
+    "chart.js": "^3.9.1",
+    "classnames": "^2.3.1",
+    "faker": "^5.5.3",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "gsap": "^3.10.4",
+    "moment": "^2.29.4",
+    "mouse-follower": "^1.0.6",
+    "react": "^18.1.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.1.0",
+    "react-google-charts": "^4.0.0",
+    "react-highcharts": "^16.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-stockcharts": "^0.7.8",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.7.4",
+    "styled-components": "^5.3.5",
+    "vision-react-stock-chart": "^2.1.9",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

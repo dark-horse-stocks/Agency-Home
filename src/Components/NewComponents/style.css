@@ -1,0 +1,14 @@
+.table{
+    width: 100%;
+    border-spacing: 0px;
+}
+.table tr{
+    text-align: left;
+}
+.table tr, .table th{
+    border: 1px solid;
+
+}
+.total-cell{
+    border-top:5px solid #000 !important;
+}

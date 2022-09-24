@@ -1,0 +1,77 @@
+.ticker-view {
+  --clr-number: white;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow-y: hidden;
+  font-size: 1.4rem;
+  width: clamp(50%, 200px, 70%);
+  position: relative;
+  color: var(--clr-number);
+}
+.ticker-view.price-small {
+  overflow-y: hidden;
+  font-size: 1.2rem;
+  width: unset;
+  color: var(--clr-number);
+}
+.ticker-view.price-small span {
+  margin: 0;
+  color: var(--clr-number);
+}
+
+.number-placeholder {
+  visibility: hidden;
+}
+
+.ticker-column-container {
+  position: relative;
+}
+
+.ticker-column {
+  position: absolute;
+  width: 100%;
+  height: 1000%;
+  bottom: 0;
+}
+
+.ticker-digit {
+  height: 10%;
+}
+.ticker-digit span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.ticker-column.increase {
+  animation: pulseGreen 500ms cubic-bezier(0.4, 0, 0.6, 1) 1;
+}
+
+.ticker-column.decrease {
+  animation: pulseRed 500ms cubic-bezier(0.4, 0, 0.6, 1) 1;
+}
+
+@keyframes pulseGreen {
+  0%,
+  100% {
+    --clr-number: white;
+  }
+
+  50% {
+    --clr-number: rgb(47, 164, 47);
+  }
+}
+
+@keyframes pulseRed {
+  0%,
+  100% {
+    --clr-number: white;
+  }
+
+  50% {
+    --clr-number: rgb(228, 64, 64);
+  }
+}

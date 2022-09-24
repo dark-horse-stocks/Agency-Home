@@ -1,0 +1,92 @@
+.light-mode .btn-component {
+  background-color: transparent;
+  height: 52px;
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 100px;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 31px 40px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.dark-mode .btn-component {
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  height: 52px;
+  border: 0.8px solid #e1e1e1;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 20px;
+  padding: 31px 40px;
+  text-align: center;
+  line-height: 0px;
+}
+
+/* btn-animate animation styles */
+.btn-animate {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn-animate__filler {
+  display: inline-block;
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  transform: translateY(-75%);
+  z-index: 1;
+}
+.light-mode .btn-animate__filler {
+  background-color: black;
+}
+.dark-mode .btn-animate__filler {
+  background-color: white;
+}
+.btn-animate__text {
+  position: relative;
+  transition: color 350ms linear;
+  z-index: 5;
+}
+
+.light-mode .btn-animate.active {
+  color: white;
+}
+.dark-mode .btn-animate.active {
+  color: black;
+}
+
+.btn-animate.active .btn-animate__filler {
+  animation: btnHover 350ms ease-in forwards;
+}
+.btn-animate.not-active .btn-animate__filler {
+  animation: btnLeave 350ms ease-in forwards;
+}
+
+@keyframes btnHover {
+  from {
+    transform: translateY(-75%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes btnLeave {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(75%);
+  }
+}
