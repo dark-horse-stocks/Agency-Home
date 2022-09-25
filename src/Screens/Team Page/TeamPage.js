@@ -1,12 +1,11 @@
 import React from "react";
 import Teamimg from "../../Assets/Group 290.png";
-import "./style.css"
+import "./style.css";
 
 function TeamPage() {
   const team = [
     {
       img: Teamimg,
-
     },
     {
       img: Teamimg,
@@ -16,15 +15,20 @@ function TeamPage() {
     },
     {
       img: Teamimg,
-    },  {
+    },
+    {
       img: Teamimg,
-    },  {
+    },
+    {
       img: Teamimg,
-    },  {
+    },
+    {
       img: Teamimg,
-    },  {
+    },
+    {
       img: Teamimg,
-    },  {
+    },
+    {
       img: Teamimg,
     },
   ];
@@ -34,19 +38,23 @@ function TeamPage() {
         {" "}
         <p className="container fs-30">Team </p>{" "}
         <h1 className="container fs-95 w-80">
-          Best in industry team of analysts
+          <div className="text-slide-up-animation-wrapper-2">
+            Best in industry team of analysts
+          </div>
         </h1>
       </div>
 
       <div className="container d-flex flex-wrap">
-
         {team.map((item) => (
-  
-          <div className='d-flex justify-content-center team-img'  style={{ margin:"80px 0"}}> <img src={item.img}   alt="item" /></div>
+          <div
+            className="d-flex justify-content-center team-img"
+            style={{ margin: "80px 0" }}
+          >
+            {" "}
+            <img src={item.img} alt="item" />
+          </div>
         ))}
-
-
-    </div>
+      </div>
 
       <div className="container mt-section fs-30">
         Most of the analysts associated with darkhorsestocks have requested to
@@ -56,9 +64,6 @@ function TeamPage() {
         Kotak Securities etc
         <p className="">Therefore please do not ask for the same.</p>
       </div>
-
-      
-
     </div>
   );
 }

@@ -6,8 +6,7 @@ import "./style.css";
 import hoverVideo from "../../Assets/hoverVideo.mp4";
 
 export default function AgencyHome() {
-
-  const history = useHistory()
+  const history = useHistory();
   return (
     <div className="container">
       <div className="mt-header">
@@ -17,28 +16,28 @@ export default function AgencyHome() {
           <h1
             className="text-slide-up-animation-1 mb-30 fs-95 outlined ml-4"
             data-cursor-video={hoverVideo}
-                    onClick={() => {
-              history.push('/')
+            onClick={() => {
+              history.push("/");
             }}
           >
             Blog
           </h1>
-          <h1
-            className="text-slide-up-animation-1 fs-95 "
+          <a
+            href="https://dashboard.darkhorsestocks.in/"
+            className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
+            style={{ borderBottom: "none" }}
             data-cursor-video={hoverVideo}
           >
-                <a href="https://dashboard.darkhorsestocks.in/" className=" ml-4 fs-95 outlined home-border mb-30">
-            Dashboard
+            <h1 className="fs-95">Dashboard</h1>
           </a>
-          </h1>
-          <h1
-            className="text-slide-up-animation-1 mb-30 fs-95"
+          <a
+            href="https://fundalysis.darkhorsestocks.in/"
+            className="text-slide-up-animation-1 outlined  fs-95 home-border"
+            style={{ borderBottom: "none" }}
             data-cursor-video={hoverVideo}
           >
-          <a href="https://fundalysis.darkhorsestocks.in/" className=" ml-4 fs-95 outlined home-border">
-            Fundalysis
+            <h1 className="mb-30 fs-95">Fundalysis</h1>
           </a>
-          </h1>
         </div>
       </div>
       <div className=" mt-section">

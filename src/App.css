@@ -457,7 +457,8 @@ body {
 /* Global Text animations */
 .text-slide-up-animation-wrapper-1,
 .text-slide-up-animation-wrapper-2,
-.text-slide-up-animation-wrapper-3 {
+.text-slide-up-animation-wrapper-3,
+.img-slide-up-animation-wrapper-1 {
   position: relative;
   overflow: hidden;
 }
@@ -466,9 +467,14 @@ body {
   transform: translateY(200%);
   display: inline-block;
 }
+.img-slide-up-animation-content-1 {
+  transform: translateY(100%);
+  display: inline-block;
+}
 .text-slide-up-animation-text-1,
 .text-slide-up-animation-text-2,
-.text-slide-up-animation-text-3 {
+.text-slide-up-animation-text-3,
+.img-slide-up-animation-img-1 {
   display: inline-block;
 }
 

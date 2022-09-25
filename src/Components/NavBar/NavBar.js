@@ -12,7 +12,6 @@ export default function NavBar() {
       <div className="icons d-flex justify-content-between align-items-center">
         <div
           className="icon search-icon"
-          data-cursor-stick=""
           data-cursor="-menu -icon-blend"
           onClick={() => {
             history.push("/search");
@@ -25,18 +24,12 @@ export default function NavBar() {
             history.push("/login");
           }}
           className="icon user-icon"
-          data-cursor-stick=""
           data-cursor="-menu -icon-blend"
         >
           Login
         </div>
         <div>
-          <div
-            className="icon user-icon"
-          >
-            menu
-          </div>{" "}
-          <HamburgerMenu />{" "}
+          <div className="icon user-icon">menu</div> <HamburgerMenu />{" "}
         </div>
       </div>
     </div>
