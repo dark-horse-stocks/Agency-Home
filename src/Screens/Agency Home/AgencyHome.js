@@ -10,18 +10,19 @@ export default function AgencyHome() {
   return (
     <div className="container">
       <div className="mt-header">
-        <p className="fs-30 mb-3">Always trying to be contrarian</p>
+        <p className="fs-30 mb-3 text-slide-up-animation-3">
+          Always trying to be contrarian
+        </p>
 
         <div className="d-flex flex-column-tablet" data-cursor="-media-blend">
-          <h1
-            className="text-slide-up-animation-1 mb-30 fs-95 outlined ml-4"
+          <a
+            href="/"
+            className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
+            style={{ borderBottom: "none" }}
             data-cursor-video={hoverVideo}
-            onClick={() => {
-              history.push("/");
-            }}
           >
-            Blog
-          </h1>
+            <h1 className="fs-95">Blog</h1>
+          </a>
           <a
             href="https://dashboard.darkhorsestocks.in/"
             className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"

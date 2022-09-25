@@ -175,7 +175,7 @@ function App(props) {
             {
               translateY: "-100%",
               skewY: "0deg",
-              duration: 1.5,
+              duration: 0.8,
               ease: "power4.out",
             }
           );
@@ -289,14 +289,6 @@ function App(props) {
             />
             <Route exact={true} key={9} path="/Faq" component={Faq} />
             <Route exact={true} key={20} path="/" component={AgencyHome} />
-
-            <Route
-              exact={true}
-              key={24}
-              path="/blog-footer"
-              component={BlogFooter}
-            />
-
             <Route
               exact={true}
               key={28}
@@ -304,41 +296,20 @@ function App(props) {
               component={CustomTable}
             />
           </Switch>
-          <div className="footer mt-section">
-            <div className="footer-animation-slide-up">
-              <div className="d-flex flex-column-tablet justify-content-between">
-                <h2 className="fs-95 fw-bold footer-text">
-                  Suggesting only <br /> fundamentally
-                  <br /> <span>strong company</span> <br /> every week
-                </h2>
-                <div>
-                  <h3 className="fs-30">
-                    Join us for weekly <br />
-                    updates
-                  </h3>
-                  <div className="mt-1">
-                    <Button text="Whatsapp" />
-                  </div>
-                </div>
-              </div>
-              <div className="toggle-container mt-section">
-                <span>Night Mode</span>
-                <span className="toggle">
-                  <input
-                    checked={darkMode}
-                    onChange={() => setDarkMode((prevMode) => !prevMode)}
-                    id="checkbox"
-                    className="checkbox"
-                    type="checkbox"
-                  />
-                  <label htmlFor="checkbox" />
-                </span>
-              </div>
-            </div>
-            {/* <FooterAnimation /> */}
-            {/* <Footer /> */}
-          </div>
           <BlogFooter />
+          <div className="toggle-container mt-section">
+            <span>Night Mode</span>
+            <span className="toggle">
+              <input
+                checked={darkMode}
+                onChange={() => setDarkMode((prevMode) => !prevMode)}
+                id="checkbox"
+                className="checkbox"
+                type="checkbox"
+              />
+              <label htmlFor="checkbox" />
+            </span>
+          </div>
         </div>
       </div>
     </div>

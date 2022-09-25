@@ -1,32 +1,44 @@
-import React from 'react'
-import CustomAccordion from '../../Components/Accordion/CustomAccordion'
-import FaqCard from "../../Components/Accordion Card/FaqCard"
-import Button from '../../Components/Button/Button'
+import React from "react";
+import CustomAccordion from "../../Components/Accordion/CustomAccordion";
+import FaqCard from "../../Components/Accordion Card/FaqCard";
+import Button from "../../Components/Button/Button";
 
 export default function Faq() {
   return (
     <div>
-              <div className=" mt-header">
+      <div className=" mt-header">
         <h1 className="container fs-95 w-80">
-        Frequently<br/> asked  questions
+          <div className="text-slide-up-animation-wrapper-2">
+            <div className="text-slide-up-animation-content-2">
+              <span className="text-slide-up-animation-text-2">Frequently</span>
+            </div>
+          </div>
+          <div className="text-slide-up-animation-wrapper-2">
+            <div className="text-slide-up-animation-content-2">
+              <span className="text-slide-up-animation-text-2">
+                asked questions
+              </span>
+            </div>
+          </div>
         </h1>
       </div>
       <div className="d-flex Overview-Categories container mt-section ">
-        <p className="mb-3">Overview</p>
+        <p className="mb-3 text-slide-up-animation-3">Overview</p>
 
-        <p className="overview-content">
+        <p className="overview-content text-slide-up-animation-3">
           Companies at darkhorsestocks are bifurcated into various different
           categories. Classification of these stocks in to various categories is
           explained below.
         </p>
       </div>
 
-      <CustomAccordion right="I Darkhorsestocks Sebi registered?" card={<FaqCard/>}  />
-      <div className='mt-6 container d-flex justify-content-center'>
-      <Button 
-    text="View all" />
+      <CustomAccordion
+        right="I Darkhorsestocks Sebi registered?"
+        card={<FaqCard />}
+      />
+      <div className="mt-6 container d-flex justify-content-center">
+        <Button text="View all" />
       </div>
-
     </div>
-  )
+  );
 }

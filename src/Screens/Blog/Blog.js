@@ -10,9 +10,27 @@ export default function Blog() {
     <div>
       <div className="mt-header">
         <div className="  container ">
-          <p className="fs-30">Dashboard</p>
-          <h1 className=" fs-95">
-            A unique platform to <br /> track all darkhorsestock <br /> ideas
+          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
+          <h1 className="fs-95">
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  A unique platform to
+                </span>
+              </div>
+            </div>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  track all darkhorsestock
+                </span>
+              </div>
+            </div>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">ideas</span>
+              </div>
+            </div>
           </h1>
         </div>
       </div>
@@ -46,19 +64,19 @@ export default function Blog() {
       </div>
 
       <div className="mt-section d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img">
+        <div className="first-img img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
-        <div className="secend-img">
+        <div className="secend-img img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
       </div>
 
       <div className=" d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img container">
+        <div className="first-img container img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
-        <div className="secend-img container">
+        <div className="secend-img container img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
       </div>
@@ -72,7 +90,7 @@ export default function Blog() {
         </p>
       </div>
 
-      <div className="section-img-container mt-section ">
+      <div className="section-img-container mt-section">
         <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
 
