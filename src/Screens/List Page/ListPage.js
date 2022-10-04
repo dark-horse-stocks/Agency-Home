@@ -12,7 +12,16 @@ export default function ListPage(props) {
   return (
     <div className="container">
       <h1 className="fs-95 mt-header">
-        List of <br /> advisories
+        <div className="text-slide-up-animation-wrapper-2">
+          <div className="text-slide-up-animation-content-2">
+            <span className="text-slide-up-animation-text-2">List of</span>
+          </div>
+        </div>
+        <div className="text-slide-up-animation-wrapper-2">
+          <div className="text-slide-up-animation-content-2">
+            <span className="text-slide-up-animation-text-2">advisories</span>
+          </div>
+        </div>
       </h1>
       <div className="d-flex container overview-wrapper mt-section ">
         <p className="overview-title text-slide-up-animation-3">Overview</p>
@@ -42,14 +51,16 @@ export default function ListPage(props) {
         <CustomAccordion
           right="Purnartha Advisory"
           left="Rs 1,00,000"
-          card={<AccordionCard
-            approx={item.Charges}
-            no={item.No}
-            plan={item.Plans}
-            register={item.REGISTERED}
-            trial={item.Free_Trial}
-            type={item.Type_of_Service}
-          />}
+          card={
+            <AccordionCard
+              approx={item.Charges}
+              no={item.No}
+              plan={item.Plans}
+              register={item.REGISTERED}
+              trial={item.Free_Trial}
+              type={item.Type_of_Service}
+            />
+          }
         />
       ))}
       <div

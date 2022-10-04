@@ -38,6 +38,7 @@ function App(props) {
     const txtAnimate1 = document.querySelectorAll(".text-slide-up-animation-1");
     const txtAnimate2 = document.querySelectorAll(".text-slide-up-animation-2");
     const txtAnimate3 = document.querySelectorAll(".text-slide-up-animation-3");
+    const imgAnimate1 = document.querySelectorAll(".img-slide-up-animation-1");
     txtAnimate1.forEach((txt) => {
       const splitWordsArr = txt.innerText.match(/\S+/g);
       txt.innerHTML = "";
@@ -82,6 +83,20 @@ function App(props) {
 
         txt.innerHTML += txtAnimateTemplate3;
       });
+    });
+    imgAnimate1.forEach((img) => {
+      const imgInnerHTML = img.innerHTML;
+      img.innerHTML = "";
+
+      const imgAnimateTemplate1 = `
+        <span class="img-slide-up-animation-wrapper-1">
+          <span class="img-slide-up-animation-content-1">
+            <span class="img-slide-up-animation-img-1">${imgInnerHTML}</span>
+          </span>
+        </span>
+        `;
+
+      img.innerHTML += imgAnimateTemplate1;
     });
 
     window.addEventListener("load", () => {
@@ -139,83 +154,31 @@ function App(props) {
           );
       });
 
-      // Footer slide up animation
-      gsap.fromTo(
-        ".footer-animation-slide-up",
-        { translateY: "100%", opacity: 0 },
-        {
-          translateY: "0%",
-          opacity: 1,
-          duration: 2,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: ".footer",
-            start: "top 80%",
-          },
-        }
-      );
-
-      // Footer mountains slide up animation
-      gsap.to(".slideUp", {
-        translateY: "50px",
-        duration: 3,
-        ease: "power4.easeOut",
-        scrollTrigger: {
-          trigger: ".mountains",
-          start: "top 80%",
-          scrub: 1,
-        },
-        stagger: 0.05,
-      });
-
-      // Footer sun & moon slide up animation
-      if (darkMode) {
-        gsap.to(".moon", {
-          rotate: "0deg",
-          duration: 4,
-          ease: "power4.easeOut",
-          scrollTrigger: {
-            trigger: ".footer",
-            start: "top 80%",
-          },
-        });
-      } else {
-        gsap.to(".sun", {
-          rotate: "0deg",
-          duration: 4,
-          ease: "power4.easeOut",
-          scrollTrigger: {
-            trigger: ".footer",
-            start: "top 80%",
-          },
-        });
-      }
-      const toggleThemeBtn = document.querySelector("#checkbox");
-      toggleThemeBtn.addEventListener("change", () => {
-        console.log(toggleThemeBtn, darkMode);
-        if (document.body.classList.contains("dark-mode")) {
-          gsap.to(".moon", {
-            rotate: "0deg",
-            duration: 4,
-            ease: "power4.easeOut",
-          });
-          gsap.to(".sun", {
-            rotate: "90deg",
-            duration: 4,
-            ease: "power4.easeOut",
-          });
-        } else if (document.body.classList.contains("light-mode")) {
-          gsap.to(".sun", {
-            rotate: "0deg",
-            duration: 4,
-            ease: "power4.easeOut",
-          });
-          gsap.to(".moon", {
-            rotate: "90deg",
-            duration: 4,
-            ease: "power4.easeOut",
-          });
-        }
+      // Image animation 1
+      gsap.utils.toArray(".img-slide-up-animation-1").forEach((elem) => {
+        const imgAnimate1Wrappers = elem.querySelectorAll(
+          ".img-slide-up-animation-wrapper-1"
+        );
+        const imgAnimate3img = elem.querySelectorAll(
+          ".img-slide-up-animation-img-1"
+        );
+        const tl = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: imgAnimate1Wrappers,
+              start: "top 90%",
+            },
+          })
+          .fromTo(
+            imgAnimate3img,
+            { skewY: "4deg" },
+            {
+              translateY: "-100%",
+              skewY: "0deg",
+              duration: 0.8,
+              ease: "power4.out",
+            }
+          );
       });
 
       // Delegating click event
@@ -303,7 +266,6 @@ function App(props) {
         <div id="container-wrapper">
           <NavBar />
           <Switch>
-
             <Route exact={true} key={12} path="/team" component={TeamPage} />
             <Route
               exact={true}
@@ -325,26 +287,8 @@ function App(props) {
               path="/fundalysis"
               component={Fundalysis}
             />
-                        <Route
-              exact={true}
-              key={9}
-              path="/Faq"
-              component={Faq}
-            />
-            <Route
-              exact={true}
-              key={20}
-              path="/"
-              component={AgencyHome}
-            />
-
-            <Route
-              exact={true}
-              key={24}
-              path="/blog-footer"
-              component={BlogFooter}
-            />
-
+            <Route exact={true} key={9} path="/Faq" component={Faq} />
+            <Route exact={true} key={20} path="/" component={AgencyHome} />
             <Route
               exact={true}
               key={28}
@@ -352,41 +296,19 @@ function App(props) {
               component={CustomTable}
             />
           </Switch>
-          <div className="footer mt-section">
-            <div className="footer-animation-slide-up-wrapper">
-              <div className="footer-animation-slide-up">
-                <div className="d-flex flex-column-tablet justify-content-between">
-                  <h2 className="fs-95 fw-bold footer-text">
-                    Suggesting only <br /> fundamentally
-                    <br /> <span>strong company</span> <br /> every week
-                  </h2>
-                  <div>
-                    <h3 className="fs-30">
-                      Join us for weekly <br />
-                      updates
-                    </h3>
-                    <div className="mt-1">
-                      <Button text="Whatsapp" />
-                    </div>
-                  </div>
-                </div>
-                <div className="toggle-container mt-section">
-                  <span>Night Mode</span>
-                  <span className="toggle">
-                    <input
-                      checked={darkMode}
-                      onChange={() => setDarkMode((prevMode) => !prevMode)}
-                      id="checkbox"
-                      className="checkbox"
-                      type="checkbox"
-                    />
-                    <label htmlFor="checkbox" />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <FooterAnimation />
-            <Footer />
+          <BlogFooter />
+          <div className="toggle-container mt-section">
+            <span>Night Mode</span>
+            <span className="toggle">
+              <input
+                checked={darkMode}
+                onChange={() => setDarkMode((prevMode) => !prevMode)}
+                id="checkbox"
+                className="checkbox"
+                type="checkbox"
+              />
+              <label htmlFor="checkbox" />
+            </span>
           </div>
         </div>
       </div>

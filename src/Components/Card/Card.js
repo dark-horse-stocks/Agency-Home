@@ -52,7 +52,6 @@ export default function Card(props) {
           {/* <p className=""> {props.rate} </p> */}
           <p
             style={{
-              width: "70%",
               display: "flex",
               gap: ".5rem",
               alignItems: "center",

@@ -15,7 +15,6 @@ import BlogAccordion from "../../Components/Accordion/BlogAccordion";
 // import { Chart2 } from "../../Components/Chart/Chart2";
 // import ChatTest from "../../Components/Chart/ChatTest";
 
-
 export default function NewBlog() {
   const data = [
     {
@@ -65,12 +64,41 @@ export default function NewBlog() {
       <div className="container">
         <div className="blog-header  mt-header">
           <div className="card-date">
-            <p>PUBLISHED ON JAN 23, 2022</p>
+            <p>
+              <div className="text-slide-up-animation-wrapper-2">
+                <div className="text-slide-up-animation-content-2">
+                  <span className="text-slide-up-animation-text-2">
+                    PUBLISHED ON JAN 23, 2022
+                  </span>
+                </div>
+              </div>
+            </p>
           </div>
           <h1 className="container fs-95 blog-title ">
-            macrotech <br /> Devlopers limited
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  macrotech
+                </span>
+              </div>
+            </div>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  Devlopers limited
+                </span>
+              </div>
+            </div>
           </h1>
-          <p>Debt free | Cash Rich | Long Term Investing | Darkhorsestock</p>
+          <p>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  Debt free | Cash Rich | Long Term Investing | Darkhorsestock
+                </span>
+              </div>
+            </div>
+          </p>
         </div>
       </div>
       <div className="container mt-section fw-semibold fs-30">
@@ -88,16 +116,17 @@ export default function NewBlog() {
       <div className="section-img-container mt-section ">
         <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
-      <h3 className="container mt-section fw-semibold fs-30">
+      <h3 className="container mt-section fw-semibold fs-30 text-slide-up-animation-3">
         {" "}
         Market Price at the time of Publishing this report : 590 Rs{" "}
       </h3>
 
-     {/* <div className="container"><ChatTest className="mt-section" /></div>  */}
+      {/* <div className="container"><ChatTest className="mt-section" /></div>  */}
       <div className="mt-section">
-       {data.map((item) => (
-        <BlogAccordion  text={item.text} card={item.card} />
-       ))}</div>
-     </div>
+        {data.map((item) => (
+          <BlogAccordion text={item.text} card={item.card} />
+        ))}
+      </div>
+    </div>
   );
 }

@@ -10,9 +10,27 @@ export default function Fundalysis() {
     <div>
       <div className="mt-header">
         <div className="  container ">
-          <p className="fs-30">Dashboard</p>
-          <h1 className=" fs-95">
-            A unique platform to <br /> track all darkhorsestock <br /> ideas
+          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
+          <h1 className="fs-95">
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  A unique platform to
+                </span>
+              </div>
+            </div>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">
+                  track all darkhorsestock
+                </span>
+              </div>
+            </div>
+            <div className="text-slide-up-animation-wrapper-2">
+              <div className="text-slide-up-animation-content-2">
+                <span className="text-slide-up-animation-text-2">ideas</span>
+              </div>
+            </div>
           </h1>
         </div>
       </div>
@@ -46,26 +64,26 @@ export default function Fundalysis() {
       </div>
 
       <div className="mt-section d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img">
+        <div className="first-img img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
-        <div className="secend-img">
+        <div className="secend-img img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
       </div>
 
       <div className=" d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img container">
+        <div className="first-img container img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
-        <div className="secend-img container">
+        <div className="secend-img container img-slide-up-animation-1">
           <img src={Rectangle} alt="icon" />
         </div>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
         <h4 className="text-slide-up-animation-3">Features</h4>
-        <p className="overview-content">
+        <p className="overview-content text-slide-up-animation-3">
           Developing websites is about so much more than marketing. It’s also
           about aesthetics. For us, your site is the face of your company. Let’s
           make it stunning
@@ -81,7 +99,7 @@ export default function Fundalysis() {
           <h2 className="fs-95 header-fs-tablet text-slide-up-animation-3">
             In the end ✨
           </h2>
-          <p className="fs-30">
+          <p className="fs-30 text-slide-up-animation-3">
             The ❤️ of our investment strategy is centred on producing consistent
             alpha and, more crucially, identifying companies that are not on the
             radar of most analysts. To do so, we supplement our in-depth

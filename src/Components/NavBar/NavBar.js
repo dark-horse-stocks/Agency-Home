@@ -11,32 +11,56 @@ export default function NavBar() {
       <div className="logo">DARKHORSESTOCKS</div>
       <div className="icons d-flex justify-content-between align-items-center">
         <div
-          className="icon search-icon"
-          data-cursor-stick=""
+          className="icon search-icon content__item Social-item nav-link-wrapper"
           data-cursor="-menu -icon-blend"
-          onClick={() => {
-            history.push("/search");
-          }}
         >
-          search
+          <a href="/search" className="nav-link">
+            <em className="nav-link-hover-wrapper">
+              <span
+                data-text="search"
+                className="nav-link-hover"
+                data-movement="0.2"
+              >
+                search
+              </span>
+            </em>
+          </a>
         </div>
         <div
-          onClick={() => {
-            history.push("/login");
-          }}
-          className="icon user-icon"
-          data-cursor-stick=""
+          className="icon user-icon content__item Social-item nav-link-wrapper"
           data-cursor="-menu -icon-blend"
         >
-          Login
+          <a href="/login" className="nav-link">
+            <em className="nav-link-hover-wrapper">
+              <span
+                data-text="login"
+                className="nav-link-hover"
+                data-movement="0.2"
+              >
+                login
+              </span>
+            </em>
+          </a>
         </div>
         <div>
           <div
-            className="icon user-icon"
+            className="icon user-icon content__item Social-item nav-link-wrapper"
+            id="hamburgerMenuLabel"
+            data-cursor="-menu -icon-blend"
           >
-            menu
-          </div>{" "}
-          <HamburgerMenu />{" "}
+            <div className="nav-link">
+              <em className="nav-link-hover-wrapper">
+                <span
+                  data-text="menu"
+                  className="nav-link-hover"
+                  data-movement="0.2"
+                >
+                  menu
+                </span>
+              </em>
+            </div>
+          </div>
+          <HamburgerMenu />
         </div>
       </div>
     </div>
