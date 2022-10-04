@@ -81,7 +81,7 @@ window.addEventListener("load", () => {
     fixedElem1.style.top = offset.y + "px";
     fixedElem2.style.top = offset.y + "px";
     fixedElem2.style.left = offset.x + "px";
-    fixedElem3.style.top = `${offset.y + 32}px`;
+    fixedElem3.style.top = `${offset.y + 28}px`;
     fixedElem4.style.top = offset.y + "px";
   });
 
@@ -102,6 +102,7 @@ window.addEventListener("load", () => {
 
   // Don't let the user be able to scroll when the navbar is open
   const menuLabelWrapper = document.querySelector("#menuLabelWrapper");
+  const hamburgerMenuLabel = document.querySelector("#hamburgerMenuLabel");
   const navBackdropSticky = document.querySelector("#navBackdropSticky");
   const containerWrapper = document.querySelector("#container-wrapper");
   const navSticky = document.querySelector("#navSticky");
@@ -109,6 +110,9 @@ window.addEventListener("load", () => {
 
   let menuOpen = false;
 
+  hamburgerMenuLabel.addEventListener("click", () => {
+    menuLabelWrapper.click();
+  });
   menuLabelWrapper.addEventListener("click", () => {
     if (menuLabelWrapper.classList.contains("menuOpen")) {
       menuOpen = true;
@@ -141,13 +145,19 @@ window.addEventListener("load", () => {
   navBackdropSticky.addEventListener("click", () => {
     if (menuLabelWrapper.classList.contains("menuOpen")) {
       scrollbar.updatePluginOptions("modal", { open: false });
+
+      // HamburgerBar close
+      hamburger.classList.add("close");
+      hamburger.classList.remove("open");
     } else {
       scrollbar.updatePluginOptions("modal", { open: true });
+
+      // HamburgerBar open
+      hamburger.classList.add("open");
+      hamburger.classList.remove("close");
     }
   });
 });
-
-
 
 root.render(
   <Suspense>
