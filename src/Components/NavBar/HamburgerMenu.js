@@ -429,16 +429,16 @@ function HamburgerMenu() {
                 <span
                   className="nav-link magnetic-content"
                   onClick={() => {
-                    history.push("/pricing");
+                    history.push("/blog")
                   }}
                 >
                   <em className="nav-link-hover-wrapper">
                     <span
-                      data-text="Pricing"
+                      data-text="Blog"
                       className="nav-link-hover"
                       data-movement="0.2"
                     >
-                      Pricing
+                      Blog
                     </span>
                   </em>
                 </span>
@@ -451,16 +451,16 @@ function HamburgerMenu() {
                 <span
                   className="nav-link magnetic-content"
                   onClick={() => {
-                    history.push("/subscriptions");
+                    history.push("/dashboard")
                   }}
                 >
                   <em className="nav-link-hover-wrapper">
                     <span
-                      data-text="Subscribe"
+                      data-text="Dashboard"
                       className="nav-link-hover"
                       data-movement="0.2"
                     >
-                      Subscribe
+                      Dashboard
                     </span>
                   </em>
                 </span>
@@ -473,16 +473,16 @@ function HamburgerMenu() {
                 <span
                   className="nav-link magnetic-content"
                   onClick={() => {
-                    history.push("/philosophy-Page");
+                    history.push("/fundalysis")
                   }}
                 >
                   <em className="nav-link-hover-wrapper">
                     <span
-                      data-text="Philosophy"
+                      data-text="Fundalysis"
                       className="nav-link-hover"
                       data-movement="0.2"
                     >
-                      Philosophy
+                      Fundalysis
                     </span>
                   </em>
                 </span>
@@ -495,16 +495,16 @@ function HamburgerMenu() {
                 <span
                   className="nav-link magnetic-content"
                   onClick={() => {
-                    history.push("/categories");
+                    history.push("/team")
                   }}
                 >
                   <em className="nav-link-hover-wrapper">
                     <span
-                      data-text="Categories"
+                      data-text="Team"
                       className="nav-link-hover"
                       data-movement="0.2"
                     >
-                      Categories
+                Team
                     </span>
                   </em>
                 </span>

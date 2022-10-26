@@ -8,7 +8,7 @@ export default function NavBar() {
   const history = useHistory();
   return (
     <div className="d-flex justify-content-between container-nav align-items-center">
-      <div className="logo">DARKHORSESTOCKS</div>
+      <div className="logo" onClick={() => history.push("/")}>DARKHORSESTOCKS</div>
       <div className="icons d-flex justify-content-between align-items-center">
         <div
           className="icon search-icon content__item Social-item nav-link-wrapper"

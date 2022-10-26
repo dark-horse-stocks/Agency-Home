@@ -8,23 +8,23 @@ export default function BlogFooter() {
         <h2>Have an idea?</h2>
         <p className="blog-footer-text line-animation-2">Tell us about it</p>
       </div>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between footer-wrapper">
         <div className="blog-contact ">
           <h4
             className="fs-20 line-animation-1"
-            style={{ marginBottom: ".5rem" }}
+            style={{ marginBottom: "1.5rem" }}
           >
             support@darkhorsestocksinception.in
           </h4>
-          <p className="mt-3 ">
+          <p className=" gray-color"   style={{ marginBottom: ".5rem" }}>
             837 Garden street, Milpitas California 95035, USA
           </p>
-          <p className="mt-1">
+          <p className=" gray-color">
             {" "}
             Parimit Apartment, Besides parth hospital, Anjali cross road, Bhatta
             380007, Ahmedabad, India.
           </p>
-          <p className="mt-3">privacy policy</p>
+          <p className="fw-bold" style={{ marginTop: "1.5rem" }}>Privacy Policy</p>
         </div>
 
         <div className="footer-social">
