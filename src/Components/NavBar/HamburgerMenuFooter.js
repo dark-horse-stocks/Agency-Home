@@ -155,18 +155,18 @@ function HamburgerMenuFooter() {
             }}>Home</li>
             <li class="content__item fw-bold menu-item"
               onClick={() => {
-                history.push("/pricing")
+                history.push("/blog")
               }}
-            >Pricing</li>
+            >Blog</li>
             <li class="content__item fw-bold menu-item" onClick={() => {
-              history.push("/subscriptions")
-            }}>Subscribe</li>
+              history.push("/dashboard")
+            }}>Dashboard</li>
             <li class="content__item fw-bold menu-item" onClick={() => {
-              history.push("/philosophy-Page")
-            }}>Philosophy</li>
+              history.push("/fundalysis")
+            }}>Fundalysis</li>
             <li class="content__item fw-bold menu-item" onClick={() => {
-              history.push("/categories")
-            }}>Categories</li>
+              history.push("/team")
+            }}>Team</li>
             <li class="content__item fw-bold menu-item" onClick={() => {
               history.push("/faq")
             }}>Faq’s</li>
