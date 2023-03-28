@@ -1,49 +1,61 @@
+@import "./variables/colors";
+@import "./variables/typography";
+@import "./variables/margin";
+@import "./mixins/flex";
+@import "./mixins/fonts";
+@import "./mixins/dimensions";
+@import "./mixins/typography-mixin";
+@import "./mixins/position";
+@import "./mixins/spacing";
+
 :root {
-  --Colour-1: #fff;
-  --Colour-2: #000;
-  --Colour-3: #636363;
-  --Colour-4: #c4c4c4;
-  --Colour-5: #e85c7a;
-  --Colour-5: #0ec224;
-  --Colour-5: #6455c2;
-  --Colour-5: #36166e;
-  --Colour-5: #d3f6e0;
-  --Heading-95: 95px;
-  --Heading-75: 75px;
-  --Font-55: 55px;
-  --Font-45: 45px;
-  --Font-35: 35px;
-  --Font-30: 30px;
-  --Font-15: 15px;
-  --Margin-sections: 400px;
-  --Margin-headers: 180px;
+  --Colour-1: $color-white;
+  --Colour-2: $color-black;
+  --Colour-3: $color-gray;
+  --Colour-4: $color-light-gray;
+  --Colour-5: $color-red;
+  --Colour-6: $color-green;
+  --Colour-7: $color-purple;
+  --Colour-8: $color-dark-purple;
+  --Colour-9: $color-light-green;
+  --Heading-95: $heading-95;
+  --Heading-75: $heading-75;
+  --Font-55: $font-55;
+  --Font-50: $font-50;
+  --Font-45: $font-45;
+  --Font-35: $font-35;
+  --Font-30: $font-30;
+  --Font-20: $font-20;
+  --Font-15: $font-15;
+  --Margin-sections: $margin-sections;
+  --Margin-headers: $margin-headers;
 }
 
 @font-face {
   font-family: AvertaBold;
-  src: url(./Assets/Font/Averta\ Bold.otf);
+  src: url("./Assets/Font/Averta\ Bold.otf");
 }
 
 @font-face {
   font-family: Averta;
-  src: url(./Assets/Font/Averta\ Light.otf);
+  src: url("./Assets/Font/Averta\ Light.otf");
 }
 
 @font-face {
   font-family: AvertaSemi;
-  src: url(./Assets/Font/Averta\ Semibold.otf);
+  src: url("./Assets/Font/Averta\ Semibold.otf");
 }
 
 .light-font {
-  font-family: Averta;
+  @include light-font;
 }
 
 .semi-font {
-  font-family: AvertaSemi;
+  @include semi-font;
 }
 
 .bold-font {
-  font-family: AvertaBold;
+  @include bold-font;
 }
 
 * {
@@ -134,7 +146,6 @@ body {
   justify-content: flex-end;
   margin: 17px auto;
   width: 85%;
-
 }
 
 .slider-arrow-left {
@@ -145,7 +156,6 @@ body {
 .slider-arrow-right {
   /* margin-right: 100px; */
   cursor: pointer;
-
 }
 
 .stroked {
@@ -273,7 +283,7 @@ a {
   margin-bottom: 20px;
 }
 
-ul li:hover~.cursor {
+ul li:hover ~ .cursor {
   transform: scale(6);
 }
 
@@ -331,7 +341,6 @@ ul li:hover~.cursor {
   .fs-45 {
     font-size: 21px;
     line-height: 45px;
-
   }
 }
 
@@ -343,7 +352,6 @@ ul li:hover~.cursor {
   .fs-45 {
     font-size: 16px;
     line-height: 30px;
-
   }
 
   .fs-95 {
@@ -377,7 +385,6 @@ ul li:hover~.cursor {
   .fs-45 {
     font-size: 14px;
     line-height: 25px;
-
   }
 
   .fs-95 {
@@ -471,10 +478,10 @@ ul li:hover~.cursor {
   color: #787878;
   margin: 0 !important;
 }
-rect[Attributes]{
-display: none !important;
+rect[Attributes] {
+  display: none !important;
 }
 
-.w-35{
+.w-35 {
   width: 30%;
 }

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { useEffect, useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import ListPage from "./Screens/List Page/ListPage";
