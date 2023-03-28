@@ -40,7 +40,7 @@ li {
   font-size: 20px;
 }
 
-.icon{
+.icon {
   margin-right: 20px;
 }
 .dark-mode .icons {
@@ -48,11 +48,11 @@ li {
 }
 
 .Social-item a {
-  color: #000;
+  color: var(--Colour-2);
 }
 
 .dark-mode .Social-item a {
-  color: #fff;
+  color: var(--Colour-1);
 }
 
 .toggle-menu {
@@ -167,7 +167,7 @@ li {
 
 .dark-mode .nav-link-hover::before,
 .dark-mode .nav-link-hover::after {
-  color: white;
+  color: var(--Colour-1);
 }
 
 .nav-link-hover::before {

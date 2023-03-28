@@ -1,0 +1,11 @@
+@mixin position-relative {
+  position: relative;
+}
+
+@mixin position-absolute {
+  position: absolute;
+}
+
+@mixin position-fixed {
+  position: fixed;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 
 // Importing a dummy image and a dummy video for hover animation
 import hoverVideo from "../../Assets/hoverVideo.mp4";

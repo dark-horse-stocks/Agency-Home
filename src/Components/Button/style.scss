@@ -2,13 +2,14 @@
   background-color: transparent;
   height: 52px;
   border: 0.8px solid rgba(0, 0, 0, 0.1);
-
   border-radius: 100px;
   color: #000;
   font-size: 20px;
   cursor: pointer;
   font-weight: bold;
-  padding: 31px 40px;
+  width: 180px;
+  height: 60px;
+  margin-top: 20px;
   text-align: center;
   line-height: 0px;
 }
@@ -20,11 +21,13 @@
   height: 52px;
   border: 0.8px solid #e1e1e1;
   border-radius: 100px;
-  color: #fff;
+  color: var(--Colour-1);
   font-size: 20px;
-  padding: 31px 40px;
   text-align: center;
   line-height: 0px;
+  width: 180px;
+  height: 60px;
+  margin-top: 20px;
 }
 
 /* btn-animate animation styles */
@@ -88,5 +91,24 @@
   }
   to {
     transform: translateY(75%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dark-mode .btn-component,
+  .light-mode .btn-component {
+    width: 111px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-text {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: -0.2rem;
+  }
+  .pricing-list {
+    margin-left: 15px;
   }
 }

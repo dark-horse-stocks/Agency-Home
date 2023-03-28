@@ -3,7 +3,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import AccordionCard from "../../Components/Accordion Card/AccordionCard";
 import Button from "../../Components/Button/Button";
 import CustomAccordion from "../../Components/Accordion/CustomAccordion";
-import "./style.css";
+import "./style.scss";
 import { useHistory } from "react-router-dom";
 import advisories from "../../Assets/data.js";
 

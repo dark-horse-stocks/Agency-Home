@@ -33,17 +33,17 @@
 
 @font-face {
   font-family: AvertaBold;
-  src: url("./Assets/Font/Averta\ Bold.otf");
+  src: url("../Assets//Font/Averta\ Bold.otf");
 }
 
 @font-face {
   font-family: Averta;
-  src: url("./Assets/Font/Averta\ Light.otf");
+  src: url("../Assets/Font/Averta\ Light.otf");
 }
 
 @font-face {
   font-family: AvertaSemi;
-  src: url("./Assets/Font/Averta\ Semibold.otf");
+  src: url("../Assets/Font/Averta\ Semibold.otf");
 }
 
 .light-font {
@@ -75,63 +75,55 @@ body {
 }
 
 .container {
-  width: 80vw;
-  margin: 0 auto;
+  @include container;
 }
 
 .text-center {
-  text-align: center;
+  @include text-center;
 }
 
 .underline {
-  text-decoration: underline;
+  @include underline;
 }
 
 .mt-section {
-  margin: var(--Margin-sections) auto;
+  @include mt-section;
 }
 
 .mt-header {
-  margin: var(--Margin-headers) 0 var(--Margin-sections) 0;
+  @include mt-header;
 }
 
 .fs-95 {
-  font-size: var(--Heading-95) !important;
-  line-height: auto;
-  font-family: AvertaSemi;
+  @include fs-95;
 }
 
 .fs-55 {
-  font-size: var(--Font-55) !important;
-  line-height: 95px;
+  @include fs-55;
 }
 
 .fs-30 {
-  font-size: var(--Font-30);
-  line-height: 45px;
+  @include fs-30;
 }
 
 .fs-45 {
-  font-size: 40px;
-  line-height: 45px;
-  font-family: AvertaSemi;
+  @include fs-45;
 }
 
 .fs-75 {
-  font-size: var(--Heading-75);
-  line-height: 70px;
+  @include fs-75;
 }
 
 .w-80 {
-  width: 80%;
+  @include w-80;
 }
 
 .w-70 {
-  width: 70%;
+  @include w-70;
 }
 
 .h-100 {
-  height: 100vh;
+  @include h-100;
 }
 
 .gray-color {
@@ -139,18 +131,15 @@ body {
 }
 
 .fw-semibold {
-  font-weight: 400;
+  @include fw-semibold;
 }
 
 .slider-arrow {
-  justify-content: flex-end;
-  margin: 17px auto;
-  width: 85%;
+  @include slider-arrow;
 }
 
 .slider-arrow-left {
-  margin-right: 11px;
-  cursor: pointer;
+  @include slider-arrow-left;
 }
 
 .slider-arrow-right {
@@ -159,69 +148,67 @@ body {
 }
 
 .stroked {
-  color: white;
-  -webkit-text-stroke: 1px black;
+  @include stroked;
 }
 
 .overview-content {
-  width: 60%;
-  margin: 0 auto;
+  @include overview-content;
 }
 
 .mt-1 {
-  margin-top: 1em;
+  @include mt-1;
 }
 
 .mt-6 {
-  margin-top: 6em;
+  @include mt-6;
 }
 
 .d-flex {
-  display: flex;
+  @include d-flex;
 }
 
 .flex-column {
-  flex-direction: column;
+  @include flex-column;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+  @include flex-wrap;
 }
 
 .flex-direction-column {
-  flex-direction: column;
+  @include flex-direction-column;
 }
 
 .justify-content-between {
-  justify-content: space-between;
+  @include justify-content-between;
 }
 
 .justify-content-center {
-  justify-content: center;
+  @include justify-content-center;
 }
 
 .align-items-center {
-  align-items: center;
+  @include align-items-center;
 }
 
 .align-items-end {
-  align-items: flex-end;
+  @include align-items-end;
 }
 
 .my-4 {
-  margin: 15px 0;
+  @include my-4;
 }
 
 .fw-bold {
-  font-weight: bold;
+  @include fw-bold;
 }
 
 .w-100 {
-  width: 100%;
+  @include w-100;
 }
 
 .AccordionSummary {
-  font-size: var(--Font-30);
+  @include accordion-summary;
 }
 
 a {

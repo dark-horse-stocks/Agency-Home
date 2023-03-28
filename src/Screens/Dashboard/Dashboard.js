@@ -3,7 +3,7 @@ import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
-import "./style.css";
+import "./style.scss";
 
 export default function Dashboard() {
   return (
@@ -45,7 +45,7 @@ export default function Dashboard() {
             Let’s make it stunning
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
-            <Button text="Go to Dashboard" />
+            <Button text="Go to Dashboard" className="btn" />
           </div>
         </div>
       </div>
