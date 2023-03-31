@@ -2,7 +2,12 @@ import React from "react";
 import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
-import SecImage from "../../Assets/image section.png";
+import Image from "../../Assets/Dashboard/Final/1.png";
+import Image2 from "../../Assets/Dashboard/Final/2.jpg";
+import Image3 from "../../Assets/Dashboard/Final/3.jpg";
+import Image4 from "../../Assets/Dashboard/Final/4.jpg";
+import Image5 from "../../Assets/Dashboard/Final/5.jpg";
+import Image6 from "../../Assets/Dashboard/Final/6.jpg";
 import "./style.css";
 
 export default function Dashboard() {
@@ -35,14 +40,12 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="hero-img-container">
-        <img src={HeroImg} alt="Hero" className="hero-img" />
+        <img src={Image} alt="Hero" className="hero-img" />
       </div>
       <div className=" mt-section container">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
-            Developing websites is about so much more than marketing. It’s also
-            about aesthetics. For us, your site is the face of your company.
-            Let’s make it stunning
+          With the dashboard you can track all the ideas that we have suggested on real time basis along with amazing stats such as daily gainers & losers, overall gainers & losers as well as much more. It reflects our performance in real time basis. Currently no other advisory we have come across so far provides with this kind of detailed analytical platform.
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
             <Button text="Go to Dashboard" />
@@ -51,47 +54,47 @@ export default function Dashboard() {
       </div>
 
       <div className="section-img-container mt-section ">
-        <img src={SecImage} alt="Hero" className="hero-img" />
+        <img src={Image2} alt="Hero" className="hero-img" />
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
-          Developing websites is about so much more than marketing. It’s also
-          about aesthetics. For us, your site is the face of your company. Let’s
-          make it stunning
+        Live data feed, Historical charts of Indices as well as all the darkhorsestocks suggested, 52 Week high lows , Distance from 52 week high lows etc
         </p>
       </div>
 
       <div className="mt-section d-flex container dashbord-img flex-column-tablet">
         <div className="first-img img-slide-up-animation-1">
-          <img src={Rectangle} alt="icon" />
+          <img src={Image3} alt="icon" />
         </div>
         <div className="secend-img img-slide-up-animation-1">
-          <img src={Rectangle} alt="icon" />
+          <img src={Image4} alt="icon" />
         </div>
       </div>
 
       <div className=" d-flex container dashbord-img flex-column-tablet">
         <div className="first-img img-slide-up-animation-1">
-          <img src={Rectangle} alt="icon" />
+          <img src={Image5} alt="icon" />
         </div>
         <div className="secend-img img-slide-up-animation-1">
-          <img src={Rectangle} alt="icon" />
+          <img src={Image6} alt="icon" />
         </div>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
-          Developing websites is about so much more than marketing. It’s also
-          about aesthetics. For us, your site is the face of your company. Let’s
-          make it stunning
+          <span >        Developing this type of dashboard and updating it with live data feed is extremely costly and requires huge effort. Besides it also shows your true performance. By doing so if your performance is not that good it opens up to a huge exposure.
+</span>
+          <span className="mt-3">         Other advisories indulge in marketing as their prime motive is to earn heafty subscriptions . By providing this kind of dashboard it may act as an obstruction to their ulterior motive.
+</span>
+
         </p>
       </div>
 
       <div className="section-img-container mt-section ">
-        <img src={SecImage} alt="Hero" className="hero-img" />
+        {/* <img src={SecImage} alt="Hero" className="hero-img" /> */}
       </div>
 
       <div className="container end-wrapper mt-section">
