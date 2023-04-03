@@ -464,7 +464,8 @@ li {
   }
 
   .icons {
-    width: 100px;
+    width: 65px;
+    margin-right: 23px;
   }
 
   .first-list {

@@ -11,6 +11,7 @@ import Image6 from "../../Assets/Dashboard/Final/6.jpg";
 import "./style.css";
 
 export default function Dashboard() {
+  const mobile = window.innerWidth < 800;
   return (
     <div>
       <div className="mt-header">
@@ -45,7 +46,12 @@ export default function Dashboard() {
       <div className=" mt-section container">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
-          With the dashboard you can track all the ideas that we have suggested on real time basis along with amazing stats such as daily gainers & losers, overall gainers & losers as well as much more. It reflects our performance in real time basis. Currently no other advisory we have come across so far provides with this kind of detailed analytical platform.
+            With the dashboard you can track all the ideas that we have
+            suggested on real time basis along with amazing stats such as daily
+            gainers & losers, overall gainers & losers as well as much more. It
+            reflects our performance in real time basis. Currently no other
+            advisory we have come across so far provides with this kind of
+            detailed analytical platform.
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
             <Button text="Go to Dashboard" />
@@ -60,11 +66,13 @@ export default function Dashboard() {
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
-        Live data feed, Historical charts of Indices as well as all the darkhorsestocks suggested, 52 Week high lows , Distance from 52 week high lows etc
+          Live data feed, Historical charts of Indices as well as all the
+          darkhorsestocks suggested, 52 Week high lows , Distance from 52 week
+          high lows etc
         </p>
       </div>
 
-      <div className="mt-section d-flex container dashbord-img flex-column-tablet">
+      <div className={`${!mobile && "mt-section"} d-flex container dashbord-img flex-column-tablet`}>
         <div className="first-img img-slide-up-animation-1">
           <img src={Image3} alt="icon" />
         </div>
@@ -74,7 +82,7 @@ export default function Dashboard() {
       </div>
 
       <div className=" d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img img-slide-up-animation-1">
+        <div className="first-img img-slide-up-animation-1 mt-2">
           <img src={Image5} alt="icon" />
         </div>
         <div className="secend-img img-slide-up-animation-1">
@@ -85,11 +93,17 @@ export default function Dashboard() {
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
-          <span >        Developing this type of dashboard and updating it with live data feed is extremely costly and requires huge effort. Besides it also shows your true performance. By doing so if your performance is not that good it opens up to a huge exposure.
-</span>
-          <span className="mt-3">         Other advisories indulge in marketing as their prime motive is to earn heafty subscriptions . By providing this kind of dashboard it may act as an obstruction to their ulterior motive.
-</span>
-
+          <span>
+            Developing this type of dashboard and updating it with live data
+            feed is extremely costly and requires huge effort. Besides it also
+            shows your true performance. By doing so if your performance is not
+            that good it opens up to a huge exposure.
+          </span>
+          <span className="mt-3">
+            Other advisories indulge in marketing as their prime motive is to
+            earn heafty subscriptions . By providing this kind of dashboard it
+            may act as an obstruction to their ulterior motive.
+          </span>
         </p>
       </div>
 
