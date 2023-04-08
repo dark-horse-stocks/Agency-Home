@@ -1,6 +1,6 @@
 import React from "react";
 import Teamimg from "../../Assets/Group 290.png";
-import "./style.css";
+import "./style.scss";
 
 function TeamPage() {
   const team = [

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { useEffect, useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import ListPage from "./Screens/List Page/ListPage";
@@ -267,13 +267,13 @@ function App(props) {
           <NavBar />
           <Switch>
             <Route exact={true} key={12} path="/team" component={TeamPage} />
-            <Route
+            {/* <Route
               exact={true}
               key={18}
               path="/list-page"
               component={ListPage}
-            />
-            <Route exact={true} key={6} path="/new-blog" component={NewBlog} />
+            /> */}
+            {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
             <Route
               exact={true}
               key={7}

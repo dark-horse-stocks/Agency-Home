@@ -1,6 +1,6 @@
 import React from "react";
 import SecImage from "../../Assets/image section.png";
-import "./style.css";
+import "./style.scss";
 import Component1 from "./Blog Components/Component1";
 import Component2 from "./Blog Components/Component2";
 import Component3 from "./Blog Components/Component3";

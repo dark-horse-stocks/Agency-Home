@@ -8,7 +8,7 @@ import HomeCard from "../../Components/Home Card/HomeCard";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
 
-import "./style.css";
+import "./style.scss";
 import Slider from "react-slick";
 
 export default function HomePage() {

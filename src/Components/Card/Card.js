@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import React from "react";
 import AnimatingNumber from "../AnimatingNumber/animation-number";
 import { useState } from "react";

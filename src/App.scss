@@ -416,11 +416,11 @@ body {
   outline: none;
 }
 .input-line-animation__ip::placeholder {
-  color: hsla(0 0% 70% / 100%);
+  color: rgb(179, 179, 179);
   transition: color 1s;
 }
 .input-line-animation__ip:focus::placeholder {
-  color: hsla(0 0% 60% / 100%);
+  color: rgb(179, 179, 179);
 }
 .input-line-animation__line {
   position: absolute;

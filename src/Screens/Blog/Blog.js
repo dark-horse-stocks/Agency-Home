@@ -3,7 +3,7 @@ import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
-import "./style.css";
+import "./style.scss";
 
 export default function Blog() {
   return (

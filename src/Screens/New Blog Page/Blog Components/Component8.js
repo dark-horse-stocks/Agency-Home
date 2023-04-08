@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./style.scss";
 
 export default function Component8() {
   return (
@@ -16,7 +16,7 @@ export default function Component8() {
           <img
             alt=""
             className=""
-            src="https://darkhorsestocks.com/wp-content/uploads/2022/07/Finance2-1024x723.png" 
+            src="https://darkhorsestocks.com/wp-content/uploads/2022/07/Finance2-1024x723.png"
           />
         </figure>
         <figure className="w-50">
@@ -28,7 +28,7 @@ export default function Component8() {
         <figure className="w-50">
           <img
             alt=""
-            src="https://darkhorsestocks.com/wp-content/uploads/2022/07/Finance4-1024x725.png" 
+            src="https://darkhorsestocks.com/wp-content/uploads/2022/07/Finance4-1024x725.png"
           />
         </figure>
         <figure className="w-50">

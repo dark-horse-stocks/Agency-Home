@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./style.css";
+import "./style.scss";
 import { useEffect, useRef, useState } from "react";
 import { usePrevious } from "../../utils/usePrevious";
 

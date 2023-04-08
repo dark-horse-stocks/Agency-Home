@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import LockPic from "../../Assets/lock circle.png";
 
 export default function HomeCard(props) {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 
 export default function BlogFooter() {
   return (
@@ -16,7 +16,7 @@ export default function BlogFooter() {
           >
             support@darkhorsestocksinception.in
           </h4>
-          <p className=" gray-color"   style={{ marginBottom: ".5rem" }}>
+          <p className=" gray-color" style={{ marginBottom: ".5rem" }}>
             837 Garden street, Milpitas California 95035, USA
           </p>
           <p className=" gray-color">
@@ -24,7 +24,9 @@ export default function BlogFooter() {
             Parimit Apartment, Besides parth hospital, Anjali cross road, Bhatta
             380007, Ahmedabad, India.
           </p>
-          <p className="fw-bold" style={{ marginTop: "1.5rem" }}>Privacy Policy</p>
+          <p className="fw-bold" style={{ marginTop: "1.5rem" }}>
+            Privacy Policy
+          </p>
         </div>
 
         <div className="footer-social">
