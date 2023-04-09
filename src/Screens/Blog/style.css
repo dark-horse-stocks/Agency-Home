@@ -3,9 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.dashbord-btn {
-  margin-top: 30px;
-}
+
 
 .feature-section {
   justify-content: space-between;
@@ -16,14 +14,7 @@
 }
 
 
-.dashbord-img .first-img img {
-  width: 100%;
-}
 
-.dashbord-img .secend-img img{
-  margin-top: 100px;
-  width: 100%;
-}
 .end-secend {
   margin-top: 50px;
 }

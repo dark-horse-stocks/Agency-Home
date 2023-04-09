@@ -6,7 +6,7 @@ import HamburgerBar from "./HamburgerBar";
 const MenuLabelWrapper = styled.div`
   position: fixed;
   top: 1.75rem;
-  /* right: 2.3%; */
+  right: 1.9%;
   width: 2rem;
   height: 2rem;
   z-index: 20;

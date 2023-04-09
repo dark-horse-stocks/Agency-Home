@@ -15,7 +15,7 @@
   --Font-35: 35px;
   --Font-30: 30px;
   --Font-15: 15px;
-  --Margin-sections: 400px;
+  --Margin-sections: 420px;
   --Margin-headers: 180px;
 }
 
@@ -181,6 +181,8 @@ body {
 .flex-column {
   flex-direction: column;
 }
+
+
 
 .flex-wrap {
   flex-wrap: wrap;
@@ -360,8 +362,23 @@ ul li:hover~.cursor {
   }
 
   .fs-30 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
+  }
+  
+  .img-second {
+    display:flex !important;
+    justify-content: flex-end;
+    width:100%;
+    margin: auto
+  }
+
+  .head-font{
+    font-size:35px
+  }
+
+  .mobile-screen{
+    margin-top: 35px !important;
   }
 
   .fs-75 {
@@ -378,6 +395,10 @@ ul li:hover~.cursor {
 
   .icon-mobile {
     font-size: 20px !important;
+  }
+  .dark-mode .btn-component, .light-mode .btn-component{
+    padding: 23px 26px !important; 
+    font-size:15px !important;
   }
 }
 

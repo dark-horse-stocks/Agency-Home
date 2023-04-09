@@ -43,7 +43,7 @@ export default function Dashboard() {
       <div className="hero-img-container">
         <img src={Image} alt="Hero" className="hero-img" />
       </div>
-      <div className=" mt-section container">
+      <div className=" mt-section container mobile-screen">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
             With the dashboard you can track all the ideas that we have
@@ -53,18 +53,18 @@ export default function Dashboard() {
             advisory we have come across so far provides with this kind of
             detailed analytical platform.
           </p>
-          <div className="d-flex justify-content-center dashbord-btn">
-            <Button text="Go to Dashboard" />
-          </div>
+        </div>
+        <div className="d-flex justify-content-center dashbord-btn">
+          <Button text="Go to Dashboard" />
         </div>
       </div>
 
-      <div className="section-img-container mt-section ">
+      <div className="section-img-container">
         <img src={Image2} alt="Hero" className="hero-img" />
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
-        <h4 className="text-slide-up-animation-3">Features</h4>
+      <div className="container d-flex mt-section fs-30  feature-section flex-column-tablet mobile-screen">
+        <h4 className="text-slide-up-animation-3 head-font">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           Live data feed, Historical charts of Indices as well as all the
           darkhorsestocks suggested, 52 Week high lows , Distance from 52 week
@@ -72,11 +72,15 @@ export default function Dashboard() {
         </p>
       </div>
 
-      <div className={`${!mobile && "mt-section"} d-flex container dashbord-img flex-column-tablet`}>
+      <div
+        className={`${
+          !mobile && "mt-section"
+        } d-flex container dashbord-img flex-column-tablet`}
+      >
         <div className="first-img img-slide-up-animation-1">
           <img src={Image3} alt="icon" />
         </div>
-        <div className="secend-img img-slide-up-animation-1">
+        <div className="secend-img img-slide-up-animation-1 img-second">
           <img src={Image4} alt="icon" />
         </div>
       </div>
@@ -85,13 +89,13 @@ export default function Dashboard() {
         <div className="first-img img-slide-up-animation-1 mt-2">
           <img src={Image5} alt="icon" />
         </div>
-        <div className="secend-img img-slide-up-animation-1">
+        <div className="secend-img img-slide-up-animation-1 img-second">
           <img src={Image6} alt="icon" />
         </div>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
-        <h4 className="text-slide-up-animation-3">Features</h4>
+        <h4 className="text-slide-up-animation-3 head-font">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           <span>
             Developing this type of dashboard and updating it with live data

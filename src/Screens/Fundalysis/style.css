@@ -3,9 +3,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.dashbord-btn {
-  margin-top: 30px;
-}
 
 .feature-section {
   justify-content: space-between;
@@ -16,12 +13,12 @@
 }
 
 .dashbord-img .first-img img {
-  width: 100%;
+  width: 85%;
 }
 
 .dashbord-img .secend-img img {
   margin-top: 100px;
-  width: 100%;
+  width: 85%;
 }
 .end-secend {
   margin-top: 50px;
@@ -32,6 +29,9 @@
 
 @media only screen and (max-width: 600px) {
   .dashbord-img .secend-img img {
+    display:flex !important;
+    justify-content: flex-end;
+    margin: 0 0 0 auto;
     margin-top: 30px;
   }
 }
