@@ -15,10 +15,27 @@
   font-family: "Averta CY", sans-serif;
 }
 @mixin fs-95 {
-  font-size: 95px !important;
-  line-height: 95px;
-  font-family: AvertaSemi;
+  font-size: 128px !important;
+ 
+  font-family: "Averta CY",sans-serif;
   font-weight: 700;
+  @media only screen and (max-width: 1920px) {
+    font-size: 100px !important;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 90px !important;
+  }
+  @media only screen and (max-width: 1440px) {
+    font-size: 75px !important;
+  }
+  @media only screen and (max-width: 1150px) {
+    font-size: 65px !important;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 55px !important;
+  }
+
+ 
 }
 
 @mixin fs-55 {
@@ -28,8 +45,15 @@
 
 @mixin fs-30 {
   font-size: 30px;
-  line-height: 38px;
-  font-family: Averta;
+ 
+  font-family: "Averta CY",sans-serif;
+  @media (min-width: 1900px){
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 1920px) {
+    font-size: 20px !important;
+  }
+
 }
 
 @mixin fs-45 {

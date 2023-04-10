@@ -8,13 +8,13 @@ import hoverVideo from "../../Assets/hoverVideo.mp4";
 export default function AgencyHome() {
   const history = useHistory();
   return (
-    <div className="container">
+    <div className="container ">
       <div className="mt-header">
         <p className="fs-30 mb-3 text-slide-up-animation-3">
           Always trying to be contrarian
         </p>
 
-        <div className="d-flex flex-column-tablet" data-cursor="-media-blend">
+        <div className="d-flex flex-column-tablet " data-cursor="-media-blend">
           <a
             href="/"
             className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"

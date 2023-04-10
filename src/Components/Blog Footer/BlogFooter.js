@@ -4,7 +4,8 @@ import "./style.scss";
 export default function BlogFooter() {
   return (
     <div className="blog-container">
-      <div className="fs-75">
+     <div className="container">
+     <div className="fs-75 parent-h2">
         <h2>Have an idea?</h2>
         <p className="blog-footer-text line-animation-2">Tell us about it</p>
       </div>
@@ -100,6 +101,7 @@ export default function BlogFooter() {
           </ul>
         </div>
       </div>
+     </div>
     </div>
   );
 }

@@ -109,7 +109,8 @@
 
 body {
   margin: 0;
-  font-family: Averta;
+
+  font-family: "Averta CY", sans-serif;
 }
 
 .App {
@@ -130,15 +131,63 @@ body {
 }
 
 .mt-section {
-  @include mt-section;
+  // @include mt-section;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-header-parent {
+  display: flex;
+  justify-content: center;
+}
+/*Parent Container for all Page */
+.parent-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1440px) {
+    width: 85%;
+  }
 }
 
 .mt-header {
   @include mt-header;
+  margin: 0;
+  font-family: "Averta CY", sans-serif !important;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  > p.text-slide-up-animation-3 {
+  }
+
+  @media only screen and (max-width: 1440px) {
+    height: 400px;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+  div.d-flex.flex-column-tablet {
+    @media only screen and (max-width: 900px) {
+      a{
+        margin-bottom: 10px !important;
+        line-height: 80px !important;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      a{
+        
+        line-height: 65px !important;
+        font-size: 50px !important;
+      }
+    }
+  }
 }
+
 
 .fs-95 {
   @include fs-95;
+  font-family: "Averta CY", sans-serif;
 }
 
 .fs-55 {

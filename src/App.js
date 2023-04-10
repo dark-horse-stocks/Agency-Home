@@ -265,6 +265,7 @@ function App(props) {
       <div id="scroll-container">
         <div id="container-wrapper">
           <NavBar />
+          <div className="parent-container">
           <Switch>
             <Route exact={true} key={12} path="/team" component={TeamPage} />
             {/* <Route
@@ -296,6 +297,10 @@ function App(props) {
               component={CustomTable}
             />
           </Switch>
+       
+          </div>
+          
+          <div className="blog-mode">
           <BlogFooter />
           <div className="toggle-container mt-section">
             <span>Night Mode</span>
@@ -310,6 +315,8 @@ function App(props) {
               <label htmlFor="checkbox" />
             </span>
           </div>
+          </div>
+         
         </div>
       </div>
     </div>
