@@ -564,3 +564,71 @@ rect[Attributes] {
 .w-35 {
   width: 30%;
 }
+
+
+/*Common Main Header for 4 pages */
+.mt-header.common-mt-header{
+  
+@media only screen and (max-width: 1440px) {
+  justify-content: center;
+  margin-bottom: 0px;
+  height: 70vh;
+}
+  
+  
+}
+
+.common-main-header{
+  h1.fs-75{
+    line-height: 75px !important;
+    @media only screen and (max-width: 1050px) {
+      font-size: 60px !important;
+      margin-top: 15px;
+    }
+    @media only screen and (max-width: 992px) {
+      font-size: 50px !important;
+      line-height: 50px !important;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 45px !important;
+      line-height: 45px !important;
+    }
+    @media only screen and (max-width: 545px) {
+      font-size: 42px !important;
+      line-height: 42px !important;
+    }
+  }
+}
+
+.common-mt-section{
+  padding: 150px 0;
+}
+.feature-section-common{
+  width: 80%;
+  padding: 200px 0;
+  .overview-content{
+    line-height: 1.1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.end-section-common{
+  padding: 120px 0;
+  h2{
+    padding: 50px 0;
+  }
+  p{
+    font-size: 30px !important;
+    @media only screen and (max-width:768px) {
+      font-size: 20px !important;
+      line-height: 25px !important;
+    }
+    @media only screen and (max-width:600px) {
+      font-size: 18px !important;
+      line-height: 25px !important;
+    }
+  }
+}
