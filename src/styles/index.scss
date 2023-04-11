@@ -629,6 +629,10 @@ rect[Attributes] {
 .feature-section-common{
   width: 80%;
   padding: 200px 0;
+  margin-bottom: 100px;
+  @media only screen and (max-width:768px) {
+   margin-bottom: 0;
+  }
   .overview-content{
     line-height: normal;
   }
@@ -734,6 +738,14 @@ span.text-slide-up-animation-text-1{
   >div{
     width: 42%;
     margin: 0;
+    &.first-img{
+      transform: translateY(-100px);
+      @media only screen and (max-width:768px) {
+        transform: translateY(0px);
+      }
+       
+
+    }
     @media only screen and (max-width:768px) {
      width: 100%;
    }
@@ -744,7 +756,7 @@ span.text-slide-up-animation-text-1{
       height: 100%;
       span span span span span {
         &.img-slide-up-animation-img-1{
-          @media only screen and (max-width:768px) {
+          @media only screen and (max-width:1920px) {
             position: relative;
             padding-bottom: 100%;
             img{
@@ -785,12 +797,17 @@ span.text-slide-up-animation-text-1{
 
   }
 }
+.dashbord-img{
+  margin-bottom: 50px;
+  @media only screen and (max-width:768px) {
+   margin-bottom: 0;
+  }
+  
+}
 .dashbord-img ~div.dashbord-img{
-  margin-bottom: 150px;
-  margin-top: -150px;
-  @media only screen and (max-width:900px) {
-    margin-top: -110px;
- }
+
+  margin-bottom: 0;
+
  @media only screen and (max-width:768px) {
   margin-top: 0px;
   margin-bottom: 0;
