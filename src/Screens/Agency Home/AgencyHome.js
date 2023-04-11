@@ -9,7 +9,7 @@ export default function AgencyHome() {
   const history = useHistory();
   return (
     <div className="container ">
-      <div className="mt-header">
+      <div className="mt-header home-agency-page">
         <p className="fs-30 mb-3 text-slide-up-animation-3">
           Always trying to be contrarian
         </p>

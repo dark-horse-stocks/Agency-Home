@@ -196,7 +196,7 @@ function App(props) {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const boundingRect = wrap.mArea.getBoundingClientRect();
     const halfDiff = Math.abs(boundingRect.width - boundingRect.height) / 2;
-    const relX = e.pageX - boundingRect.left - halfDiff;
+    const relX = e.pageX - boundingRect.left - halfDiff ;
     const relY = e.pageY - boundingRect.top;
 
     gsap.to(wrap.mContent, {
@@ -206,6 +206,7 @@ function App(props) {
       duration: 0.6,
     });
   }
+  
 
   function magneticButtonFunc() {
     // Magnetic button js

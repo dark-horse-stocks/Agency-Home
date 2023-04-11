@@ -18,47 +18,24 @@
   @include justify-content-between;
  
  @media only screen and (max-width: 900px) {
- align-items: center;
+ 
 }
 >div{
   @media only screen and (max-width: 900px) {
-    display: flex;
-    justify-content: center;
+   
    }
 }
 
 }
 .dashbord-img ~div.dashbord-img{
   @media only screen and (max-width: 900px) {
-    margin-top: 100px;
+   // margin-top: 100px;
    }
 }
 
-.dashbord-img .first-img img {
- width: 100%;
- max-width: 90%;
- @media only screen and (max-width: 900px) {
-  max-width: 100%;
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
 
-.dashbord-img .secend-img img {
-  margin-top: 100px;
-  width: 100%;
-  width: 100%;
- max-width: 90%;
- @media only screen and (max-width: 900px) {
-  max-width: 100%;
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+
+
 .end-secend {
   margin-top: 50px;
 }

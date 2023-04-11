@@ -36,7 +36,7 @@ export default function NavBar() {
           <Link to="/login" className="nav-link">
             <em className="nav-link-hover-wrapper">
               <span data-text="login" className="nav-link-hover" data-movement="0.2">
-                login
+                Login
               </span>
               <div className="magnetic-wrap mobile-icon-menu">
 <div className="magnetic-area"></div>
@@ -57,7 +57,7 @@ export default function NavBar() {
             <div className="nav-link">
               <em className="nav-link-hover-wrapper">
                 <span data-text="menu" className="nav-link-hover" data-movement="0.2">
-                  menu
+                  Menu
                 </span>
               </em>
             </div>
