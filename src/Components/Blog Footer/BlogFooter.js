@@ -15,7 +15,7 @@ export default function BlogFooter() {
               className="fs-20 line-animation-1"
               style={{ marginBottom: "1.5rem" }}
             >
-              support@darkhorsestocksinception.in
+              support@darkhorsestocks.in
             </h4>
             <p className=" gray-color" style={{ marginBottom: ".5rem" }}>
               837 Garden street, Milpitas California 95035, USA

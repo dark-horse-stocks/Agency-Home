@@ -139,7 +139,7 @@ function App(props) {
           .timeline({
             scrollTrigger: {
               trigger: txtAnimate3Wrappers,
-              start: "top 80%",
+              start: "top 100%",
             },
           })
           .fromTo(

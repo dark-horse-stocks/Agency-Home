@@ -5,7 +5,16 @@
 }
 
 .home-text {
-  @include w-80;
+  
+  @media only screen and (min-width: 1400px) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media only screen and (max-width: 1200px) {
+    //width: 70%;
+    
+  }
 }
 
 .ml-4 {
@@ -15,8 +24,66 @@
 @media only screen and (max-width: 900px) {
   .home-text {
     @include w-100;
+    line-height: normal;
   }
   .mb-30 {
     margin-bottom: 30px;
   }
 }
+
+.home-text {
+  font-family: AvertaSemi;
+  
+  font-size: 20px;
+ 
+  letter-spacing: .00464286em;
+  @media (min-width: 1200px){
+    
+    font-size: 30px !important;
+    
+    
+  }
+  .text-slide-up-animation-wrapper-3,.text-slide-up-animation-content-3,.text-slide-up-animation-text-3{
+    line-height: 34px;
+    @media only screen and (max-width:992px) {
+      line-height: 30px;
+      
+    }
+    @media only screen and (max-width:769px) {
+      line-height: 28px;
+      
+    }
+    @media only screen and (max-width:600px) {
+      line-height: 24px;
+      
+    }
+  }
+
+}
+.parent-container{
+  height: 100vh;
+
+  @media only screen and (max-width: 1440px) {
+   height: 100vh;
+    
+  }
+  .container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width: 1024px) {
+      justify-content: flex-start;
+      margin-top: 120px;
+       
+     }
+     @media only screen and (max-width: 768px) {
+      
+      margin-top: 90px;
+       
+     }
+    
+  }
+
+}
+

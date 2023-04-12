@@ -101,6 +101,14 @@ input[type="checkbox"].checkbox + label {
   margin: 0 auto;
   justify-content: flex-end;
   padding: 20px 0;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    justify-content: center;
+  }
+  /*
+
+.toggle-container
+  */
 }
 
 .toggle-container > span {

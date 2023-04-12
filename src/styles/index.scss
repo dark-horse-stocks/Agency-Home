@@ -153,6 +153,19 @@ body {
   }
 }
 
+.mt-header.home-agency-page{
+  @media only screen and (min-width: 1400px) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a.fs-95{
+    @media only screen and (max-width: 1200px) {
+     font-size: 65px !important;
+    }
+  }
+
+}
 .mt-header {
   @include mt-header;
   margin: 0;
@@ -171,13 +184,19 @@ body {
     margin-bottom: 40px;
   }
   div.d-flex.flex-column-tablet {
+    @media only screen and (max-width: 992px) {
+      a{
+       margin-bottom: 25px !important;
+      }
+    }
     @media only screen and (max-width: 900px) {
       a{
        
         line-height: 61px !important;
         font-size: 50px !important;
         margin-left: 0px !important;
-        margin-right: 15px !IMPORTANT;
+        margin-right: 15px !important;
+        margin-bottom: 15px !important;
       }
     }
     @media only screen and (max-width: 600px) {

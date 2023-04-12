@@ -1,13 +1,17 @@
 .blog-container {
   .container {
     height: 75vh;
-    width: 70%;
+   
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media only screen and (max-width: 1440px) {
-      width: 85%;
+    @media only screen and (min-width: 1400px) {
+      width: 80%;
+      
+      margin: 0;
+      margin-left: auto;
+     
     }
     @media only screen and (max-width: 1024px) {
       height: auto;
@@ -42,7 +46,7 @@
   height: 90%;
   font-size: 23px;
   @media only screen and (max-width: 1200px) {
-    width: 200px;
+    width: 240px;
   }
   li{
     width: 100px;
@@ -109,7 +113,7 @@
     margin-top: 80px;
   }
   .blog-contact .fs-20 {
-    font-size: 16px;
+    font-size: 24px;
   }
   .footer-social {
    // width: 65%;
@@ -124,6 +128,13 @@
    margin-right: auto;
    padding-bottom: 20px;
     
+  }
+  .footer-social {
+    margin-top: 60px;
+    
+  }
+  .blog-footer-list{
+    margin-bottom: 25px;
   }
 }
 .scrollbar-track-x{
@@ -339,11 +350,11 @@ body.light-mode {
   }
   .spanSvg {
     display: block;
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
   
   .youtubeicon{
