@@ -145,7 +145,7 @@ body {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1700px) {
     width: 85%;
   }
   @media only screen and (max-width: 768px) {
@@ -155,9 +155,7 @@ body {
 
 .mt-header.home-agency-page{
   @media only screen and (min-width: 1400px) {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    
   }
   a.fs-95{
     @media only screen and (max-width: 1200px) {
@@ -186,7 +184,7 @@ body {
   div.d-flex.flex-column-tablet {
     @media only screen and (max-width: 992px) {
       a{
-       margin-bottom: 25px !important;
+       margin-bottom: 5px !important;
       }
     }
     @media only screen and (max-width: 900px) {
@@ -205,6 +203,11 @@ body {
       
         font-size: 50px !important;
       }
+    }
+  }
+  &.faq{
+    @media only screen and (max-width: 768px) {
+     justify-content: center;
     }
   }
 }
@@ -443,7 +446,7 @@ ul li:hover ~ .cursor {
 
   .overview-content {
     width: 100%;
-    margin-top: 30px !important;
+    margin-top: 20px !important;
   }
 
   .fs-45 {
@@ -623,8 +626,8 @@ rect[Attributes] {
       line-height: 45px !important;
     }
     @media only screen and (max-width: 545px) {
-      font-size: 42px !important;
-      line-height: 42px !important;
+      font-size: 35px !important;
+      line-height: 40px !important;
     }
   }
 }
@@ -632,7 +635,7 @@ rect[Attributes] {
   @media only screen and (max-width: 768px) {
     width: 90%;
     h1.fs-75{
-      font-weight: 400 !important;
+      font-weight: 600 !important;
     }
    
   }
@@ -640,10 +643,28 @@ rect[Attributes] {
 }
 .common-mt-section{
   padding: 150px 0;
+  .fs-30.text-slide-up-animation-3{
+    font-weight: 300;
+    line-height: 23px;
+  }
   @media only screen and (max-width: 768px) {
     width: 90%;
+    .fs-30.text-slide-up-animation-3{
+      font-weight: 300;
+      line-height: 23px;
+    }
    
   }
+  .dashbord-btn{
+    @media only screen and (max-width: 500px) {
+    
+     width: 100%;
+     .btn-component{
+      font-size: 15px;
+     }
+    }
+  }
+
 }
 .feature-section-common{
   width: 80%;
@@ -658,12 +679,25 @@ rect[Attributes] {
   h4{
     color: rgba(#000,.9);
     font-weight: 600;
+    font-size: 30px;
+    span{
+      font-weight: 600;
+      font-size: 30px;
+    }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 800px) {
     width: 90%;
     flex-direction: column;
     padding: 100px 0;
+  }
+
+  .text-slide-up-animation-wrapper-3{
+    font-weight: 300 !important;
+    line-height: 23px;
+  }
+  h4.text-slide-up-animation-wrapper-3{
+    font-weight: 600;
   }
 }
 
@@ -671,7 +705,7 @@ rect[Attributes] {
   padding: 120px 0;
   margin-top: 100px;
   h2.fs-95{
-    font-weight: 400 !important;
+    font-weight: 600 !important;
   }
   @media only screen and (max-width:768px) {
    width: 90%;
@@ -682,15 +716,16 @@ rect[Attributes] {
   }
   p{
     font-size: 30px !important;
+    
+    line-height: 23px !important;
+    font-weight: 300;
     @media only screen and (max-width:768px) {
       font-size: 20px !important;
-      line-height: 25px !important;
+      line-height: 23px !important;
+      font-weight: 300;
       
     }
-    @media only screen and (max-width:600px) {
-      font-size: 18px !important;
-      line-height: 25px !important;
-    }
+  
   }
 }
 .dark-mode{
@@ -832,4 +867,49 @@ span.text-slide-up-animation-text-1{
   margin-bottom: 0;
 }
 
+}
+.common-txt-300{
+  font-weight: 300;
+  line-height: 23px;
+  >span:nth-child(50){
+    
+    margin-top: 20px;
+  }
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+.Overview-Categories{
+  @media only screen and (max-width:768px) {
+      flex-direction: column;
+    }
+    >p{
+      &:nth-child(1){
+        font-family: 'Averta CY';
+        font-weight: 600;
+        font-size: 30px;
+      }
+    }
+    .overview-content {
+      font-family: 'Averta CY';
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 5px !important;
+    }
+    
+}
+.faq-dropdown{
+  h5{
+    font-size: 20px !important;
+  }
+  .AccordionDetails {
+    @media only screen and (max-width:500px) {
+      padding: 0 !important;
+      font-weight: 300 !important;
+      line-height: 23px !important;
+      font-size: 20px !important;
+    }
+  }
 }

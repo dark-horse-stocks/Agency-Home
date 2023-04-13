@@ -6,17 +6,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media only screen and (min-width: 1400px) {
-      width: 80%;
+    width: 70%;
+   
+    @media only screen and (max-width: 1700px) {
+      
       
       margin: 0;
       margin-left: auto;
+      margin-right: auto;
+      width: 80%;
      
     }
+  
     @media only screen and (max-width: 1024px) {
       height: auto;
       padding-top: 100px;
     }
+    @media only screen and (max-width: 769px) {
+      width: 90%;
+    }
+  }
+  .nav-link-hover{
+    font-weight: 300 !important;
   }
 }
 
@@ -93,7 +104,7 @@
     
   }
   .blog-footer-list {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 
@@ -130,7 +141,7 @@
     
   }
   .footer-social {
-    margin-top: 60px;
+    margin-top: 0px;
     
   }
   .blog-footer-list{
@@ -336,10 +347,20 @@ body.light-mode {
   .blog-contact {
     p.gray-color {
       //  color: rgba(255,255,255,.6) !important;
-      font-weight: 400 !important;
+      font-weight: 300 !important;
 
       margin-bottom: 0 !important;
+      color: #4C4C4C;
+      @media only screen and (max-width:768px) {
+        line-height: 22px;
+         
+       }
     }
+    p.fw-bold{
+      margin-top: 50px !important;
+      margin-bottom: 50px !important;
+    }
+  
   }
 
   .nav-link-hover::before {
@@ -450,6 +471,9 @@ body.light-mode {
 
 //Dark Mode Hover 
 .dark-mode{
+  .blog-mode .blog-contact p.gray-color{
+    color: rgba(255,255,255,.6);
+  }
   .linkedinIcon {
    
     .magnetic-area:hover + span.magnetic-content span.spanSvg {
@@ -510,6 +534,9 @@ body.light-mode {
 }
 
 .light-mode {
+  .nav-link-hover{
+    font-weight: 400 !important;
+  }
   /*
   .blog-mode{
     background-color: #000;

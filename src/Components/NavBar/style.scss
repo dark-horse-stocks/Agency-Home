@@ -291,6 +291,19 @@ li {
   display: flex;
   flex: none!important;
   height: 70%;
+  @media only screen and (max-width: 768px) {
+      
+    height:auto;
+     
+   }
+   @media only screen and (max-width: 500px) {
+      
+    padding-left: 35px;;
+    margin-top: 0;
+     
+   }
+
+  
 }
 
 
@@ -301,6 +314,13 @@ li {
   font-size: 16px!important;
   font-weight: 400!important;
   margin-bottom: 45px!important;
+  @media only screen and (max-width: 768px) {
+      
+    margin-bottom: 25px!important;
+     
+   }
+
+
 }
 
 .contact-menu {
@@ -1258,20 +1278,52 @@ li {
 
 @media (max-width: 768px){
   #navSticky .list-nav {
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: 90%;;
+    margin-left: auto;
+    margin-right: auto;
+    .menu-item{
+      font-size: 42px !important;
+      line-height: 46px;
+    }
+    .second-list em{
+      font-size: 42px !important;
+      line-height: 46px;
+    }
 }
 #navSticky .contact-menu {
   display: block;
   margin: 0 auto;
   position: static;
   width: 100%;
-  width: 60%;
+  width: 90%;
+  margin-top: 55px;
 }
 .logo{
   font-size: 19px !important;
 }
 }
+@media only screen and (max-width: 500px) {
+  #navSticky .contact-menu{
+   padding-left: 35px;
+   margin-top: 25px;
+ }
+}
+#navSticky {
+  
+  @media screen and (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    .first-list{
+       display: none;
+    }
+
+  }
+ 
+}
+
 
 
 @media screen and (max-width: 700px){
@@ -1297,6 +1349,7 @@ li {
   padding: 0 98px;
 }
 }
+
 
 
 

@@ -11,7 +11,7 @@ export default function Dashboard() {
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
           <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
-          <h1 className="fs-95">
+          <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">

@@ -8,7 +8,8 @@ import hoverVideo from "../../Assets/hoverVideo.mp4";
 export default function AgencyHome() {
   const history = useHistory();
   return (
-    <div className="container ">
+   <div className="home-page-container">
+     <div className="container ">
       <div className="mt-header home-agency-page">
         <p className="fs-30 mb-3 text-slide-up-animation-3">
           Always trying to be contrarian
@@ -49,5 +50,6 @@ export default function AgencyHome() {
         </p>
       </div>
     </div>
+   </div>
   );
 }

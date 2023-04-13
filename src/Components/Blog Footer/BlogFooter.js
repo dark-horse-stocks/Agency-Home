@@ -21,10 +21,12 @@ export default function BlogFooter() {
               837 Garden street, Milpitas California 95035, USA
             </p>
             <p className=" gray-color">
-              {" "}
+             
               Parimit Apartment, Besides parth hospital, Anjali cross road,
               Bhatta 380007, Ahmedabad, India.
             </p>
+           
+
             <p className="fw-bold" style={{ marginTop: "1.5rem" }}>
               Privacy Policy
             </p>
