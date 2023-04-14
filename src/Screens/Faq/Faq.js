@@ -5,10 +5,10 @@ import Button from "../../Components/Button/Button";
 
 export default function Faq() {
   return (
-    <div>
+    <div className="container">
       <div className=" mt-header faq common-mt-header">
         <div className="common-main-header">
-        <h1 className="container fs-75 w-80 ">
+        <h1 className=" fs-75  ">
           <div className="text-slide-up-animation-wrapper-2">
             <div className="text-slide-up-animation-content-2">
               <span className="text-slide-up-animation-text-2">Frequently</span>
@@ -25,13 +25,16 @@ export default function Faq() {
         </div>
     
       </div>
-      <div className="d-flex Overview-Categories container mt-section ">
+      <div className="d-flex Overview-Categories  mt-section ">
         <p className="mb-3 text-slide-up-animation-3">Overview</p>
 
         <p className="overview-content text-slide-up-animation-3">
           Companies at darkhorsestocks are bifurcated into various different
           categories. Classification of these stocks in to various categories is
           explained below.
+          <a href="mailto" >support@darkhorsestocks.in</a>
+
+
         </p>
       </div>
 

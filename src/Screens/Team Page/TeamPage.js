@@ -39,7 +39,7 @@ function TeamPage() {
         <p className="container fs-30 text-slide-up-animation-2">Team </p>{" "}
 
        <div className=" common-main-header">
-       <h1 className="container fs-75 w-80">
+       <h1 className="container fs-75 ">
           <div className="text-slide-up-animation-wrapper-2">
             <div className="text-slide-up-animation-content-2">
               <span className="text-slide-up-animation-text-2">

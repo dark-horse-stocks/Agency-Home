@@ -145,6 +145,7 @@ body {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+ 
   @media only screen and (max-width: 1700px) {
     width: 85%;
   }
@@ -526,6 +527,8 @@ ul li:hover ~ .cursor {
 
 .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   height: 100px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
@@ -644,7 +647,7 @@ rect[Attributes] {
 .common-mt-section{
   padding: 150px 0;
   .fs-30.text-slide-up-animation-3{
-    font-weight: 300;
+    font-weight: 400;
     line-height: 23px;
   }
   @media only screen and (max-width: 768px) {
@@ -693,8 +696,12 @@ rect[Attributes] {
   }
 
   .text-slide-up-animation-wrapper-3{
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     line-height: 23px;
+    @media only screen and (max-width: 768px) {
+      font-weight: 300 !important;
+    }
+
   }
   h4.text-slide-up-animation-wrapper-3{
     font-weight: 600;
@@ -715,10 +722,9 @@ rect[Attributes] {
     padding: 50px 0;
   }
   p{
-    font-size: 30px !important;
-    
-    line-height: 23px !important;
-    font-weight: 300;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    font-weight: 400;
     @media only screen and (max-width:768px) {
       font-size: 20px !important;
       line-height: 23px !important;
@@ -869,8 +875,13 @@ span.text-slide-up-animation-text-1{
 
 }
 .common-txt-300{
-  font-weight: 300;
+  font-weight: 400;
   line-height: 23px;
+  @media only screen and (max-width:768px) {
+    font-weight: 300;
+  line-height: 23px;
+   }
+
   >span:nth-child(50){
     
     margin-top: 20px;
@@ -881,8 +892,10 @@ span.text-slide-up-animation-text-1{
   margin-top: 15px;
 }
 .Overview-Categories{
+  padding-bottom: 150px;
   @media only screen and (max-width:768px) {
       flex-direction: column;
+    
     }
     >p{
       &:nth-child(1){
@@ -897,10 +910,28 @@ span.text-slide-up-animation-text-1{
         font-size: 20px;
         line-height: 23px;
         margin-top: 5px !important;
+        >span{
+          &:last-child{
+            display: block;
+            font-weight: 600;
+          }
+        }
     }
     
 }
 .faq-dropdown{
+  .MuiAccordionSummary{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .AccordionDetails {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-weight: 300 !important;
+  }
+  >div{
+    width: 100%;
+  }
   h5{
     font-size: 20px !important;
   }
