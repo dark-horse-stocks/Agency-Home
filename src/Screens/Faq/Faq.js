@@ -45,7 +45,7 @@ export default function Faq() {
       />
      </div>
       <div className="mt-6 container d-flex justify-content-center">
-        <Button text="View all" />
+        <Button className={"viewBtn"} text="View all" />
       </div>
     </div>
   );

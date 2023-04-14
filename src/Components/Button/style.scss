@@ -133,3 +133,15 @@
     margin-left: 15px;
   }
 }
+
+.viewBtn{
+  
+  font-weight: 600 !important;
+  font-size: 30px;
+  min-width: 190px;
+  @media only screen and (max-width: 992px){
+font-size: 15px !important;
+min-width: 120px;
+  }
+
+}

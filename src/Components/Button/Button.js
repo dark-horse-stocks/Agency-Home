@@ -9,7 +9,7 @@ export default function Button({ text, className }) {
     >
       <div className="magnetic-area"></div>
       <button
-        className={`btn-component magnetic-content btn-animate ${className} `}
+        className={`btn-component magnetic-content btn-animate ${className}`}
       >
         <span className="btn-animate__filler"></span>
         <span className="btn-animate__text">{text}</span>

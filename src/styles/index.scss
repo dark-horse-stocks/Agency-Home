@@ -7,6 +7,9 @@
 @import "./mixins/typography-mixin";
 @import "./mixins/position";
 @import "./mixins/spacing";
+.txtcntr{
+  text-align: center;
+}
 
 :root {
   --Colour-1: $color-white;
@@ -651,7 +654,7 @@ rect[Attributes] {
     line-height: 23px;
   }
   @media only screen and (max-width: 768px) {
-    width: 90%;
+    width: 85%;
     .fs-30.text-slide-up-animation-3{
       font-weight: 300;
       line-height: 23px;
@@ -690,7 +693,7 @@ rect[Attributes] {
   }
 
   @media only screen and (max-width: 800px) {
-    width: 90%;
+    width: 85%;
     flex-direction: column;
     padding: 100px 0;
   }
@@ -715,7 +718,7 @@ rect[Attributes] {
     font-weight: 600 !important;
   }
   @media only screen and (max-width:768px) {
-   width: 90%;
+   width: 85%;
     
   }
   h2{
@@ -877,9 +880,11 @@ span.text-slide-up-animation-text-1{
 .common-txt-300{
   font-weight: 400;
   line-height: 23px;
+  font-size: 20px !important;
   @media only screen and (max-width:768px) {
     font-weight: 300;
   line-height: 23px;
+  margin-top: 150px;
    }
 
   >span:nth-child(50){
