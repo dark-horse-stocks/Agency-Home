@@ -635,6 +635,11 @@ rect[Attributes] {
       font-size: 35px !important;
       line-height: 40px !important;
     }
+    @media only screen and (max-width: 376px) {
+      font-size: 29px !important;
+      line-height: 36px !important;
+     
+    }
   }
 }
 .common-main-header{
@@ -648,16 +653,32 @@ rect[Attributes] {
 
 }
 .common-mt-section{
+  .fs-30{
+  font-size: 28px !important;
+  @media only screen and (max-width: 768px) {
+    font-size: 20px !important;
+    line-height: 25px !important;
+    width: 85%;
+    max-width: 100%;
+   
+  }
+  
+  }
   padding: 150px 0;
   .fs-30.text-slide-up-animation-3{
-    font-weight: 400;
-    line-height: 23px;
+    @media only screen and (min-width:1921px) {
+      line-height:normal;
+     
+    }
+
+    font-weight: 300;
+    line-height: 32px;
   }
   @media only screen and (max-width: 768px) {
     width: 85%;
     .fs-30.text-slide-up-animation-3{
       font-weight: 300;
-      line-height: 23px;
+     // line-height: 23px;
     }
    
   }
@@ -681,6 +702,15 @@ rect[Attributes] {
   }
   .overview-content{
     line-height: normal;
+    font-size: 28px !important;
+    @media only screen and (max-width: 768px) {
+      font-size: 20px !important;
+      line-height: 26px !important;
+      width: 85%;
+      max-width: 100%;
+      margin-left: 0;
+     
+    }
   }
   h4{
     color: rgba(#000,.9);
@@ -699,8 +729,13 @@ rect[Attributes] {
   }
 
   .text-slide-up-animation-wrapper-3{
-    font-weight: 400 !important;
-    line-height: 23px;
+    font-weight: 300 !important;
+    line-height: 33px;
+    @media only screen and (max-width: 768px) {
+      
+      line-height: 25px;
+    }
+   
     @media only screen and (max-width: 768px) {
       font-weight: 300 !important;
     }
@@ -722,16 +757,19 @@ rect[Attributes] {
     
   }
   h2{
-    padding: 50px 0;
+    padding: 40px 0;
   }
   p{
-    font-size: 24px !important;
-    line-height: 30px !important;
-    font-weight: 400;
+    font-size: 28px !important;
+    line-height: 32px !important;
+    font-weight: 300;
+    max-width: 850px;
+
     @media only screen and (max-width:768px) {
-      font-size: 20px !important;
-      line-height: 23px !important;
+      font-size: 22px !important;
+      line-height: 26px !important;
       font-weight: 300;
+
       
     }
   
@@ -947,5 +985,10 @@ span.text-slide-up-animation-text-1{
       line-height: 23px !important;
       font-size: 20px !important;
     }
+  }
+}
+.dark-mode{
+  .feature-section-common h4{
+    color: #fff;
   }
 }

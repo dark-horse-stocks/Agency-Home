@@ -10,6 +10,7 @@ li {
 
 .first-list {
   width: 15%;
+
 }
 .logo{
   font-family: Averta CY!important;
@@ -300,6 +301,12 @@ li {
       
     padding-left: 35px;;
     margin-top: 0;
+     
+   }
+   @media only screen and (max-width:400px) {
+      
+    
+    margin-top: 50px !important;
      
    }
 
@@ -862,6 +869,11 @@ li {
   }
 
 }
+@media screen and (max-width: 420px){
+.icons{
+  width: 105px;
+}
+}
 
 @media screen and (max-width: 500px) {
   .contact-menu {
@@ -1309,7 +1321,43 @@ li {
    margin-top: 25px;
  }
 }
+@media only screen and (max-width: 400px) {
+  #navSticky .list-nav {
+   
+    .menu-item{
+      font-size: 38px !important;
+      line-height: 46px;
+    }
+    .second-list em{
+      font-size: 38px !important;
+      line-height: 46px;
+    }
+}
+}
+/*
+  #navSticky .list-nav {
+    justify-content: flex-start;
+    width: 90%;;
+    margin-left: auto;
+    margin-right: auto;
+    .menu-item{
+      font-size: 42px !important;
+      line-height: 46px;
+    }
+    .second-list em{
+      font-size: 42px !important;
+      line-height: 46px;
+    }
+}
+
+*/
 #navSticky {
+  .first-list {
+   
+    .nav-link-hover{
+      font-weight: 300 !important;
+    }
+  }
   
   @media screen and (max-width: 768px){
     display: flex;
