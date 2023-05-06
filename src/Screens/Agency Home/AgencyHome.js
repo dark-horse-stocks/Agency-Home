@@ -44,10 +44,7 @@ export default function AgencyHome() {
       </div>
       <div className=" mt-section">
         <p className=" fs-30 home-text text-slide-up-animation-3">
-          Darkhorsestocks was started with a simple aim that is to help small
-          investors in the stock market. Today we are working in this direction
-          to take it to new heights.
-        </p>
+Darkhorsestocks, is committed to delivering amazing returns by identifying fundamentally strong companies. We conduct extensive research and analysis to carefully select and present amazing companies which we feel are worth exploring.        </p>
       </div>
     </div>
    </div>
