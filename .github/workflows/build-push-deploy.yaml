@@ -40,4 +40,4 @@ jobs:
           script: |
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.REPOSITORY }}:${{ env.IMAGE_TAG }}
             docker kill agency-home || echo "Deploying ..."
-            docker run --rm -d -p 3000:80 --name agency-home ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.REPOSITORY }}:${{ env.IMAGE_TAG }}
+            docker run --rm -d -p 7000:80 --name agency-home ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.REPOSITORY }}:${{ env.IMAGE_TAG }}
