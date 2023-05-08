@@ -33,7 +33,7 @@ jobs:
         env:
           IMAGE_TAG: nginx
         with:
-          host: "13.127.181.125"
+          host: "13.234.132.55"
           username: ec2-user
           key: ${{ secrets.CICD_PRIVATE_KEY }}
           port: "22"
