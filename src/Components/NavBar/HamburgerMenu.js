@@ -20,7 +20,7 @@ right: 4%;
   & > .magnetic-area {
     top: -1.5rem;
     left: -1.5rem;
-    right: -1.5rem;
+    /* right: -1.5rem; */
     bottom: -1.5rem;
   }
 
