@@ -33,7 +33,7 @@ nav {
   /* width: 100%; */
   display: flex;
   background-color: steelblue;
-  padding: 20px;
+  
 }
 
 main {
@@ -101,6 +101,14 @@ input[type="checkbox"].checkbox + label {
   margin: 0 auto;
   justify-content: flex-end;
   padding: 20px 0;
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    justify-content: center;
+  }
+  /*
+
+.toggle-container
+  */
 }
 
 .toggle-container > span {
@@ -260,7 +268,7 @@ body {
   top: 105%;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
 
   --transitionProperty: transform;
   --transitionDuration: 300ms;
@@ -422,11 +430,11 @@ body {
   outline: none;
 }
 .input-line-animation__ip::placeholder {
-  color: hsla(0 0% 70% / 100%);
+  color: rgb(179, 179, 179);
   transition: color 1s;
 }
 .input-line-animation__ip:focus::placeholder {
-  color: hsla(0 0% 60% / 100%);
+  color: rgb(179, 179, 179);
 }
 .input-line-animation__line {
   position: absolute;

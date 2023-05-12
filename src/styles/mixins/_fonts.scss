@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+
+@mixin fw-bold {
+  font-weight: bold;
+}
+@mixin fw-semibold {
+  font-weight: 400;
+}
+// Accordion summary font size mixin
+@mixin accordion-summary {
+  font-size: 30px;
+}
+@mixin footer-font {
+  font-family: "Averta CY", sans-serif;
+}
+@mixin fs-95 {
+  font-size: 95px !important;
+ 
+  font-family: "Averta CY",sans-serif;
+  font-weight: 700;
+  @media only screen and (max-width: 1920px) {
+    font-size: 100px !important;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 90px !important;
+  }
+  @media only screen and (max-width: 1440px) {
+    font-size: 75px !important;
+  }
+  @media only screen and (max-width: 1150px) {
+    font-size: 65px !important;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 55px !important;
+  }
+
+ 
+}
+
+@mixin fs-55 {
+  font-size: 55px !important;
+  line-height: 55px;
+}
+
+@mixin fs-30 {
+  font-size: 30px;
+ 
+  font-family: "Averta CY",sans-serif;
+
+  @media only screen and (max-width: 1920px) {
+    font-size: 20px !important;
+  }
+
+}
+
+@mixin fs-45 {
+  font-size: 45px;
+  line-height: 45px;
+  font-family: AvertaSemi;
+}
+
+@mixin fs-75 {
+  font-size: 75px;
+  line-height: 70px;
+}
+@mixin fs-25 {
+  font-size: 25px;
+  line-height: 30px !important;
+}
+
+@mixin light-font {
+  font-family: Averta;
+}
+
+@mixin semi-font {
+  font-family: AvertaSemi !important;
+}
+
+@mixin bold-font {
+  font-family: AvertaBold;
+}
+
+@mixin overview-text-mobile {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  @include footer-font;
+}

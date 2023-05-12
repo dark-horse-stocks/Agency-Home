@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import styled from 'styled-components';
-import useMousePosition from '../../utils/useMousePosition';
+import React, { useEffect, useRef } from "react";
+import styled from "styled-components";
+import useMousePosition from "../../utils/useMousePosition";
 
 const Style = styled.svg`
   /* Hide on mobile */
@@ -36,7 +36,7 @@ const Cursor = ({ hover }) => {
   const cursorRef = useRef();
   const { mouseX, mouseY } = useMousePosition();
   const hasMovedCursor =
-    typeof mouseX === 'number' && typeof mouseY === 'number';
+    typeof mouseX === "number" && typeof mouseY === "number";
   const hoverScale = 4;
 
   useEffect(() => {

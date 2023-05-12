@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css"
+import "./style.scss";
 
 export default function CountryCode() {
   return (
     <select name="countryCode" id="">
-        <option name="IN" defaultValue="91" selected className="selected" >
-          +91
-        </option>
+      <option name="IN" defaultValue="91" selected className="selected">
+        +91
+      </option>
       <optgroup label="Other countries">
         <option name="DZ" value="213">
           Algeria (+213)

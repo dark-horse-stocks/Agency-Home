@@ -3,15 +3,15 @@ import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
-import "./style.css";
+import "./style.scss";
 
 export default function Fundalysis() {
   return (
     <div>
-      <div className="mt-header">
-        <div className="  container ">
+      <div className="mt-header common-mt-header">
+        <div className="  container common-main-header">
           <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
-          <h1 className="fs-95">
+          <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
@@ -37,7 +37,7 @@ export default function Fundalysis() {
       <div className="hero-img-container">
         <img src={HeroImg} alt="Hero" className="hero-img" />
       </div>
-      <div className=" mt-section container">
+      <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
             Developing websites is about so much more than marketing. It’s also
@@ -54,7 +54,7 @@ export default function Fundalysis() {
         <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
+      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           Developing websites is about so much more than marketing. It’s also
@@ -81,7 +81,7 @@ export default function Fundalysis() {
         </div>
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
+      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           Developing websites is about so much more than marketing. It’s also
@@ -94,7 +94,7 @@ export default function Fundalysis() {
         <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
 
-      <div className="container end-wrapper mt-section">
+      <div className="container end-wrapper mt-section end-section-common">
         <div className="w-70">
           <h2 className="fs-95 header-fs-tablet text-slide-up-animation-3">
             In the end ✨

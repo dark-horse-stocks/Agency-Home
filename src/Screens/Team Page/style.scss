@@ -1,0 +1,47 @@
+.team-img {
+  width: 32%;
+}
+
+@media only screen and (max-width: 600px) {
+  .team-img {
+    width: 45%;
+  }
+}
+.team-container-svg{
+  @media only screen and (max-width: 600px) {
+    justify-content: space-between;
+    }
+  .anonumusttxt{
+    font-family: "Averta CY";
+    font-weight: 300;
+    font-size: 24px;
+  }
+  svg{
+
+    @media only screen and (max-width: 600px) {
+     width: 75px;
+     height: 75px;
+     display: block;
+     margin-left: auto;;
+     margin-right: auto;
+    }
+  }
+  .anonumusttxt{
+    @media only screen and (max-width: 600px) {
+     font-size: 18px;
+     }
+  }
+  >div{
+    @media only screen and (max-width: 600px) {
+      margin: 50px 0 !important;
+      }
+  }
+}
+
+.dark-mode{
+  svg{
+    >path{
+      stroke: #fff;
+    }
+  }
+}

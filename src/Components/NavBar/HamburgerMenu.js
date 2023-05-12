@@ -4,16 +4,18 @@ import styled from "styled-components";
 import HamburgerBar from "./HamburgerBar";
 
 const MenuLabelWrapper = styled.div`
-  position: fixed;
-  top: 1.75rem;
-  right: 1.9%;
-  width: 2rem;
-  height: 2rem;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+width: 1.3rem;
+height: 2rem;
+z-index: 20;
+display: flex;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+cursor: pointer;
+position: fixed;
+top: 60px;
+right: 4%;
 
   & > .magnetic-area {
     top: -1.5rem;
@@ -31,14 +33,6 @@ const MenuLabelWrapper = styled.div`
     background-color: white !important;
   }
 
-  @media screen and (max-width: 1200px) {
-    right: 4%;
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
 `;
 
 const MenuLabel = styled.label`
@@ -129,7 +123,7 @@ const Navigation = styled.nav`
   flex-direction: column;
   background-color: #fff;
   overflow: hidden;
-  padding: 3rem 12rem 3rem 8rem;
+  
 
   transform: translateX(0%);
 
@@ -168,21 +162,23 @@ const Navigation = styled.nav`
     flex: 1;
     display: flex;
     align-items: center;
+    margin-top : 120px;
+
   }
 
   @media screen and (min-width: 1400px) {
-    padding: 8rem 12rem 8rem 8rem;
+   
   }
   @media screen and (min-width: 1024px) {
-    padding: 5rem 11rem 5rem 5rem;
+    
   }
   @media screen and (max-width: 992px) {
-    padding: 4rem 10rem 4rem 4rem;
+  
   }
 
   @media screen and (max-width: 700px) {
     width: 100%;
-    padding: 5rem 5rem 5rem 2.8rem;
+  
     justify-content: center;
 
     & .vertical-center {

@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./styles/index.scss";
+// import './index.scss'
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
@@ -81,7 +82,7 @@ window.addEventListener("load", () => {
     fixedElem1.style.top = offset.y + "px";
     fixedElem2.style.top = offset.y + "px";
     fixedElem2.style.left = offset.x + "px";
-    fixedElem3.style.top = `${offset.y + 28}px`;
+    fixedElem3.style.top = `${offset.y + 60}px`;
     fixedElem4.style.top = offset.y + "px";
   });
 

@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function Filter() {

@@ -1,3 +1,5 @@
+@import "../../styles/mixins/dimensions";
+
 .home-hero-text {
   text-transform: capitalize;
 }
@@ -12,7 +14,7 @@
   margin: 0 auto;
 }
 .w-90 {
-  width: 90%;
+  @include w-90;
 }
 .sector-img {
   width: 22%;
@@ -55,6 +57,6 @@
 
 @media only screen and (max-width: 600px) {
   .sector-img {
-    width: 50%;
+    @include w-50;
   }
 }

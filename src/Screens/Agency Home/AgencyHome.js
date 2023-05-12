@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 
 // Importing a dummy image and a dummy video for hover animation
 import hoverVideo from "../../Assets/hoverVideo.mp4";
@@ -8,13 +8,14 @@ import hoverVideo from "../../Assets/hoverVideo.mp4";
 export default function AgencyHome() {
   const history = useHistory();
   return (
-    <div className="container">
-      <div className="mt-header">
+   <div className="home-page-container">
+     <div className="container ">
+      <div className="mt-header home-agency-page">
         <p className="fs-30 mb-3 text-slide-up-animation-3">
           Always trying to be contrarian
         </p>
 
-        <div className="d-flex flex-column-tablet" data-cursor="-media-blend">
+        <div className="d-flex flex-column-tablet " data-cursor="-media-blend">
           <a
             href="/"
             className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
@@ -43,11 +44,10 @@ export default function AgencyHome() {
       </div>
       <div className=" mt-section">
         <p className=" fs-30 home-text text-slide-up-animation-3">
-          Darkhorsestocks was started with a simple aim that is to help small
-          investors in the stock market. Today we are working in this direction
-          to take it to new heights.
+          Darkhorsestocks, is committed to delivering amazing returns by identifying fundamentally strong companies. We conduct extensive research and analysis to carefully select and present amazing companies which we feel are worth exploring.        
         </p>
       </div>
     </div>
+   </div>
   );
 }

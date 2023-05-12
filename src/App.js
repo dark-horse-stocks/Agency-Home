@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { useEffect, useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import ListPage from "./Screens/List Page/ListPage";
@@ -139,7 +139,7 @@ function App(props) {
           .timeline({
             scrollTrigger: {
               trigger: txtAnimate3Wrappers,
-              start: "top 80%",
+              start: "top 100%",
             },
           })
           .fromTo(
@@ -196,7 +196,7 @@ function App(props) {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const boundingRect = wrap.mArea.getBoundingClientRect();
     const halfDiff = Math.abs(boundingRect.width - boundingRect.height) / 2;
-    const relX = e.pageX - boundingRect.left - halfDiff;
+    const relX = e.pageX - boundingRect.left - halfDiff ;
     const relY = e.pageY - boundingRect.top;
 
     gsap.to(wrap.mContent, {
@@ -206,6 +206,7 @@ function App(props) {
       duration: 0.6,
     });
   }
+  
 
   function magneticButtonFunc() {
     // Magnetic button js
@@ -265,15 +266,16 @@ function App(props) {
       <div id="scroll-container">
         <div id="container-wrapper">
           <NavBar />
+          <div className="parent-container">
           <Switch>
             <Route exact={true} key={12} path="/team" component={TeamPage} />
-            <Route
+            {/* <Route
               exact={true}
               key={18}
               path="/list-page"
               component={ListPage}
-            />
-            <Route exact={true} key={6} path="/new-blog" component={NewBlog} />
+            /> */}
+            {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
             <Route
               exact={true}
               key={7}
@@ -296,6 +298,10 @@ function App(props) {
               component={CustomTable}
             />
           </Switch>
+       
+          </div>
+          
+          <div className="blog-mode">
           <BlogFooter />
           <div className="toggle-container mt-section">
             <span>Night Mode</span>
@@ -310,6 +316,8 @@ function App(props) {
               <label htmlFor="checkbox" />
             </span>
           </div>
+          </div>
+         
         </div>
       </div>
     </div>

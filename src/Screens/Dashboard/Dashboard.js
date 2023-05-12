@@ -2,22 +2,23 @@ import React from "react";
 import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
+import SecImage from "../../Assets/image section.png";
+import "./style.scss";
 import Image from "../../Assets/Dashboard/Final/1.png";
 import Image2 from "../../Assets/Dashboard/Final/2.jpg";
 import Image3 from "../../Assets/Dashboard/Final/3.jpg";
 import Image4 from "../../Assets/Dashboard/Final/4.jpg";
 import Image5 from "../../Assets/Dashboard/Final/5.jpg";
 import Image6 from "../../Assets/Dashboard/Final/6.jpg";
-import "./style.css";
 
 export default function Dashboard() {
   const mobile = window.innerWidth < 800;
   return (
     <div>
-      <div className="mt-header">
-        <div className="  container ">
+      <div className="mt-header common-mt-header">
+        <div className="  container common-main-header">
           <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
-          <h1 className="fs-95">
+          <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
@@ -43,7 +44,7 @@ export default function Dashboard() {
       <div className="hero-img-container">
         <img src={Image} alt="Hero" className="hero-img" />
       </div>
-      <div className=" mt-section container mobile-screen">
+      <div className=" mt-section container common-mt-section mobile-screen">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
             With the dashboard you can track all the ideas that we have
@@ -63,7 +64,7 @@ export default function Dashboard() {
         <img src={Image2} alt="Hero" className="hero-img" />
       </div>
 
-      <div className="container d-flex mt-section fs-30  feature-section flex-column-tablet mobile-screen">
+      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common mobile-screen">
         <h4 className="text-slide-up-animation-3 head-font">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           Live data feed, Historical charts of Indices as well as all the
@@ -94,8 +95,8 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet">
-        <h4 className="text-slide-up-animation-3 head-font">Features</h4>
+      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
+        <h4 className="text-slide-up-animation-3 mobile-screen">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           <span>
             Developing this type of dashboard and updating it with live data
@@ -115,7 +116,7 @@ export default function Dashboard() {
         {/* <img src={SecImage} alt="Hero" className="hero-img" /> */}
       </div>
 
-      <div className="container end-wrapper mt-section">
+      <div className="container end-wrapper mt-section end-section-common">
         <div className="w-70">
           <h2 className="fs-95 header-fs-tablet text-slide-up-animation-3">
             In the end ✨
