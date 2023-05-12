@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { Link, useHistory } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
-import "./style.css";
+import "./style.scss";
 import { FaRegUser } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 
