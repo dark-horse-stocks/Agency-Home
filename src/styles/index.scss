@@ -113,7 +113,7 @@
 body {
   margin: 0;
 
-  font-family: "Averta CY", sans-serif;
+  font-family: "Averta CY" !important;
 }
 
 .App {
@@ -219,7 +219,7 @@ body {
 
 .fs-95 {
   @include fs-95;
-  font-family: "Averta CY", sans-serif;
+  font-family: "Averta CY", sans-serif !important;
 }
 
 .fs-55 {
@@ -228,14 +228,19 @@ body {
 
 .fs-30 {
   @include fs-30;
+  font-family: "Averta CY" !important;
+  font-weight: 300
 }
 
 .fs-45 {
   @include fs-45;
+
+  font-family: "Averta CY" !important;
 }
 
 .fs-75 {
   @include fs-75;
+  font-family: "Averta CY" !important;
 }
 
 .w-80 {
