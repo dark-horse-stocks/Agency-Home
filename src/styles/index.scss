@@ -112,8 +112,7 @@
 
 body {
   margin: 0;
-
-  font-family: "Averta CY" !important;
+  font-family: "Averta CY";
 }
 
 .App {
@@ -171,7 +170,7 @@ body {
 .mt-header {
   @include mt-header;
   margin: 0;
-  font-family: "Averta CY", sans-serif !important;
+  font-family: "Averta CY", sans-serif;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -219,7 +218,7 @@ body {
 
 .fs-95 {
   @include fs-95;
-  font-family: "Averta CY", sans-serif !important;
+  font-family: "Averta CY", sans-serif;
 }
 
 .fs-55 {
@@ -228,19 +227,18 @@ body {
 
 .fs-30 {
   @include fs-30;
-  font-family: "Averta CY" !important;
+  font-family: "Averta CY";
   font-weight: 300
 }
 
 .fs-45 {
   @include fs-45;
-
-  font-family: "Averta CY" !important;
+  font-family: "Averta CY";
 }
 
 .fs-75 {
   @include fs-75;
-  font-family: "Averta CY" !important;
+  font-family: "Averta CY";
 }
 
 .w-80 {
