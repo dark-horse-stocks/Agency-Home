@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import ListPage from "./Screens/List Page/ListPage";
 import { Route, Switch } from "react-router-dom";
@@ -32,7 +32,7 @@ function App(props) {
     localStorage.setItem("dark", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     magneticButtonFunc();
 
     const txtAnimate1 = document.querySelectorAll(".text-slide-up-animation-1");
@@ -99,7 +99,6 @@ function App(props) {
       img.innerHTML += imgAnimateTemplate1;
     });
 
-    window.addEventListener("load", () => {
       // Text animation 1
       gsap.fromTo(
         ".text-slide-up-animation-text-1",
@@ -188,7 +187,6 @@ function App(props) {
       //     elem.nextElementSibling.click();
       //   });
       // });
-    });
   }, []);
 
   function parallaxIt(e, wrap) {
