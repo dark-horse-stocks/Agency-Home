@@ -16,12 +16,11 @@ export default function NavBar() {
       <div className="logo" onClick={() => history.push("/")}>
         DARKHORSESTOCKS
       </div>
-      <div className="icons d-flex justify-content-between align-items-center">
+      <div className="icons d-flex align-items-center">
         {mobile ? (
           <>
             <FaSearch />
-
-            <FaRegUser />
+            <FaRegUser className="dark-ml-1"/>
           </>
         ) : (
           <>
@@ -51,7 +50,7 @@ export default function NavBar() {
               </Link>
             </div>
             <div
-              className="icon user-icon content__item Social-item nav-link-wrapper"
+              className="icon user-icon content__item Social-item nav-link-wrapper dark-ml-1"
               data-cursor="-menu -icon-blend"
             >
               <Link to="/login" className="nav-link">
@@ -77,7 +76,7 @@ export default function NavBar() {
             </div>
             <div>
               <div
-                className="icon user-icon content__item Social-item nav-link-wrapper"
+                className="icon user-icon content__item Social-item nav-link-wrapper dark-ml-1"
                 id="hamburgerMenuLabel"
                 data-cursor="-menu -icon-blend"
               >

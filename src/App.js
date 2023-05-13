@@ -181,13 +181,13 @@ function App(props) {
           );
       });
 
-      // Delegating click event
-      const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
-      allMagneticAreaElem.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          elem.nextElementSibling.click();
-        });
-      });
+      // // Delegating click event
+      // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
+      // allMagneticAreaElem.forEach((elem) => {
+      //   elem.addEventListener("click", (e) => {
+      //     elem.nextElementSibling.click();
+      //   });
+      // });
     });
   }, []);
 
