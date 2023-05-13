@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import classNames from "classnames";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import styled from "styled-components";
 import HamburgerBar from "./HamburgerBar";
 
 const MenuLabelWrapper = styled.div`
-width: 1.3rem;
-height: 2rem;
-z-index: 20;
-display: flex;
--webkit-box-pack: center;
-justify-content: center;
--webkit-box-align: center;
-align-items: center;
-cursor: pointer;
-position: fixed;
-top: 60px;
-right: 4%;
+
+  width: 1.3rem;
+  height: 2rem;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  top: 60px ;
+  right:4% ;
 
   & > .magnetic-area {
     top: -1.5rem;
     left: -1.5rem;
-    /* right: -1.5rem; */
+    right: -1.5rem;
     bottom: -1.5rem;
   }
 
@@ -33,6 +33,13 @@ right: 4%;
     background-color: white !important;
   }
 
+  @media screen and (max-width: 1200px) {
+    
+  }
+
+  @media screen and (max-width: 700px) {
+  
+  }
 `;
 
 const MenuLabel = styled.label`
@@ -86,13 +93,13 @@ const Icon = styled.div`
   &::before {
     top: 30%;
     transform: ${(props) =>
-      props.clicked ? "translateY(5px) rotate(135deg)" : "rotate(0)"};
+      props.clicked ? "translateY(6px) rotate(135deg)" : "rotate(0)"};
   }
 
   &::after {
     bottom: 30%;
     transform: ${(props) =>
-      props.clicked ? "translateY(-5px) rotate(-135deg)" : "rotate(0)"};
+      props.clicked ? "translateY(-6px) rotate(-135deg)" : "rotate(0)"};
   }
 
   @media screen and (max-width: 700px) {
@@ -102,12 +109,12 @@ const Icon = styled.div`
     }
     &::before {
       transform: ${(props) =>
-        props.clicked ? "translateY(4.5px) rotate(135deg)" : "rotate(0)"};
+        props.clicked ? "translateY(5px) rotate(135deg)" : "rotate(0)"};
     }
 
     &::after {
       transform: ${(props) =>
-        props.clicked ? "translateY(-4.5px) rotate(-135deg)" : "rotate(0)"};
+        props.clicked ? "translateY(-5px) rotate(-135deg)" : "rotate(0)"};
     }
   }
 `;
@@ -123,6 +130,7 @@ const Navigation = styled.nav`
   flex-direction: column;
   background-color: #fff;
   overflow: hidden;
+  padding: 3rem 12rem 3rem 8rem;
   
 
   transform: translateX(0%);
@@ -163,22 +171,21 @@ const Navigation = styled.nav`
     display: flex;
     align-items: center;
     margin-top : 120px;
-
   }
 
   @media screen and (min-width: 1400px) {
-   
+    padding: 5rem 15rem 5rem 6rem;
   }
   @media screen and (min-width: 1024px) {
-    
+    padding: 5rem 15rem 5rem 6rem;
   }
   @media screen and (max-width: 992px) {
-  
+    padding: 4rem 10rem 4rem 10rem;
   }
 
   @media screen and (max-width: 700px) {
     width: 100%;
-  
+    padding: 5rem 5rem 5rem 2.8rem;
     justify-content: center;
 
     & .vertical-center {
@@ -197,6 +204,8 @@ const List = styled.ul`
 
   & > .menu-color {
     margin-bottom: 1rem;
+    font-size:24px;
+    font-weight : 500;
   }
 
   @media screen and (max-width: 500px) {
@@ -210,18 +219,60 @@ function HamburgerMenu() {
   const history = useHistory();
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  useEffect(() => {});
+  // const navStickyRef = useRef(null);
+
+  // 1st method
+  // useEffect(() => {
+  //   let timeoutId = null;
+
+  //   if (click === true) {
+  //     navStickyRef.current.style.display = "flex";
+  //   } else if (click === false) {
+  //     navStickyRef.current.style.display = "flex";
+  //     timeoutId = setTimeout(() => {
+  //       navStickyRef.current.style.display = "none";
+  //     }, 400);
+  //   }
+
+  //   return () => clearTimeout(timeoutId);
+  // }, [click]);
+
+  // 2nd method
+  // useEffect(() => {
+  //   let timeoutId = null;
+
+  //   if (click === true) {
+  //     navStickyRef.current.style.display = "flex";
+  //   } else if (click === false) {
+  //     timeoutId = setTimeout(() => {
+  //       navStickyRef.current.style.display = "none";
+  //     }, 400);
+  //   }
+
+  //   return () => clearTimeout(timeoutId);
+  // }, [click]);
+
+  // 3rd method
+  const [isNavStickyVisible, setNavStickyVisible] = useState(false);
+
+  useEffect(() => {
+    let timeoutId = null;
+    if (click) setNavStickyVisible(true);
+    else timeoutId = setTimeout(() => setNavStickyVisible(false), 400);
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [click]);
 
   return (
     <>
       <MenuLabelWrapper
         data-cursor="-menu"
         id="menuLabelWrapper"
-        className={
-          click
-            ? "menuLabelWrapper menuOpen"
-            : "menuLabelWrapper magnetic-wrap menuClose"
-        }
+        className={classNames('menuLabelWrapper', {'menuOpen': click, 'magnetic-wrap menuClose': !click, })}
         clicked={click}
         onClick={handleClick}
       >
@@ -232,21 +283,22 @@ function HamburgerMenu() {
           htmlFor="navi-toggle"
           data-movement="0.3"
         >
-          {/* <Icon className="menu-label" clicked={click}></Icon> */}
-          <HamburgerBar></HamburgerBar>
+          <HamburgerBar clicked={click}></HamburgerBar>
         </MenuLabel>
       </MenuLabelWrapper>
 
       <NavBackdrop
         id="navBackdropSticky"
         clicked={click}
-        onClick={handleClick}
+        onClick={()=>handleClick(false)}
       ></NavBackdrop>
 
       <Navigation
         id="navSticky"
         clicked={click}
         className={click ? "x nav-open" : "x nav-close"}
+        // ref={navStickyRef}
+        style={{ display: isNavStickyVisible ? "flex" : "none" }}
       >
         <div className="vertical-center">
           <div className="d-flex list-nav">
@@ -256,140 +308,147 @@ function HamburgerMenu() {
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=917874999975"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Whatsapp"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Whatsapp
-                    </span>
-                  </em>
+                <a href="https://api.whatsapp.com/send?phone=917874999975">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Whatsapp"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Whatsapp
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://telegram.me/darkhorsestocks"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Telegram"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Telegram
-                    </span>
-                  </em>
+                <a href="https://telegram.me/darkhorsestocks">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Telegram"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Telegram
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://www.instagram.com/darkhorse_stocks/"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Instagram"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Instagram
-                    </span>
-                  </em>
+                <a href="https://www.instagram.com/darkhorse_stocks/">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Instagram"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Instagram
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://twitter.com/DARKHORSESTOCKS"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Twitter"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Twitter
-                    </span>
-                  </em>
+                <a href="https://twitter.com/DARKHORSESTOCKS">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Twitter"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Twitter
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://www.getrevue.co/profile/darkhorsestocks/?ltclid="
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Revue"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Revue
-                    </span>
-                  </em>
+                <a href="https://www.getrevue.co/profile/darkhorsestocks/?ltclid=">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Revue"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Revue
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ/featured"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Youtube"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Youtube
-                    </span>
-                  </em>
+                <a href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ/featured">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Youtube"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Youtube
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <a
-                  href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ/featured"
-                  className="nav-link magnetic-content"
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Quora"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Quora
-                    </span>
-                  </em>
+                <a href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ/featured">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Quora"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Quora
+                      </span>
+                    </em>
+                  </span>
                 </a>
               </li>
             </List>
@@ -399,133 +458,127 @@ function HamburgerMenu() {
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/");
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Home"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Home
-                    </span>
-                  </em>
-                </span>
+                <Link to="/">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Home"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Home
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
               <li
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/blog")
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Blog"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Blog
-                    </span>
-                  </em>
-                </span>
+                <Link to="/pricing">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Pricing"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Pricing
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
               <li
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/dashboard")
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Dashboard"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Dashboard
-                    </span>
-                  </em>
-                </span>
+                <Link to="/subscriptions">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Subscribe"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Subscribe
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
               <li
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/fundalysis")
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Fundalysis"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Fundalysis
-                    </span>
-                  </em>
-                </span>
+                <Link to="/philosophy-Page">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Philosophy"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Philosophy
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
               <li
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/team")
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Team"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                Team
-                    </span>
-                  </em>
-                </span>
+                <Link to="/categories">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Categories"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Categories
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
               <li
                 className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <div className="magnetic-area"></div>
-                <span
-                  className="nav-link magnetic-content"
-                  onClick={() => {
-                    history.push("/faq");
-                  }}
-                >
-                  <em className="nav-link-hover-wrapper">
-                    <span
-                      data-text="Faq's"
-                      className="nav-link-hover"
-                      data-movement="0.2"
-                    >
-                      Faq's
-                    </span>
-                  </em>
-                </span>
+                <Link to="/faq">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Faq's"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Faq's
+                      </span>
+                    </em>
+                  </span>
+                </Link>
               </li>
             </List>
           </div>
