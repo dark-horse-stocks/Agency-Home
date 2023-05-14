@@ -5,7 +5,7 @@ import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
 import "./style.scss";
 
-export default function Blog() {
+export default function PMS() {
   return (
     <div>
       <div className="mt-header common-mt-header">

@@ -101,6 +101,7 @@ input[type="checkbox"].checkbox + label {
   margin: 0 auto;
   justify-content: flex-end;
   padding: 20px 0;
+  align-items: center;
   @media only screen and (max-width: 1024px) {
     width: 100%;
     justify-content: center;
@@ -109,6 +110,60 @@ input[type="checkbox"].checkbox + label {
 
 .toggle-container
   */
+}
+
+.footer-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 50px auto 10px;
+
+}
+.sub-footer {
+  width: 87vw;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 12px;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+ 
+}
+
+
+.sub-footer {
+  ul {
+    width: 50%;
+    list-style: none;
+    justify-content: space-between;
+
+  }
+
+}
+.dark-mode a {
+  color: #fff;
+
+}
+
+.light-mode a {
+  color: #000;
+
+}
+.sub-footer ul li a {
+    font-size: 16px;
+}
+
+.links{
+  display: flex;
+  width: 70%;
+}
+.links p{
+  margin-left: 20px;
+}
+
+.dark-mode .links p a {
+  color: #fff;
 }
 
 .toggle-container > span {

@@ -25,6 +25,11 @@
 }
 
 @font-face {
+  font-family: AvertLight;
+  src: url("./Assets/Font/AvertaCY-Light.otf");
+}
+
+@font-face {
   font-family: Averta;
   src: url("./Assets/Font/Averta\ Light.otf");
 }
@@ -32,6 +37,10 @@
 @font-face {
   font-family: AvertaSemi;
   src: url("./Assets/Font/Averta\ Semibold.otf");
+}
+
+.test{
+  font-family: AvertLight;
 }
 
 .light-font {
@@ -124,6 +133,8 @@ body {
 
 .gray-color {
   color: var(--Colour-3);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .fw-semibold {

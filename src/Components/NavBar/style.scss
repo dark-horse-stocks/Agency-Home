@@ -129,7 +129,9 @@ li {
 }
 
 .dark-mode .Social-item a, .dark-mode  .nav-link-hover,.dark-mode  .menu-color{
-  color: var(--Colour-1);
+  color: #fff;
+  font-weight: 100;
+  font-family: AvertLight;
 }
 
 .toggle-menu {
@@ -250,11 +252,13 @@ li {
 .light-mode .nav-link-hover::before,
 .light-mode .nav-link-hover::after {
   color: black;
+  font-weight: 100;
 }
 
 .dark-mode .nav-link-hover::before,
 .dark-mode .nav-link-hover::after {
   color: var(--Colour-1);
+  font-weight: 100;
   
 }
 .dark-mode .nav-link-hover::before{

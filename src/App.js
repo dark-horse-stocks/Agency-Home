@@ -21,6 +21,8 @@ import FooterAnimation from "./Components/FooterAnimation/FooterAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomTable from "./Components/NewComponents/CustomTable";
+import PhilosophyPage from "./Screens/Philosophy Page/PhilosophyPage";
+import PMS from "./Screens/PMS/Blog";
 
 // Registering ScrollTrigger for smooth scrolling
 gsap.registerPlugin(ScrollTrigger);
@@ -99,94 +101,94 @@ function App(props) {
       img.innerHTML += imgAnimateTemplate1;
     });
 
-      // Text animation 1
-      gsap.fromTo(
-        ".text-slide-up-animation-text-1",
-        { skewY: "20deg" },
-        {
-          translateY: "-200%",
-          skewY: "0deg",
-          duration: 1,
-          ease: "power4.out",
-          stagger: 0.2,
-        }
+    // Text animation 1
+    gsap.fromTo(
+      ".text-slide-up-animation-text-1",
+      { skewY: "20deg" },
+      {
+        translateY: "-200%",
+        skewY: "0deg",
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.2,
+      }
+    );
+
+    // Text animation 2
+    gsap.fromTo(
+      ".text-slide-up-animation-text-2",
+      { rotateX: "-40deg", opacity: 0 },
+      {
+        translateY: "-130%",
+        rotateX: "0deg",
+        opacity: 1,
+        duration: 1.5,
+        ease: "power4.out",
+        stagger: 0.1,
+      }
+    );
+
+    // Text animation 3
+    gsap.utils.toArray(".text-slide-up-animation-3").forEach((elem) => {
+      const txtAnimate3Wrappers = elem.querySelectorAll(
+        ".text-slide-up-animation-wrapper-3"
       );
-
-      // Text animation 2
-      gsap.fromTo(
-        ".text-slide-up-animation-text-2",
-        { rotateX: "-40deg", opacity: 0 },
-        {
-          translateY: "-130%",
-          rotateX: "0deg",
-          opacity: 1,
-          duration: 1.5,
-          ease: "power4.out",
-          stagger: 0.1,
-        }
+      const txtAnimate3Text = elem.querySelectorAll(
+        ".text-slide-up-animation-text-3"
       );
+      const tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: txtAnimate3Wrappers,
+            start: "top 100%",
+          },
+        })
+        .fromTo(
+          txtAnimate3Text,
+          { skewY: "2deg" },
+          {
+            translateY: "-200%",
+            skewY: "0deg",
+            duration: 1.5,
+            ease: "power4.out",
+          }
+        );
+    });
 
-      // Text animation 3
-      gsap.utils.toArray(".text-slide-up-animation-3").forEach((elem) => {
-        const txtAnimate3Wrappers = elem.querySelectorAll(
-          ".text-slide-up-animation-wrapper-3"
+    // Image animation 1
+    gsap.utils.toArray(".img-slide-up-animation-1").forEach((elem) => {
+      const imgAnimate1Wrappers = elem.querySelectorAll(
+        ".img-slide-up-animation-wrapper-1"
+      );
+      const imgAnimate3img = elem.querySelectorAll(
+        ".img-slide-up-animation-img-1"
+      );
+      const tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: imgAnimate1Wrappers,
+            start: "top 90%",
+          },
+        })
+        .fromTo(
+          imgAnimate3img,
+          { skewY: "4deg" },
+          {
+            translateY: "-100%",
+            skewY: "0deg",
+            duration: 0.8,
+            ease: "power4.out",
+          }
         );
-        const txtAnimate3Text = elem.querySelectorAll(
-          ".text-slide-up-animation-text-3"
-        );
-        const tl = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: txtAnimate3Wrappers,
-              start: "top 100%",
-            },
-          })
-          .fromTo(
-            txtAnimate3Text,
-            { skewY: "2deg" },
-            {
-              translateY: "-200%",
-              skewY: "0deg",
-              duration: 1.5,
-              ease: "power4.out",
-            }
-          );
-      });
+    });
 
-      // Image animation 1
-      gsap.utils.toArray(".img-slide-up-animation-1").forEach((elem) => {
-        const imgAnimate1Wrappers = elem.querySelectorAll(
-          ".img-slide-up-animation-wrapper-1"
-        );
-        const imgAnimate3img = elem.querySelectorAll(
-          ".img-slide-up-animation-img-1"
-        );
-        const tl = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: imgAnimate1Wrappers,
-              start: "top 90%",
-            },
-          })
-          .fromTo(
-            imgAnimate3img,
-            { skewY: "4deg" },
-            {
-              translateY: "-100%",
-              skewY: "0deg",
-              duration: 0.8,
-              ease: "power4.out",
-            }
-          );
-      });
-
-      // // Delegating click event
-      // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
-      // allMagneticAreaElem.forEach((elem) => {
-      //   elem.addEventListener("click", (e) => {
-      //     elem.nextElementSibling.click();
-      //   });
-      // });
+    // // Delegating click event
+    // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
+    // allMagneticAreaElem.forEach((elem) => {
+    //   elem.addEventListener("click", (e) => {
+    //     elem.nextElementSibling.click();
+    //   });
+    // });
   }, []);
 
   function parallaxIt(e, wrap) {
@@ -194,7 +196,7 @@ function App(props) {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const boundingRect = wrap.mArea.getBoundingClientRect();
     const halfDiff = Math.abs(boundingRect.width - boundingRect.height) / 2;
-    const relX = e.pageX - boundingRect.left - halfDiff ;
+    const relX = e.pageX - boundingRect.left - halfDiff;
     const relY = e.pageY - boundingRect.top;
 
     gsap.to(wrap.mContent, {
@@ -204,7 +206,6 @@ function App(props) {
       duration: 0.6,
     });
   }
-  
 
   function magneticButtonFunc() {
     // Magnetic button js
@@ -264,58 +265,91 @@ function App(props) {
       <div id="scroll-container">
         <div id="container-wrapper">
           <NavBar />
-          <div className="parent-container">
-          <Switch>
-            <Route exact={true} key={12} path="/team" component={TeamPage} />
-            {/* <Route
+          <div className="">
+            <Switch>
+              <Route exact={true} key={12} path="/team" component={TeamPage} />
+              {/* <Route
               exact={true}
               key={18}
               path="/list-page"
               component={ListPage}
             /> */}
-            {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
-            <Route
-              exact={true}
-              key={7}
-              path="/dashboard"
-              component={Dashboard}
-            />
-            <Route exact={true} key={8} path="/blog" component={Blog} />
-            <Route
-              exact={true}
-              key={9}
-              path="/fundalysis"
-              component={Fundalysis}
-            />
-            <Route exact={true} key={9} path="/Faq" component={Faq} />
-            <Route exact={true} key={20} path="/" component={AgencyHome} />
-            <Route
-              exact={true}
-              key={28}
-              path="/table"
-              component={CustomTable}
-            />
-          </Switch>
-       
-          </div>
-          
-          <div className="blog-mode">
-          <BlogFooter />
-          <div className="toggle-container mt-section">
-            <span>Night Mode</span>
-            <span className="toggle">
-              <input
-                checked={darkMode}
-                onChange={() => setDarkMode((prevMode) => !prevMode)}
-                id="checkbox"
-                className="checkbox"
-                type="checkbox"
+              {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
+              <Route
+                exact={true}
+                key={7}
+                path="/dashboard"
+                component={Dashboard}
               />
-              <label htmlFor="checkbox" />
-            </span>
+              <Route
+                exact={true}
+                key={7}
+                path="/philosophy-Page"
+                component={PhilosophyPage}
+              />
+              <Route exact={true} key={8} path="/blog" component={Blog} />
+              <Route exact={true} key={8} path="/pms" component={PMS} />
+              <Route
+                exact={true}
+                key={9}
+                path="/fundalysis"
+                component={Fundalysis}
+              />
+              <Route exact={true} key={9} path="/faq" component={Faq} />
+              <Route exact={true} key={20} path="/" component={AgencyHome} />
+              <Route
+                exact={true}
+                key={28}
+                path="/table"
+                component={CustomTable}
+              />
+            </Switch>
           </div>
+
+          <div className="blog-mode">
+            <BlogFooter />
+            <div className="d-flex justify-content-between sub-footer">
+              <ul className="d-flex footer-list flex-column-tablet">
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/privacy-policy.php">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/terms-conditions.php">
+                    {" "}
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/disclaimer.php">
+                    {" "}
+                    Disclaimer
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/refund-policy.php">
+                    {" "}
+                    Refund policy
+                  </a>
+                </li>
+              </ul>
+
+              <div className="toggle-container mt-section d-flex w-100">
+                <span>Night Mode</span>
+                <span className="toggle">
+                  <input
+                    checked={darkMode}
+                    onChange={() => setDarkMode((prevMode) => !prevMode)}
+                    id="checkbox"
+                    className="checkbox"
+                    type="checkbox"
+                  />
+                  <label htmlFor="checkbox" />
+                </span>
+              </div>
+            </div>
           </div>
-         
         </div>
       </div>
     </div>
