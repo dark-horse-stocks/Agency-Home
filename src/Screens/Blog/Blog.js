@@ -1,8 +1,8 @@
 import React from "react";
-import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
+import logo from "../../Assets/logo.mp4"
 import "./style.scss";
 
 export default function Blog() {
@@ -35,8 +35,8 @@ export default function Blog() {
         </div>
       </div>
       <div className="hero-img-container">
-        <video width="100%" height="100%">
-          <source src="" type="video/mp4" />
+        <video width="100%" height="100%" autoPlay muted>
+          <source src={logo} type="video/mp4" />
         </video>
       </div>
       <div className=" mt-section container common-mt-section">

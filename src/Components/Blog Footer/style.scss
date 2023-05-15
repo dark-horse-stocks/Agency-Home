@@ -141,8 +141,16 @@
     
   }
   .footer-social {
-    margin-top: 0px;
+    margin-top: 50px;
     
+  }
+
+  .sub-footer ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .sub-footer ul li{
+    width: fit-content;
   }
   .blog-footer-list{
     margin-bottom: 25px;

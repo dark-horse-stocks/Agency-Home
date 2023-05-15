@@ -177,7 +177,9 @@ body {
   justify-content: center;
   //align-items: center;
   > p.text-slide-up-animation-3 {
+    color: #fff;
   }
+
 
   @media only screen and (max-width: 1440px) {
     height: 400px;
@@ -671,7 +673,7 @@ rect[Attributes] {
   .fs-30.text-slide-up-animation-3{
     @media only screen and (min-width:1921px) {
       line-height:normal;
-     
+      color: #fff;
     }
 
     font-weight: 300;
@@ -682,6 +684,7 @@ rect[Attributes] {
     .fs-30.text-slide-up-animation-3{
       font-weight: 300;
      // line-height: 23px;
+     color: #fff;
     }
    
   }
@@ -1009,6 +1012,9 @@ text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px
 }
 
 
+.text-slide-up-animation-3 {
+  color: #fff !important;
+}
 
 
 

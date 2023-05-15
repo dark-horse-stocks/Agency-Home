@@ -86,7 +86,7 @@ export default function BlogFooter() {
                 className="nav-link-wrapper linkedinIcon"
                 data-cursor="-menu -icon-blend"
               >
-                <a href="#" className="nav-link magnetic-content">
+                <a href="https://www.linkedin.com/company/darkhorsestocks/" className="nav-link magnetic-content">
                   <em className="nav-link-hover-wrapper">
                     <span
                       data-text="Linkedin"

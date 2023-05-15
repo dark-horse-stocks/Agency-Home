@@ -350,6 +350,48 @@ function HamburgerMenu() {
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
+                <a href="https://www.linkedin.com/company/darkhorsestocks/">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Linkedin"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Linkedin
+                      </span>
+                    </em>
+                  </span>
+                </a>
+              </li>
+              <li
+                className="content__item Social-item magnetic-wrap nav-link-wrapper"
+                data-cursor="-opaque"
+              >
+                <a href="https://www.facebook.com/DARKHORSESTOCKS">
+                  <div className="magnetic-area"></div>
+                  <span
+                    className="nav-link magnetic-content"
+                  >
+                    <em className="nav-link-hover-wrapper">
+                      <span
+                        data-text="Facebook"
+                        className="nav-link-hover"
+                        data-movement="0.2"
+                      >
+                        Facebook
+                      </span>
+                    </em>
+                  </span>
+                </a>
+              </li>
+              <li
+                className="content__item Social-item magnetic-wrap nav-link-wrapper"
+                data-cursor="-opaque"
+              >
                 <a href="https://www.instagram.com/darkhorse_stocks/">
                   <div className="magnetic-area"></div>
                   <span
