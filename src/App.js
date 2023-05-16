@@ -74,9 +74,9 @@ function App(props) {
       txt.innerHTML = "";
       splitWordsArr.forEach((word) => {
         const txtAnimateTemplate3 = `
-        <span class="text-slide-up-animation-wrapper-3">
-          <span class="text-slide-up-animation-content-3">
-            <span class="text-slide-up-animation-text-3">${word}</span>
+        <span class="text-slide-up-animation-wrapper-2">
+          <span class="text-slide-up-animation-content-2">
+            <span class="text-slide-up-animation-text-2">${word}</span>
           </span>
         </span>
         `;
