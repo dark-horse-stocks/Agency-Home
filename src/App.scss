@@ -18,11 +18,22 @@ body {
   fill: #fff;
 }
 
-.dark-mode .AccordionSummary,
-.dark-mode .AccordionDetails {
-  background-color: #000;
-  color: #fff;
-  border-bottom: 1px solid #ababab;
+// .dark-mode .AccordionSummary,
+// .dark-mode .AccordionDetails {
+//   background-color: #000;
+//   color: #fff;
+//   border-bottom: 1px solid #ababab;
+// }
+// .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+//   border-bottom: 1px solid #d21818;
+// }
+
+.light-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-mode  .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+  border-bottom: 1px solid #fff !important;
 }
 
 .dark-mode nav {

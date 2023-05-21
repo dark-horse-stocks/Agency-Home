@@ -2,6 +2,7 @@ import React from "react";
 import CustomAccordion from "../../Components/Accordion/CustomAccordion";
 import FaqCard from "../../Components/Accordion Card/FaqCard";
 import Button from "../../Components/Button/Button";
+import BlogAccordion from "../../Components/Accordion/BlogAccordion";
 
 export default function Faq() {
   return (
@@ -39,7 +40,7 @@ export default function Faq() {
       </div>
 
      <div className="faq-dropdown">
-     <CustomAccordion
+     <BlogAccordion
         right="I Darkhorsestocks Sebi registered?"
         card={<FaqCard />}
       />
