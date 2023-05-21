@@ -157,7 +157,7 @@ window.addEventListener("load", () => {
       hamburger.classList.add("open");
       hamburger.classList.remove("close");
     }
-  });rr           
+  });
 });
 
 root.render(
