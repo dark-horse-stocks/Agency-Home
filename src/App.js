@@ -21,6 +21,7 @@ import FooterAnimation from "./Components/FooterAnimation/FooterAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomTable from "./Components/NewComponents/CustomTable";
+import pms from "./Screens/pms/pms";
 
 // Registering ScrollTrigger for smooth scrolling
 gsap.registerPlugin(ScrollTrigger);
@@ -281,6 +282,7 @@ function App(props) {
               component={Dashboard}
             />
             <Route exact={true} key={8} path="/blog" component={Blog} />
+            <Route exact={true} key={8} path="/pms" component={pms} />
             <Route
               exact={true}
               key={9}

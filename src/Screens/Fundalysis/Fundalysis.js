@@ -10,27 +10,23 @@ export default function Fundalysis() {
     <div>
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
-          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
+          <p className="fs-30 text-slide-up-animation-2">Fundalysis</p>
           <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  A unique platform to
+                Mutual fund analytics
                 </span>
               </div>
             </div>
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  track all darkhorsestock
+                platform
                 </span>
               </div>
             </div>
-            <div className="text-slide-up-animation-wrapper-2">
-              <div className="text-slide-up-animation-content-2">
-                <span className="text-slide-up-animation-text-2">ideas</span>
-              </div>
-            </div>
+           
           </h1>
         </div>
       </div>
@@ -40,12 +36,10 @@ export default function Fundalysis() {
       <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
-            Developing websites is about so much more than marketing. It’s also
-            about aesthetics. For us, your site is the face of your company.
-            Let’s make it stunning
+          Fundalysis is a comprehensive mutual fund database that sources data from various public sources about mutual fund schemes, holdings, and sectorial holdings. Our platform generates a wide range of reports based on this data, which are used for research and analysis purposes.
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
-            <Button text="Go to Dashboard" />
+            <Button text="Go to Fundalysis" />
           </div>
         </div>
       </div>
@@ -57,9 +51,7 @@ export default function Fundalysis() {
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
-          Developing websites is about so much more than marketing. It’s also
-          about aesthetics. For us, your site is the face of your company. Let’s
-          make it stunning
+        It allows analysis of data based on mutual fund schemes, AMC as a whole, sector, individual companies, and fund managers. The platform generates various types of reports, including monthly scheme reports, sectorial analysis, company analysis, fund manager analysis, and economic analysis. The data can also be mapped with live market trends to identify meaningful patterns.
         </p>
       </div>
 
@@ -82,40 +74,14 @@ export default function Fundalysis() {
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
-        <h4 className="text-slide-up-animation-3">Features</h4>
+        <h4 className="text-slide-up-animation-3">What's new?</h4>
         <p className="overview-content text-slide-up-animation-3">
-          Developing websites is about so much more than marketing. It’s also
-          about aesthetics. For us, your site is the face of your company. Let’s
-          make it stunning
+        Fundalysis currently covers over 200 schemes across 21 fund houses on a monthly basis. Various reports, including individual scheme reports, are generated monthly and provided to subscribers for their own analysis. This type of analytics is not currently offered by any other platform.
         </p>
       </div>
 
       <div className="section-img-container mt-section ">
         <img src={SecImage} alt="Hero" className="hero-img" />
-      </div>
-
-      <div className="container end-wrapper mt-section end-section-common">
-        <div className="w-70">
-          <h2 className="fs-95 header-fs-tablet text-slide-up-animation-3">
-            In the end ✨
-          </h2>
-          <p className="fs-30 text-slide-up-animation-3">
-            The ❤️ of our investment strategy is centred on producing consistent
-            alpha and, more crucially, identifying companies that are not on the
-            radar of most analysts. To do so, we supplement our in-depth
-            industry expertise with rigorous primary research, cutting-edge
-            technology, and in-house unique tools to uncover insights and
-            provide value.
-          </p>
-          <p className="fs-30 end-secend text-slide-up-animation-3">
-            Our team includes some of the most prestigious research analysts,
-            fund managers / portfolio managers, and other professionals, making
-            it the most effective team of its kind in the Industry. In order to
-            uncover the best stocks for our users, our team carries out its own
-            independent and bottom-up analysis, which includes studying business
-            annual reports and analysing them in depth. 😊
-          </p>
-        </div>
       </div>
     </div>
   );
