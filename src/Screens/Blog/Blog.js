@@ -10,27 +10,27 @@ export default function Blog() {
     <div>
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
-          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
+          <p className="fs-30 text-slide-up-animation-2">Blog</p>
           <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  A unique platform to
+                  Fundamentally strong
                 </span>
               </div>
             </div>
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  track all darkhorsestock
+                  companies
                 </span>
               </div>
             </div>
-            <div className="text-slide-up-animation-wrapper-2">
+            {/* <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">ideas</span>
               </div>
-            </div>
+            </div> */}
           </h1>
         </div>
       </div>
@@ -63,16 +63,21 @@ export default function Blog() {
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
-        <h4 className="text-slide-up-animation-3">Features</h4>
-        <p className="overview-content text-slide-up-animation-3">
-          Darkhorsestock reports provide information about companies that may
-          have been overlooked by the majority of analysts or broking houses,
-          but possess great potential. Most of these companies may not be
-          well-known to the general public. Our aim is to offer our readers
-          access to valuable insights and knowledge to help them make informed
-          decisions.
-        </p>
+        <div>
+          <h4 className="text-slide-up-animation-3">7+ years</h4>
+          <h4 className="text-slide-up-animation-3">of</h4>
+          <h4 className="text-slide-up-animation-3">experience</h4>
+        </div>
+        <div>
+          <p className="overview-content text-slide-up-animation-3">
+            Darkhorsestock reports provide information about companies that may have been overlooked by the majority of analysts or broking houses, but possess great potential. Most of these companies may not be well-known to the general public. Our aim is to offer our readers access to valuable insights and knowledge to help them make informed decisions.
+            <br/>
+            <Button text="Philosophy" />
+          </p>
+        </div>
       </div>
+
+
 
       <div className="mt-section d-flex container dashbord-img flex-column-tablet">
         <div className="first-img img-slide-up-animation-1">
@@ -93,7 +98,11 @@ export default function Blog() {
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
-        <h4 className="text-slide-up-animation-3">Features</h4>
+      <div>
+          <h4 className="text-slide-up-animation-3">How much</h4>
+          <h4 className="text-slide-up-animation-3">returns</h4>
+          <h4 className="text-slide-up-animation-3">can one expect ?</h4>
+        </div>
         <p className="overview-content text-slide-up-animation-3">
           At Darkhorsestock, we do not provide any target prices for our
           suggested companies. However, we are proud to say that most of our

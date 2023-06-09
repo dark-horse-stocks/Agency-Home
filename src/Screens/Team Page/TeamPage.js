@@ -92,12 +92,8 @@ function TeamPage() {
       </div>
 
       <div className="container mt-section fs-30 text-slide-up-animation-3 common-txt-300">
-        Most of the analysts associated with darkhorsestocks have requested to
-        keep their identity discrete due to thier association with some of the
-        major investment banking funds 🏦 such as JP Morgan, HDFC AMC, Goldman
-        Sacs, Morgan Stanley , Mirae AMC, ICICI Securities, ITI Mutual Fund,
-        Kotak Securities etc
-        <p className="mt-15">Therefore please do not ask for the same.</p>
+        We understand that confidentiality is paramount in the world of finance, which is why we prioritize the privacy of our analysts. Our team is comprised of experts who may have associations with major investment firms such as JP Morgan, HDFC AMC, Goldman Sachs, Morgan Stanley, Mirae AMC, ICICI Securities, ITI Mutual Fund, Kotak Securities, and many more. However, due to the sensitive nature of their roles, our analysts have requested to remain anonymous to maintain confidentiality.We kindly ask our clients to respect their privacy by refraining from asking for their identities.
+        {/* <p className="mt-15">Therefore please do not ask for the same.</p> */}
       </div>
     </div>
   );

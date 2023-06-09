@@ -11,33 +11,33 @@ import Image4 from "../../Assets/Dashboard/Final/4.jpg";
 import Image5 from "../../Assets/Dashboard/Final/5.jpg";
 import Image6 from "../../Assets/Dashboard/Final/6.jpg";
 
-export default function Dashboard() {
+export default function pms() {
   const mobile = window.innerWidth < 800;
   return (
     <div>
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
-          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
+          <p className="fs-30 text-slide-up-animation-2">PMS</p>
           <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  A unique platform to
+                  Portfolio Management
                 </span>
               </div>
             </div>
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">
-                  track all darkhorsestock
+                  Service
                 </span>
               </div>
             </div>
-            <div className="text-slide-up-animation-wrapper-2">
+            {/* <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">ideas</span>
               </div>
-            </div>
+            </div> */}
           </h1>
         </div>
       </div>
@@ -47,11 +47,8 @@ export default function Dashboard() {
       <div className=" mt-section container common-mt-section mobile-screen">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
-            Our platform offers a powerful dashboard that enables you to track all the companies we suggest in real-time, accompanied by comprehensive statistics such as daily gainers and losers, overall gainers and losers, and more. By providing this level of detail, we aim to reflect our performance in real-time, a feature that is not offered by any other advisory services we have encountered thus far.
+            At our portfolio management service, we recognize that investment management can be a complex and overwhelming endeavor. That's why we offer a professional service to help you achieve your investment goals. We are developing a range of portfolio models that will assist you in reaching your investment objectives. Our approach to investment management is grounded in discipline, leveraging extensive research and active management to produce reliable returns over time.
           </p>
-        </div>
-        <div className="d-flex justify-content-center dashbord-btn">
-          <Button text="Go to Dashboard" />
         </div>
       </div>
 
@@ -60,9 +57,13 @@ export default function Dashboard() {
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common mobile-screen">
-        <h4 className="text-slide-up-animation-3 head-font">Features</h4>
+        <div>
+          <h4 className="text-slide-up-animation-3 head-font">What will</h4>
+          <h4 className="text-slide-up-animation-3 head-font">differentiate</h4>
+          <h4 className="text-slide-up-animation-3 head-font">darkhorsestocks?</h4>
+        </div>
         <p className="overview-content text-slide-up-animation-3">
-          Our platform provides a live data feed, along with historical charts of indices and all the darkhorsestocks we suggest, 52-week high-lows, distance from 52-week highs and lows, links to research reports, returns delivered by the companies, global indices, and more. With these features, we aim to provide our clients with a comprehensive understanding of the market and the companies we suggest.
+          At Darkhorsestocks, our aim is to achieve maximum risk-adjusted returns for our clients. Unlike other PMS providers who prioritize their own profits, we focus on minimizing expenses such as annual maintenance fees, brokerage fees, and performance fees while striving for consistent returns. Our dedication to maximizing returns while minimizing costs sets us apart from the competition.
         </p>
       </div>
 
@@ -89,15 +90,15 @@ export default function Dashboard() {
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
-          <h4 className="text-slide-up-animation-3">Why others </h4>
-          <h4 className="text-slide-up-animation-3">don't provide?</h4>
+          <h4 className="text-slide-up-animation-3">Our</h4>
+          <h4 className="text-slide-up-animation-3">Strategy</h4>
         </div>
         <p className="overview-content text-slide-up-animation-3">
           <span>
-          Developing and maintaining a dashboard of this nature, complete with a live data feed, can be extremely costly and requires a significant effort. Furthermore, it also reveals your true performance, which can be a risk if it's not particularly strong.
+            At Darkhorsestocks, our goal is to maximize risk-adjusted returns for our clients. However, one of the biggest challenges we face is that many of the companies we suggest are highly illiquid. This makes it difficult to track their performance over short-term periods, often taking a prolonged period to perform. Nevertheless, we are constantly working on creating portfolio models and analyzing various strategies to overcome this challenge.
           </span>
           <span className="mt-3">
-          In contrast, other advisory services may prioritize marketing and subscriptions above providing transparency. Offering such a detailed analytical platform could potentially hinder their underlying motive.
+            While we continue to experiment with various portfolio models, we are also working on resolving the liquidity issue. Once we are confident in our PMS model, we will open it for PMS. Until then, we will keep our clients informed and continue to provide valuable insights to help them make informed investment decisions.
           </span>
         </p>
       </div>
