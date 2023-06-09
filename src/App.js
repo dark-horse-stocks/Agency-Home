@@ -21,7 +21,8 @@ import FooterAnimation from "./Components/FooterAnimation/FooterAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomTable from "./Components/NewComponents/CustomTable";
-import pms from "./Screens/pms/pms";
+import PhilosophyPage from "./Screens/Philosophy Page/PhilosophyPage";
+import PMS from "./Screens/PMS/Blog";
 
 // Registering ScrollTrigger for smooth scrolling
 gsap.registerPlugin(ScrollTrigger);
@@ -100,6 +101,7 @@ function App(props) {
       img.innerHTML += imgAnimateTemplate1;
     });
 
+    window.addEventListener("load", () => {
       // Text animation 1
       gsap.fromTo(
         ".text-slide-up-animation-text-1",
@@ -180,14 +182,15 @@ function App(props) {
             }
           );
       });
+    });
 
-      // // Delegating click event
-      // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
-      // allMagneticAreaElem.forEach((elem) => {
-      //   elem.addEventListener("click", (e) => {
-      //     elem.nextElementSibling.click();
-      //   });
-      // });
+    // // Delegating click event
+    // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
+    // allMagneticAreaElem.forEach((elem) => {
+    //   elem.addEventListener("click", (e) => {
+    //     elem.nextElementSibling.click();
+    //   });
+    // });
   }, []);
 
   function parallaxIt(e, wrap) {
@@ -195,7 +198,7 @@ function App(props) {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const boundingRect = wrap.mArea.getBoundingClientRect();
     const halfDiff = Math.abs(boundingRect.width - boundingRect.height) / 2;
-    const relX = e.pageX - boundingRect.left - halfDiff ;
+    const relX = e.pageX - boundingRect.left - halfDiff;
     const relY = e.pageY - boundingRect.top;
 
     gsap.to(wrap.mContent, {
@@ -205,7 +208,6 @@ function App(props) {
       duration: 0.6,
     });
   }
-  
 
   function magneticButtonFunc() {
     // Magnetic button js
@@ -265,15 +267,16 @@ function App(props) {
       <div id="scroll-container">
         <div id="container-wrapper">
           <NavBar />
-          <div className="parent-container">
-          <Switch>
-            <Route exact={true} key={12} path="/team" component={TeamPage} />
-            {/* <Route
+          <div className="">
+            <Switch>
+              <Route exact={true} key={12} path="/team" component={TeamPage} />
+              {/* <Route
               exact={true}
               key={18}
               path="/list-page"
               component={ListPage}
             /> */}
+
             {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
             <Route
               exact={true}
@@ -313,11 +316,75 @@ function App(props) {
                 className="checkbox"
                 type="checkbox"
               />
-              <label htmlFor="checkbox" />
-            </span>
+              <Route
+                exact={true}
+                key={7}
+                path="/philosophy-Page"
+                component={PhilosophyPage}
+              />
+              <Route exact={true} key={8} path="/blog" component={Blog} />
+              <Route exact={true} key={8} path="/pms" component={PMS} />
+              <Route
+                exact={true}
+                key={9}
+                path="/fundalysis"
+                component={Fundalysis}
+              />
+              <Route exact={true} key={9} path="/faq" component={Faq} />
+              <Route exact={true} key={20} path="/" component={AgencyHome} />
+              <Route
+                exact={true}
+                key={28}
+                path="/table"
+                component={CustomTable}
+              />
+            </Switch>
           </div>
+
+          <div className="blog-mode">
+            <BlogFooter />
+            <div className="d-flex justify-content-between sub-footer">
+              <ul className="d-flex footer-list flex-column-tablet">
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/privacy-policy.php">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/terms-conditions.php">
+                    {" "}
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/disclaimer.php">
+                    {" "}
+                    Disclaimer
+                  </a>
+                </li>
+                <li className="line-animation-3">
+                  <a href="https://www.darkhorsestocks.in/refund-policy.php">
+                    {" "}
+                    Refund policy
+                  </a>
+                </li>
+              </ul>
+
+              <div className="toggle-container mt-section d-flex w-100">
+                <span>Night Mode</span>
+                <span className="toggle">
+                  <input
+                    checked={darkMode}
+                    onChange={() => setDarkMode((prevMode) => !prevMode)}
+                    id="checkbox"
+                    className="checkbox"
+                    type="checkbox"
+                  />
+                  <label htmlFor="checkbox" />
+                </span>
+              </div>
+            </div>
           </div>
-         
         </div>
       </div>
     </div>

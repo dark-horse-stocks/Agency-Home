@@ -25,6 +25,11 @@
 }
 
 @font-face {
+  font-family: AvertLight;
+  src: url("./Assets/Font/AvertaCY-Light.otf");
+}
+
+@font-face {
   font-family: Averta;
   src: url("./Assets/Font/Averta\ Light.otf");
 }
@@ -32,6 +37,10 @@
 @font-face {
   font-family: AvertaSemi;
   src: url("./Assets/Font/Averta\ Semibold.otf");
+}
+
+.test{
+  font-family: AvertLight;
 }
 
 .light-font {
@@ -122,8 +131,14 @@ body {
   height: 100vh;
 }
 
+.mb-1{
+  margin-bottom: 1rem;
+}
+
 .gray-color {
   color: var(--Colour-3);
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .fw-semibold {
@@ -346,6 +361,9 @@ ul li:hover ~ .cursor {
   .footer-whatsapp {
     margin-top: 30px;
   }
+  .footer-social{
+    margin-top: 20px;
+  }
 
   .fs-45 {
     font-size: 16px;
@@ -508,3 +526,23 @@ rect[Attributes] {
   margin-left: 1rem;
 }
 
+
+// }
+
+.light-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  // border-bottom: 1px solid #ababab !important;
+}
+
+.dark-mode .AccordionDetails, .dark-mode .AccordionSummary{
+  background-color: #000;
+  // border-bottom: 1px solid #ababab;
+  color: #fff;
+}
+
+.css-1iji0d4.Mui-expanded{
+  border: none !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+  border-bottom: 1px solid red !important;
+}

@@ -19,12 +19,12 @@ export default function NavBar() {
       <div className="icons d-flex align-items-center">
         {mobile ? (
           <>
-            <FaSearch />
-            <FaRegUser className="dark-ml-1"/>
+            {/* <FaSearch />
+            <FaRegUser className="dark-ml-1"/> */}
           </>
         ) : (
           <>
-            <div
+            {/* <div
               className="icon search-icon content__item Social-item nav-link-wrapper"
               data-cursor="-menu -icon-blend"
             >
@@ -48,8 +48,8 @@ export default function NavBar() {
                   </div>
                 </em>
               </Link>
-            </div>
-            <div
+            </div> */}
+            {/* <div
               className="icon user-icon content__item Social-item nav-link-wrapper dark-ml-1"
               data-cursor="-menu -icon-blend"
             >
@@ -73,7 +73,7 @@ export default function NavBar() {
                   </div>
                 </em>
               </Link>
-            </div>
+            </div> */}
             <div>
               <div
                 className="icon user-icon content__item Social-item nav-link-wrapper dark-ml-1"
@@ -81,10 +81,10 @@ export default function NavBar() {
                 data-cursor="-menu -icon-blend"
               >
                 <div className="nav-link">
-                  <em className="nav-link-hover-wrapper">
+                  <em className="nav-link-hover-wrapper  test">
                     <span
                       data-text="menu"
-                      className="nav-link-hover"
+                      className="nav-link-hover test"
                       data-movement="0.2"
                     >
                       Menu

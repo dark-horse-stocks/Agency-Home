@@ -1,8 +1,8 @@
 import React from "react";
-import HeroImg from "../../Assets/hereo.png";
 import Rectangle from "../../Assets/Rectangle 127.png";
 import Button from "../../Components/Button/Button";
 import SecImage from "../../Assets/image section.png";
+import logo from "../../Assets/logo.mp4"
 import "./style.scss";
 
 export default function Blog() {
@@ -35,12 +35,22 @@ export default function Blog() {
         </div>
       </div>
       <div className="hero-img-container">
-        <img src={HeroImg} alt="Hero" className="hero-img" />
+        <video width="100%" height="100%" autoPlay muted>
+          <source src={logo} type="video/mp4" />
+        </video>
       </div>
       <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
           <p className="fs-30 text-slide-up-animation-3">
-            Darkhorsestock reports feature a weekly presentation of a fundamentally strong company, accompanied by a detailed research report about the company. Our reports offer a comprehensive analysis of each company, concluding with a concise summary at the end of each report. We are committed to providing our readers with valuable insights and knowledge to help them make informed investment decisions. So far majority of the companies suggested have delivered a stellar performance post suggestion with almost 30% of companies up 100% since suggested.
+            Darkhorsestock reports feature a weekly presentation of a
+            fundamentally strong company, accompanied by a detailed research
+            report about the company. Our reports offer a comprehensive analysis
+            of each company, concluding with a concise summary at the end of
+            each report. We are committed to providing our readers with valuable
+            insights and knowledge to help them make informed investment
+            decisions. So far majority of the companies suggested have delivered
+            a stellar performance post suggestion with almost 30% of companies
+            up 100% since suggested.
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
             <Button text="Go to Dashboard" />
@@ -94,7 +104,13 @@ export default function Blog() {
           <h4 className="text-slide-up-animation-3">can one expect ?</h4>
         </div>
         <p className="overview-content text-slide-up-animation-3">
-          At Darkhorsestock, we do not provide any target prices for our suggested companies. However, we are proud to say that most of our past ideas have delivered a minimum of 30-35% returns over 2 years. We also acknowledge that some of our ideas may fail, and we are transparent in stating that we expect around 20-30% of our ideas to not meet expectations. For this reason, we do not suggest that our readers overexpose themselves to any particular company.
+          At Darkhorsestock, we do not provide any target prices for our
+          suggested companies. However, we are proud to say that most of our
+          past ideas have delivered a minimum of 30-35% returns over 2 years. We
+          also acknowledge that some of our ideas may fail, and we are
+          transparent in stating that we expect around 20-30% of our ideas to
+          not meet expectations. For this reason, we do not suggest that our
+          readers overexpose themselves to any particular company.
         </p>
       </div>
 

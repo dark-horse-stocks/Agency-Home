@@ -1,34 +1,18 @@
-
-
-
 .light-mode .btn-component {
   background-color: transparent;
- 
-  border: 0.25px solid #636363;
+  height: 52px;
+  border: 0.8px solid rgba(0, 0, 0, 0.1);
 
-  ;
   border-radius: 100px;
   color: #000;
   font-size: 20px;
   cursor: pointer;
-  font-weight: 600;
- 
+  font-weight: bold;
+  padding: 20px 30px;
+  height: 60px;
   margin-top: 20px;
   text-align: center;
-
-  margin-top: 20px;
-    text-align: center;
-    font-size: 22px;
-   
-    padding: 0px 22px;
-    font-family: 'Averta CY';
-    line-height: 0;
-    height: 56px;
-    @media only screen and (max-width: 992px) {
-      font-size: 17px;
-      height: 42px;
-      padding: 0 20px;
-     }
+  line-height: 0px;
 }
 
 .dark-mode .btn-component {
@@ -42,20 +26,9 @@
   font-size: 20px;
   text-align: center;
   line-height: 0px;
-  
+  padding: 20px 30px;
+  height: 60px;
   margin-top: 20px;
-  text-align: center;
-  font-size: 22px;
- 
-  padding: 0px 22px;
-  font-family: 'Averta CY';
-  line-height: 0;
-  height: 56px;
-  @media only screen and (max-width: 992px) {
-    font-size: 17px;
-    height: 42px;
-    padding: 0 20px;
-   }
 }
 
 /* btn-animate animation styles */
@@ -123,25 +96,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-  .btn-text {
-    display: inline-block;
-    font-size: 15px;
-    margin-top: -0.2rem;
+  .dark-mode .btn-component,
+  .light-mode .btn-component {
+    // width: 140px;
+    height: 49px;
   }
   .pricing-list {
     margin-left: 15px;
   }
-}
-
-.viewBtn{
-  
-  font-weight: 600 !important;
-  font-size: 30px;
-  min-width: 190px;
-  @media only screen and (max-width: 992px){
-font-size: 15px !important;
-min-width: 120px;
-  }
-
 }
