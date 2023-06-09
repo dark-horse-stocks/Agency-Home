@@ -238,6 +238,10 @@ li {
   font-family: Averta CY !important;
   text-transform: capitalize;
   font-size: 18px !important;
+
+  &.bold-font {
+    font-family: AvertaSemi !important;
+  }
 }
 
 .nav-link-hover::before,

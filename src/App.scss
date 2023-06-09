@@ -28,11 +28,13 @@ body {
 //   border-bottom: 1px solid #d21818;
 // }
 
-.light-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+.light-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root,
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
-.dark-mode  .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+.dark-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root,
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   border-bottom: 1px solid #fff !important;
 }
 
@@ -44,7 +46,6 @@ nav {
   /* width: 100%; */
   display: flex;
   background-color: steelblue;
-  
 }
 
 main {
@@ -123,13 +124,12 @@ input[type="checkbox"].checkbox + label {
   */
 }
 
-.footer-section{
+.footer-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 85%;
   margin: 50px auto 10px;
-
 }
 .sub-footer {
   width: 87vw;
@@ -139,37 +139,31 @@ input[type="checkbox"].checkbox + label {
   align-items: center;
   position: relative;
   z-index: 5;
- 
 }
-
 
 .sub-footer {
   ul {
     width: 50%;
     list-style: none;
     justify-content: space-between;
-
   }
-
 }
 .dark-mode a {
   color: #fff;
-
 }
 
 .light-mode a {
   color: #000;
-
 }
 .sub-footer ul li a {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-.links{
+.links {
   display: flex;
   width: 70%;
 }
-.links p{
+.links p {
   margin-left: 20px;
 }
 
@@ -215,7 +209,7 @@ input[type="checkbox"].checkbox + label {
 
 .dashbord-btn {
   margin-top: 30px;
-  margin:50px  auto 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 /* Animation fixing related styles */
@@ -558,8 +552,6 @@ body {
   display: inline-block;
 }
 
-
-
 /* Text animation 2 */
 .text-slide-up-animation-wrapper-2 {
   overflow: unset;
@@ -587,8 +579,4 @@ body {
   .footer-animation-slide-up-wrapper {
     overflow: unset !important;
   }
-}
-
-.text-slide-up-animation-3 {
-  color: #fff !important;
 }

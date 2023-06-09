@@ -5,7 +5,6 @@ import styled from "styled-components";
 import HamburgerBar from "./HamburgerBar";
 
 const MenuLabelWrapper = styled.div`
-
   width: 1.3rem;
   height: 2rem;
   z-index: 20;
@@ -14,8 +13,8 @@ const MenuLabelWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   position: fixed;
-  top: 60px ;
-  right:4% ;
+  top: 60px;
+  right: 4%;
 
   & > .magnetic-area {
     top: -1.5rem;
@@ -34,11 +33,9 @@ const MenuLabelWrapper = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    
   }
 
   @media screen and (max-width: 700px) {
-  
   }
 `;
 
@@ -131,7 +128,6 @@ const Navigation = styled.nav`
   background-color: #fff;
   overflow: hidden;
   padding: 3rem 12rem 3rem 8rem;
-  
 
   transform: translateX(0%);
 
@@ -170,7 +166,7 @@ const Navigation = styled.nav`
     flex: 1;
     display: flex;
     align-items: center;
-    margin-top : 120px;
+    margin-top: 120px;
   }
 
   @media screen and (min-width: 1400px) {
@@ -204,8 +200,8 @@ const List = styled.ul`
 
   & > .menu-color {
     margin-bottom: 1rem;
-    font-size:24px;
-    font-weight : 500;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 500px) {
@@ -272,7 +268,10 @@ function HamburgerMenu() {
       <MenuLabelWrapper
         data-cursor="-menu"
         id="menuLabelWrapper"
-        className={classNames('menuLabelWrapper', {'menuOpen': click, 'magnetic-wrap menuClose': !click, })}
+        className={classNames("menuLabelWrapper", {
+          menuOpen: click,
+          "magnetic-wrap menuClose": !click,
+        })}
         clicked={click}
         onClick={handleClick}
       >
@@ -290,7 +289,7 @@ function HamburgerMenu() {
       <NavBackdrop
         id="navBackdropSticky"
         clicked={click}
-        onClick={()=>handleClick(false)}
+        onClick={() => handleClick(false)}
       ></NavBackdrop>
 
       <Navigation
@@ -310,9 +309,7 @@ function HamburgerMenu() {
               >
                 <a href="https://api.whatsapp.com/send/?phone=917874999975">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Whatsapp"
@@ -331,9 +328,7 @@ function HamburgerMenu() {
               >
                 <a href="https://t.me/joinchat/Qe-V-o7Lpbk0Jcwd">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Telegram"
@@ -352,9 +347,7 @@ function HamburgerMenu() {
               >
                 <a href="https://www.linkedin.com/company/darkhorsestocks/">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Linkedin"
@@ -373,9 +366,7 @@ function HamburgerMenu() {
               >
                 <a href="https://www.facebook.com/DARKHORSESTOCKS">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Facebook"
@@ -394,9 +385,7 @@ function HamburgerMenu() {
               >
                 <a href="https://www.instagram.com/darkhorse_stocks/">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Instagram"
@@ -415,9 +404,7 @@ function HamburgerMenu() {
               >
                 <a href="https://twitter.com/DARKHORSESTOCKS">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Twitter"
@@ -436,9 +423,7 @@ function HamburgerMenu() {
               >
                 <a href="https://darkhorsestocks.substack.com/">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Email"
@@ -455,13 +440,9 @@ function HamburgerMenu() {
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque"
               >
-                <a 
-                  href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ"
-                  >
+                <a href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Youtube"
@@ -474,23 +455,20 @@ function HamburgerMenu() {
                   </span>
                 </a>
               </li>
-       
             </List>
             <List className="second-list">
               <div className="menu-color">Menu</div>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Home"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Home
@@ -500,18 +478,16 @@ function HamburgerMenu() {
                 </Link>
               </li>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/blog">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Blog"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Blog
@@ -521,18 +497,16 @@ function HamburgerMenu() {
                 </Link>
               </li>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/dashboard">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Dashboard"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Dashboard
@@ -542,18 +516,16 @@ function HamburgerMenu() {
                 </Link>
               </li>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/fundalysis">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Fundalysis"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Fundalysis
@@ -563,18 +535,16 @@ function HamburgerMenu() {
                 </Link>
               </li>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/pms">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Pms"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Pms
@@ -585,18 +555,16 @@ function HamburgerMenu() {
               </li>
 
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/team">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Team"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Team
@@ -606,18 +574,16 @@ function HamburgerMenu() {
                 </Link>
               </li>
               <li
-                className="content__item fw-bold magnetic-wrap menu-item nav-link-wrapper"
+                className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque"
               >
                 <Link to="/faq">
                   <div className="magnetic-area"></div>
-                  <span
-                    className="nav-link magnetic-content"
-                  >
+                  <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Faq's"
-                        className="nav-link-hover"
+                        className="nav-link-hover fw-bold bold-font"
                         data-movement="0.2"
                       >
                         Faq's

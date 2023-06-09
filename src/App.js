@@ -22,7 +22,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomTable from "./Components/NewComponents/CustomTable";
 import PhilosophyPage from "./Screens/Philosophy Page/PhilosophyPage";
-import PMS from "./Screens/PMS/Blog";
+import PMS from "./Screens/pms/Blog";
 
 // Registering ScrollTrigger for smooth scrolling
 gsap.registerPlugin(ScrollTrigger);
@@ -76,9 +76,9 @@ function App(props) {
       txt.innerHTML = "";
       splitWordsArr.forEach((word) => {
         const txtAnimateTemplate3 = `
-        <span class="text-slide-up-animation-wrapper-2">
-          <span class="text-slide-up-animation-content-2">
-            <span class="text-slide-up-animation-text-2">${word}</span>
+        <span class="text-slide-up-animation-wrapper-3">
+          <span class="text-slide-up-animation-content-3">
+            <span class="text-slide-up-animation-text-3">${word}</span>
           </span>
         </span>
         `;
@@ -277,52 +277,35 @@ function App(props) {
               component={ListPage}
             /> */}
 
-            {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
-            <Route
-              exact={true}
-              key={7}
-              path="/dashboard"
-              component={Dashboard}
-            />
-            <Route exact={true} key={8} path="/blog" component={Blog} />
-            <Route exact={true} key={8} path="/pms" component={pms} />
-            <Route
-              exact={true}
-              key={9}
-              path="/fundalysis"
-              component={Fundalysis}
-            />
-            <Route exact={true} key={9} path="/Faq" component={Faq} />
-            <Route exact={true} key={20} path="/" component={AgencyHome} />
-            <Route
-              exact={true}
-              key={28}
-              path="/table"
-              component={CustomTable}
-            />
-          </Switch>
-       
-          </div>
-          
-          <div className="blog-mode">
-          <BlogFooter />
-          <div className="toggle-container mt-section">
-            <span>Night Mode</span>
-            <span className="toggle">
-              <input
-                checked={darkMode}
-                onChange={() => setDarkMode((prevMode) => !prevMode)}
-                id="checkbox"
-                className="checkbox"
-                type="checkbox"
+              {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
+              <Route
+                exact={true}
+                key={7}
+                path="/dashboard"
+                component={Dashboard}
               />
+              <Route exact={true} key={8} path="/blog" component={Blog} />
+              <Route
+                exact={true}
+                key={9}
+                path="/fundalysis"
+                component={Fundalysis}
+              />
+              <Route exact={true} key={9} path="/Faq" component={Faq} />
+              <Route exact={true} key={20} path="/" component={AgencyHome} />
+              <Route
+                exact={true}
+                key={28}
+                path="/table"
+                component={CustomTable}
+              />
+
               <Route
                 exact={true}
                 key={7}
                 path="/philosophy-Page"
                 component={PhilosophyPage}
               />
-              <Route exact={true} key={8} path="/blog" component={Blog} />
               <Route exact={true} key={8} path="/pms" component={PMS} />
               <Route
                 exact={true}

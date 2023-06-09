@@ -39,7 +39,7 @@
   src: url("./Assets/Font/Averta\ Semibold.otf");
 }
 
-.test{
+.test {
   font-family: AvertLight;
 }
 
@@ -131,7 +131,7 @@ body {
   height: 100vh;
 }
 
-.mb-1{
+.mb-1 {
   margin-bottom: 1rem;
 }
 
@@ -179,7 +179,7 @@ body {
   margin-top: 2em;
 }
 
-.mt-3{
+.mt-3 {
   margin-top: 3em;
 }
 
@@ -194,8 +194,6 @@ body {
 .flex-column {
   flex-direction: column;
 }
-
-
 
 .flex-wrap {
   flex-wrap: wrap;
@@ -361,7 +359,7 @@ ul li:hover ~ .cursor {
   .footer-whatsapp {
     margin-top: 30px;
   }
-  .footer-social{
+  .footer-social {
     margin-top: 20px;
   }
 
@@ -379,19 +377,19 @@ ul li:hover ~ .cursor {
     font-size: 20px;
     line-height: 30px;
   }
-  
+
   .img-second {
-    display:flex !important;
+    display: flex !important;
     justify-content: flex-end;
-    width:100%;
-    margin: auto
+    width: 100%;
+    margin: auto;
   }
 
-  .head-font{
-    font-size:35px
+  .head-font {
+    font-size: 35px;
   }
 
-  .mobile-screen{
+  .mobile-screen {
     margin-top: 35px !important;
   }
 
@@ -410,9 +408,10 @@ ul li:hover ~ .cursor {
   .icon-mobile {
     font-size: 20px !important;
   }
-  .dark-mode .btn-component, .light-mode .btn-component{
-    padding: 23px 26px !important; 
-    font-size:15px !important;
+  .dark-mode .btn-component,
+  .light-mode .btn-component {
+    padding: 23px 26px !important;
+    font-size: 15px !important;
   }
 }
 
@@ -521,11 +520,9 @@ rect[Attributes] {
   width: 30%;
 }
 
-
-.dark-ml-1{
+.dark-ml-1 {
   margin-left: 1rem;
 }
-
 
 // }
 
@@ -533,16 +530,18 @@ rect[Attributes] {
   // border-bottom: 1px solid #ababab !important;
 }
 
-.dark-mode .AccordionDetails, .dark-mode .AccordionSummary{
+.dark-mode .AccordionDetails,
+.dark-mode .AccordionSummary {
   background-color: #000;
   // border-bottom: 1px solid #ababab;
   color: #fff;
 }
 
-.css-1iji0d4.Mui-expanded{
+.css-1iji0d4.Mui-expanded {
   border: none !important;
 }
 
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root, .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root,
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
   border-bottom: 1px solid red !important;
 }
