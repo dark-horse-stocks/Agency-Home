@@ -209,9 +209,9 @@ li {
     */
   }
 
-  .nav-link-wrapper:hover .nav-link-hover::before {
-    transform: skewY(7deg);
-  }
+  // .nav-link-wrapper:hover .nav-link-hover::before {
+  //   transform: skewY(7deg);
+  // }
 
   .nav-link-wrapper:hover .nav-link-hover::after {
     transform: skewY(0);
@@ -244,7 +244,7 @@ li {
   }
 }
 
-.nav-link-hover::before,
+// .nav-link-hover::before,
 .nav-link-hover::after {
   content: attr(data-text);
   display: block;
@@ -252,26 +252,26 @@ li {
   transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.light-mode .nav-link-hover::before,
+// .light-mode .nav-link-hover::before,
 .light-mode .nav-link-hover::after {
   color: black;
   font-weight: 100;
 }
 
-.dark-mode .nav-link-hover::before,
+// .dark-mode .nav-link-hover::before,
 .dark-mode .nav-link-hover::after {
   color: var(--Colour-1);
   font-weight: 100;
 }
-.dark-mode .nav-link-hover::before {
-  //  top: 5px;
-}
+// .dark-mode .nav-link-hover::before {
+//   //  top: 5px;
+// }
 
-.nav-link-hover::before {
-  top: 0;
-  transition: skewY(0);
-  transform-origin: right bottom;
-}
+// .nav-link-hover::before {
+//   top: 0;
+//   transform: skewY(0);
+//   transform-origin: right bottom;
+// }
 
 .nav-link-hover::after {
   top: 105%;
