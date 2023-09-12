@@ -309,7 +309,7 @@ li {
 .menu-color {
   color: rgba(0, 0, 0, 0.3);
   cursor: text;
-  font-family: Averta CY, sans-serif;
+  font-family: AvertaCY, sans-serif !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   margin-bottom: 45px !important;
@@ -417,7 +417,7 @@ li {
   transition: color 0.2s;
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: -20px;
@@ -478,8 +478,8 @@ li {
   -o-transition: top 0.3s 0.3s, -o-transform 0.3s;
   -moz-transition: top 0.3s 0.3s, transform 0.3s, -moz-transform 0.3s;
   transition: top 0.3s 0.3s, transform 0.3s;
-  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s,
-    -moz-transform 0.3s, -o-transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s,
+    -o-transform 0.3s;
 }
 .hamburger__bar.bottom {
   /*
@@ -508,8 +508,8 @@ li {
   -o-transition: top 0.3s 0.3s, -o-transform 0.3s;
   -moz-transition: top 0.3s 0.3s, transform 0.3s, -moz-transform 0.3s;
   transition: top 0.3s 0.3s, transform 0.3s;
-  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s,
-    -moz-transform 0.3s, -o-transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s,
+    -o-transform 0.3s;
 }
 .magnetic-area:hover + #stickyElem .hamburger__bar {
   background-color: var(--barBgColorHover);
@@ -1397,4 +1397,11 @@ li {
 
 .dark-ml-1 {
   margin-left: 1.2rem;
+}
+
+.contact-menu-link {
+  color: rgb(131, 130, 130) !important;
+}
+.menu-item-style {
+  font-weight: 400 !important;
 }
