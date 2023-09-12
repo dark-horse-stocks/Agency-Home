@@ -1,43 +1,42 @@
 import React from 'react';
-import Image1 from '../../Assets/Blog/Final/ex-1.png';
-import Image2 from '../../Assets/Blog/Final/ex-2.png';
-import Image3 from '../../Assets/Blog/Final/ex-3.png';
-import Image4 from '../../Assets/Blog/Final/ex-4.png';
+import HeroImg from '../../Assets/hereo.png';
+import SecImage from '../../Assets/PMS/PMS/1.png';
+import SecImage7 from '../../Assets/PMS/PMS/7.jpg';
+import image1 from '../../Assets/PMS/PMS/3.jpg';
+import image2 from '../../Assets/PMS/PMS/4.jpg';
+import image3 from '../../Assets/PMS/PMS/5.jpg';
+import image4 from '../../Assets/PMS/PMS/6.jpg';
+import Video from '../../Assets/PMS/PMS/2.mp4';
 import Button from '../../Components/Button/Button';
-import SecImage from '../../Assets/Blog/Final/2.jpg';
-import SecImage1 from '../../Assets/Blog/Final/4.jpg';
-import logo from '../../Assets/logo.mp4';
 import './style.scss';
 
-export default function Blog() {
+export default function PMS() {
   return (
     <div>
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
-          <p className="fs-30 text-slide-up-animation-2">Blog</p>
+          <p className="fs-30 text-slide-up-animation-2">Dashboard</p>
           <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
-                <span className="text-slide-up-animation-text-2">Fundamentally strong</span>
+                <span className="text-slide-up-animation-text-2">A unique platform to</span>
               </div>
             </div>
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
-                <span className="text-slide-up-animation-text-2">companies</span>
+                <span className="text-slide-up-animation-text-2">track all darkhorsestock</span>
               </div>
             </div>
-            {/* <div className="text-slide-up-animation-wrapper-2">
+            <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
                 <span className="text-slide-up-animation-text-2">ideas</span>
               </div>
-            </div> */}
+            </div>
           </h1>
         </div>
       </div>
       <div className="hero-img-container">
-        <video width="100%" height="100%" autoPlay muted>
-          <source src={logo} type="video/mp4" />
-        </video>
+        <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
       <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
@@ -52,65 +51,55 @@ export default function Blog() {
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
             <a
-              href="https://reports.darkhorsestocks.in/"
+              href="https://wa.me/message/FTZXPK5YSVCXO1"
               className="magnetic-wrap button-animation-1 "
               style={{ display: 'inline-block', cursor: 'pointer' }}>
               <div className="magnetic-area"></div>
               <button className="btn-component magnetic-content btn-animate btn">
                 <span className="btn-animate__filler"></span>
-                <span className="btn-animate__text">Go to reports</span>
+                <span className="btn-animate__text">Go to Dashboard</span>
               </button>
             </a>
           </div>
         </div>
       </div>
 
-      <div className="section-img-container mt-section ">
-        <img src={SecImage} alt="Hero" className="hero-img" />
+      <div className="hero-img-container">
+        <video width="100%" height="100%" autoPlay muted>
+          <source src={Video} type="video/mp4" />
+        </video>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
-        <div>
-          <h4 className="text-slide-up-animation-3">7+ years</h4>
-          <h4 className="text-slide-up-animation-3">of</h4>
-          <h4 className="text-slide-up-animation-3">experience</h4>
-        </div>
-        <div>
-          <p className="overview-content text-slide-up-animation-3">
-            Darkhorsestock reports provide information about companies that may have been overlooked
-            by the majority of analysts or broking houses, but possess great potential. Most of
-            these companies may not be well-known to the general public. Our aim is to offer our
-            readers access to valuable insights and knowledge to help them make informed decisions.
-            <br />
-            <Button text="Philosophy" />
-          </p>
-        </div>
+        <h4 className="text-slide-up-animation-3">Features</h4>
+        <p className="overview-content text-slide-up-animation-3">
+          Darkhorsestock reports provide information about companies that may have been overlooked
+          by the majority of analysts or broking houses, but possess great potential. Most of these
+          companies may not be well-known to the general public. Our aim is to offer our readers
+          access to valuable insights and knowledge to help them make informed decisions.
+        </p>
       </div>
 
       <div className="mt-section d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img img-slide-up-animation-1 blog-images-galeray">
-          <img src={Image1} alt="icon" />
+        <div className="first-img img-slide-up-animation-1">
+          <img src={image1} alt="icon" />
         </div>
-        <div className="secend-img img-slide-up-animation-1 blog-images-galeray">
-          <img src={Image2} alt="icon" />
+        <div className="secend-img img-slide-up-animation-1">
+          <img src={image2} alt="icon" />
         </div>
       </div>
 
       <div className=" d-flex container dashbord-img flex-column-tablet">
-        <div className="first-img container img-slide-up-animation-1 blog-images-galeray">
-          <img src={Image3} alt="icon" />
+        <div className="first-img container img-slide-up-animation-1">
+          <img src={image3} alt="icon" />
         </div>
-        <div className="secend-img container img-slide-up-animation-1 blog-images-galeray">
-          <img src={Image4} alt="icon" />
+        <div className="secend-img container img-slide-up-animation-1">
+          <img src={image4} alt="icon" />
         </div>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
-        <div>
-          <h4 className="text-slide-up-animation-3">How much</h4>
-          <h4 className="text-slide-up-animation-3">returns</h4>
-          <h4 className="text-slide-up-animation-3">can one expect ?</h4>
-        </div>
+        <h4 className="text-slide-up-animation-3">Features</h4>
         <p className="overview-content text-slide-up-animation-3">
           At Darkhorsestock, we do not provide any target prices for our suggested companies.
           However, we are proud to say that most of our past ideas have delivered a minimum of
@@ -122,7 +111,7 @@ export default function Blog() {
       </div>
 
       <div className="section-img-container mt-section ">
-        <img src={SecImage1} alt="Hero" className="hero-img" />
+        <img src={SecImage7} alt="Hero" className="hero-img" />
       </div>
 
       <div className="container end-wrapper mt-section end-section-common">

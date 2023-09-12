@@ -1,12 +1,12 @@
-@import "./variables/colors";
-@import "./variables/typography";
-@import "./variables/margin";
-@import "./mixins/flex";
-@import "./mixins/fonts";
-@import "./mixins/dimensions";
-@import "./mixins/typography-mixin";
-@import "./mixins/position";
-@import "./mixins/spacing";
+@import './variables/colors';
+@import './variables/typography';
+@import './variables/margin';
+@import './mixins/flex';
+@import './mixins/fonts';
+@import './mixins/dimensions';
+@import './mixins/typography-mixin';
+@import './mixins/position';
+@import './mixins/spacing';
 .txtcntr {
   text-align: center;
 }
@@ -36,57 +36,51 @@
 
 @font-face {
   font-family: AvertaBold;
-  src: url("../Assets//Font/Averta\ Bold.otf");
+  src: url('../Assets//Font/Averta\ Bold.otf');
 }
 
 @font-face {
   font-family: Averta;
-  src: url("../Assets/Font/Averta\ Light.otf");
+  src: url('../Assets/Font/Averta\ Light.otf');
 }
 
 @font-face {
   font-family: AvertaSemi;
-  src: url("../Assets/Font/Averta\ Semibold.otf");
+  src: url('../Assets/Font/Averta\ Semibold.otf');
 }
 
 @font-face {
-  font-family: "Averta CY";
-  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.woff2)
-      format("woff2"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.woff) format("woff"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.ttf) format("truetype");
+  font-family: 'Averta CY';
+  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.woff2) format('woff2'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.woff) format('woff'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Light.ttf) format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Averta CY";
-  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.woff2)
-      format("woff2"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.woff) format("woff"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.ttf)
-      format("truetype");
+  font-family: 'Averta CY';
+  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.woff2) format('woff2'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.woff) format('woff'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Regular.ttf) format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Averta CY";
-  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.woff2)
-      format("woff2"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.woff) format("woff"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.ttf)
-      format("truetype");
+  font-family: 'Averta CY';
+  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.woff2) format('woff2'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.woff) format('woff'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Semibold.ttf) format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Averta CY";
-  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.woff2)
-      format("woff2"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.woff) format("woff"),
-    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.ttf) format("truetype");
+  font-family: 'Averta CY';
+  src: url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.woff2) format('woff2'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.woff) format('woff'),
+    url(//cdn.cuberto.com/cb/fonts/averta/AvertaCY-Bold.ttf) format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -112,7 +106,7 @@
 
 body {
   margin: 0;
-  font-family: "Averta CY";
+  font-family: 'Averta CY';
 }
 
 .App {
@@ -168,7 +162,7 @@ body {
 .mt-header {
   @include mt-header;
   margin: 0;
-  font-family: "Averta CY", sans-serif;
+  font-family: 'Averta CY', sans-serif;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -210,7 +204,7 @@ body {
 
 .fs-95 {
   @include fs-95;
-  font-family: "Averta CY", sans-serif;
+  font-family: 'Averta CY', sans-serif;
 }
 
 .fs-55 {
@@ -219,18 +213,18 @@ body {
 
 .fs-30 {
   @include fs-30;
-  font-family: "Averta CY";
+  font-family: 'Averta CY';
   font-weight: 300;
 }
 
 .fs-45 {
   @include fs-45;
-  font-family: "Averta CY";
+  font-family: 'Averta CY';
 }
 
 .fs-75 {
   @include fs-75;
-  font-family: "Averta CY";
+  font-family: 'Averta CY';
 }
 
 .w-80 {
@@ -354,7 +348,7 @@ a {
 }
 
 .link::before {
-  content: "";
+  content: '';
 }
 
 .link--metis {
@@ -401,8 +395,8 @@ ul li:hover ~ .cursor {
 @media only screen and (min-width: 1000px) {
   .outlined {
     color: white;
-    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
-      1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000,
+      0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   }
 
   .dark-mode .stroked {
@@ -412,8 +406,8 @@ ul li:hover ~ .cursor {
 
   .dark-mode .outlined {
     color: #000;
-    text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
-      1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+    text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff,
+      0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
   }
 }
 
@@ -757,9 +751,8 @@ rect[Attributes] {
     }
     span.text-slide-up-animation-text-1 {
       color: #000;
-      text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff,
-        1px 0 0 #fff, 1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff,
-        -1px 0 0 #fff;
+      text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff,
+        0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
     }
   }
 }
@@ -779,7 +772,7 @@ rect[Attributes] {
         font-weight: 400 !important;
         position: relative;
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           bottom: 6px;
           width: 100%;
@@ -841,12 +834,23 @@ rect[Attributes] {
       }
     }
     &:nth-child(2) {
-      margin-left: 30px;
+      margin-left: 0px;
       @media only screen and (max-width: 1000px) {
         margin-left: 20px;
       }
       @media only screen and (max-width: 768px) {
         margin-left: 0px;
+      }
+    }
+  }
+  &.fundalysis-image {
+    & > div:nth-child(2) {
+      margin-left: 80px !important;
+      @media only screen and (max-width: 1000px) {
+        margin-left: 40px !important;
+      }
+      @media only screen and (max-width: 768px) {
+        margin-left: 0px !important;
       }
     }
   }
@@ -900,13 +904,13 @@ rect[Attributes] {
   }
   > p {
     &:nth-child(1) {
-      font-family: "Averta CY";
+      font-family: 'Averta CY';
       font-weight: 600;
       font-size: 30px;
     }
   }
   .overview-content {
-    font-family: "Averta CY";
+    font-family: 'Averta CY';
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
@@ -952,6 +956,6 @@ rect[Attributes] {
 
 .home-agency-page span.text-slide-up-animation-text-1 {
   color: white;
-  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000,
-    1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000,
+    0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
 }

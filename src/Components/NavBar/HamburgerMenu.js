@@ -294,7 +294,7 @@ function HamburgerMenu() {
         <div className="vertical-center">
           <div className="d-flex list-nav">
             <List className="first-list">
-              <div className="menu-color">Social</div>
+              <div className="menu-color menu-color-title">Social</div>
               <li
                 className="content__item Social-item magnetic-wrap nav-link-wrapper"
                 data-cursor="-opaque">
@@ -409,7 +409,7 @@ function HamburgerMenu() {
               </li>
             </List>
             <List className="second-list">
-              <div className="menu-color">Menu</div>
+              <div className="menu-color menu-color-title">Menu</div>
               <li
                 className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque">
@@ -417,7 +417,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Home" className="nav-link-hover fw-bold" data-movement="0.2">
+                      <span
+                        data-text="Home"
+                        className="nav-link-hover menu-list-item fw-bold"
+                        data-movement="0.2">
                         Home
                       </span>
                     </em>
@@ -431,7 +434,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Blog" className="nav-link-hover fw-bold" data-movement="0.2">
+                      <span
+                        data-text="Blog"
+                        className="nav-link-hover menu-list-item fw-bold"
+                        data-movement="0.2">
                         Blog
                       </span>
                     </em>
@@ -447,7 +453,7 @@ function HamburgerMenu() {
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Dashboard"
-                        className="nav-link-hover fw-bold"
+                        className="nav-link-hover menu-list-item fw-bold"
                         data-movement="0.2">
                         Dashboard
                       </span>
@@ -464,7 +470,7 @@ function HamburgerMenu() {
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Fundalysis"
-                        className="nav-link-hover fw-bold"
+                        className="nav-link-hover menu-list-item fw-bold"
                         data-movement="0.2">
                         Fundalysis
                       </span>
@@ -479,7 +485,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Pms" className="nav-link-hover fw-bold" data-movement="0.2">
+                      <span
+                        data-text="Pms"
+                        className="nav-link-hover menu-list-item fw-bold"
+                        data-movement="0.2">
                         Pms
                       </span>
                     </em>
@@ -494,7 +503,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Team" className="nav-link-hover fw-bold" data-movement="0.2">
+                      <span
+                        data-text="Team"
+                        className="nav-link-hover menu-list-item fw-bold"
+                        data-movement="0.2">
                         Team
                       </span>
                     </em>
@@ -510,7 +522,7 @@ function HamburgerMenu() {
                     <em className="nav-link-hover-wrapper">
                       <span
                         data-text="Faq's"
-                        className="nav-link-hover fw-bold"
+                        className="nav-link-hover menu-list-item fw-bold"
                         data-movement="0.2">
                         Faq's
                       </span>
@@ -522,7 +534,7 @@ function HamburgerMenu() {
           </div>
         </div>
         <div className="contact-menu">
-          <h6 className="menu-color contact-menu-text">Get in touch</h6>
+          <h6 className="menu-color contact-menu-text menu-color-title">Get in touch</h6>
           <a
             className="line-animation-1 contact-menu-link"
             href="https://darkhorsestocks.substack.com/">

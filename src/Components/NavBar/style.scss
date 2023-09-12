@@ -1243,7 +1243,7 @@ li {
 
 .second-list em {
   font-family: Averta CY;
-  font-weight: 400;
+  font-weight: 500 !important;
   .nav-link-hover {
     font-size: inherit !important;
   }
@@ -1404,4 +1404,11 @@ li {
 }
 .menu-item-style {
   font-weight: 400 !important;
+}
+
+.menu-list-item {
+  font-weight: 500 !important;
+}
+.menu-color-title {
+  font-weight: 500 !important;
 }
