@@ -41,7 +41,16 @@ export default function Faq() {
         <BlogAccordion right="I Darkhorsestocks Sebi registered?" card={<FaqCard />} />
       </div>
       <div className="mt-6 container d-flex justify-content-center">
-        <Button className={'viewBtn'} text="View all" />
+        <a
+          href="https://reports.darkhorsestocks.in/faq"
+          className="magnetic-wrap button-animation-1 viewBtn "
+          style={{ display: 'inline-block', cursor: 'pointer' }}>
+          <div className="magnetic-area"></div>
+          <button className="btn-component magnetic-content btn-animate btn">
+            <span className="btn-animate__filler"></span>
+            <span className="btn-animate__text">View all</span>
+          </button>
+        </a>
       </div>
     </div>
   );

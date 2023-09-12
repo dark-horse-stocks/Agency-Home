@@ -1,8 +1,8 @@
 import React from 'react';
 import HeroImg from '../../Assets/hereo.png';
-import Rectangle from '../../Assets/Rectangle 127.png';
-import Button from '../../Components/Button/Button';
-import SecImage from '../../Assets/image section.png';
+import SecImage1 from '../../Assets/Fundalysis/1.jpg';
+import SecImage2 from '../../Assets/Fundalysis/2.jpg';
+import SecImage7 from '../../Assets/Fundalysis/7.jpg';
 import Image1 from '../../Assets/Fundalysis/image-1.png';
 import Image2 from '../../Assets/Fundalysis/image-2.png';
 import Image3 from '../../Assets/Fundalysis/image-3.png';
@@ -29,7 +29,7 @@ export default function Fundalysis() {
         </div>
       </div>
       <div className="hero-img-container">
-        <img src={HeroImg} alt="Hero" className="hero-img" />
+        <img src={SecImage1} alt="Hero" className="hero-img" />
       </div>
       <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
@@ -55,7 +55,7 @@ export default function Fundalysis() {
       </div>
 
       <div className="section-img-container mt-section ">
-        <img src={SecImage} alt="Hero" className="hero-img" />
+        <img src={SecImage2} alt="Hero" className="hero-img" />
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
@@ -69,7 +69,7 @@ export default function Fundalysis() {
         </p>
       </div>
 
-      <div className="mt-section d-flex container dashbord-img flex-column-tablet">
+      <div className="mt-section fundalysis-image d-flex container dashbord-img flex-column-tablet">
         <div className="first-img img-slide-up-animation-1">
           <img src={Image1} alt="icon" />
         </div>
@@ -78,7 +78,7 @@ export default function Fundalysis() {
         </div>
       </div>
 
-      <div className=" d-flex container dashbord-img flex-column-tablet">
+      <div className=" d-flex container fundalysis-image dashbord-img flex-column-tablet">
         <div className="first-img container img-slide-up-animation-1">
           <img src={Image3} alt="icon" />
         </div>
@@ -98,7 +98,7 @@ export default function Fundalysis() {
       </div>
 
       <div className="section-img-container mt-section ">
-        <img src={SecImage} alt="Hero" className="hero-img" />
+        <img src={SecImage7} alt="Hero" className="hero-img" />
       </div>
     </div>
   );
