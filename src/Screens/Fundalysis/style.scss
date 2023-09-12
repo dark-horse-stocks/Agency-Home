@@ -1,5 +1,5 @@
-@import "../../styles/mixins/flex";
-@import "../../styles/mixins/dimensions";
+@import '../../styles/mixins/flex';
+@import '../../styles/mixins/dimensions';
 
 .dashbord-section {
   display: flex;
@@ -16,25 +16,23 @@
 
 .dashbord-img {
   @include justify-content-between;
- 
- @media only screen and (max-width: 900px) {
- 
-}
->div{
+
   @media only screen and (max-width: 900px) {
-   
-   }
+  }
+  > div {
+    @media only screen and (max-width: 900px) {
+    }
+  }
+  .first-img,
+  .secend-img {
+    background-color: #c4c4c4;
+  }
 }
-
-}
-.dashbord-img ~div.dashbord-img{
+.dashbord-img ~ div.dashbord-img {
   @media only screen and (max-width: 900px) {
-   // margin-top: 100px;
-   }
+    // margin-top: 100px;
+  }
 }
-
-
-
 
 .end-secend {
   margin-top: 50px;

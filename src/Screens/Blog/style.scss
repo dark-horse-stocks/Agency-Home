@@ -1,5 +1,5 @@
-@import "../../styles/mixins/flex";
-@import "../../styles/mixins/dimensions";
+@import '../../styles/mixins/flex';
+@import '../../styles/mixins/dimensions';
 
 .dashbord-section {
   display: flex;
@@ -17,18 +17,21 @@
 .dashbord-img {
   @include justify-content-between;
 }
-
-.dashbord-img .first-img img {
-  @include w-100;
+.first-img {
+  margin-bottom: 0 !important;
 }
 
+.dashbord-img .first-img img,
 .dashbord-img .secend-img img {
-  //margin-top: 100px;
-  width: 100%;
-  @media only screen and (max-width:768px) {
-    margin-top:0px;
- }
+  position: absolute !important;
+  margin-top: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
 }
+
 .end-secend {
   margin-top: 50px;
 }
@@ -39,5 +42,11 @@
 @media only screen and (max-width: 600px) {
   .dashbord-img .secend-img img {
     margin-top: 30px;
+  }
+}
+
+.feature-section {
+  h4 {
+    font-size: 26px !important;
   }
 }
