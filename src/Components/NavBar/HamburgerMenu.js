@@ -302,7 +302,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Whatsapp" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Whatsapp"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Whatsapp
                       </span>
                     </em>
@@ -316,7 +319,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Telegram" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Telegram"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Telegram
                       </span>
                     </em>
@@ -330,7 +336,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Linkedin" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Linkedin"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Linkedin
                       </span>
                     </em>
@@ -344,7 +353,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Facebook" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Facebook"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Facebook
                       </span>
                     </em>
@@ -358,7 +370,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Instagram" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Instagram"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Instagram
                       </span>
                     </em>
@@ -372,7 +387,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Twitter" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Twitter"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Twitter
                       </span>
                     </em>
@@ -386,7 +404,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Email" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Email"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Email
                       </span>
                     </em>
@@ -400,7 +421,10 @@ function HamburgerMenu() {
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
-                      <span data-text="Youtube" className="nav-link-hover" data-movement="0.2">
+                      <span
+                        data-text="Youtube"
+                        className="nav-link-hover social-menu-item"
+                        data-movement="0.2">
                         Youtube
                       </span>
                     </em>

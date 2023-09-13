@@ -71,7 +71,7 @@ h1 {
   align-items: center;
 }
 
-input[type="checkbox"].checkbox {
+input[type='checkbox'].checkbox {
   width: 40px;
   height: 10px;
   background: #555;
@@ -85,15 +85,15 @@ input[type="checkbox"].checkbox {
   outline: none;
 }
 
-input[type="checkbox"].checkbox:checked + label {
+input[type='checkbox'].checkbox:checked + label {
   left: 30px;
 }
 
-input[type="checkbox"].checkbox:focus-visible {
+input[type='checkbox'].checkbox:focus-visible {
   outline: solid 2px white;
 }
 
-input[type="checkbox"].checkbox + label {
+input[type='checkbox'].checkbox + label {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -324,7 +324,7 @@ body {
 .line-animation-2::before,
 .line-animation-3::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 105%;
   left: 0;
   width: 100%;
@@ -403,7 +403,7 @@ body {
 
 .line-animation-4::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   color: inherit;
@@ -429,7 +429,7 @@ body {
 }
 
 .line-animation-4-content::before {
-  content: "";
+  content: '';
 }
 
 .line-animation-4-hover {
