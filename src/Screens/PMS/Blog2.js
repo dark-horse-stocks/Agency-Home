@@ -57,7 +57,7 @@ export default function PMS() {
               <div className="magnetic-area"></div>
               <button className="btn-component magnetic-content btn-animate btn">
                 <span className="btn-animate__filler"></span>
-                <span className="btn-animate__text">Go to Dashboard</span>
+                <span className="btn-animate__text">Join Queue</span>
               </button>
             </a>
           </div>

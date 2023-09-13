@@ -41,7 +41,7 @@ export default function Fundalysis() {
           </p>
           <div className="d-flex justify-content-center dashbord-btn">
             <a
-              href="https://wa.me/message/FTZXPK5YSVCXO1"
+              href="https://mf.darkhorsestocks.in/home"
               className="magnetic-wrap button-animation-1 "
               style={{ display: 'inline-block', cursor: 'pointer' }}>
               <div className="magnetic-area"></div>

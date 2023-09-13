@@ -19,7 +19,7 @@ export default function AgencyHome() {
               className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <h1 className="fs-95">Blog</h1>
+              <h1 className="fs-95">Reports</h1>
             </a>
             <a
               href="https://dashboard.darkhorsestocks.in/"

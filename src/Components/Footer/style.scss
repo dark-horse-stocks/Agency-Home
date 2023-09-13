@@ -8,7 +8,9 @@
   z-index: 5;
 }
 .sub-footer ul {
-  width: 65%;
+  width: 50%;
+  gap: 20px;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
 }

@@ -98,7 +98,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
+      <div className="container dashboard d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
           <h4 className="text-slide-up-animation-3">Why others </h4>
           <h4 className="text-slide-up-animation-3">don't provide?</h4>
