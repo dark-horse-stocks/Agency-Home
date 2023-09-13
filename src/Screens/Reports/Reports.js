@@ -14,7 +14,7 @@ export default function Blog() {
     <div>
       <div className="mt-header common-mt-header">
         <div className="  container common-main-header">
-          <p className="fs-30 text-slide-up-animation-2">Blog</p>
+          <p className="fs-30 text-slide-up-animation-2">Reports</p>
           <h1 className="fs-75">
             <div className="text-slide-up-animation-wrapper-2">
               <div className="text-slide-up-animation-content-2">
@@ -69,7 +69,7 @@ export default function Blog() {
         <img src={SecImage} alt="Hero" className="hero-img" />
       </div>
 
-      <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
+      <div className="container reports d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
           <h4 className="text-slide-up-animation-3">7+ years</h4>
           <h4 className="text-slide-up-animation-3">of</h4>
@@ -81,9 +81,20 @@ export default function Blog() {
             by the majority of analysts or broking houses, but possess great potential. Most of
             these companies may not be well-known to the general public. Our aim is to offer our
             readers access to valuable insights and knowledge to help them make informed decisions.
-            <br />
-            <Button text="Philosophy" />
           </p>
+          <br />
+          <div className="overview-content">
+            <a
+              href="https://reports.darkhorsestocks.in/philosophy-Page"
+              className="magnetic-wrap button-animation-1 "
+              style={{ display: 'inline-block', cursor: 'pointer' }}>
+              <div className="magnetic-area"></div>
+              <button className="btn-component magnetic-content btn-animate btn">
+                <span className="btn-animate__filler"></span>
+                <span className="btn-animate__text">Philosophy</span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
 

@@ -454,15 +454,15 @@ function HamburgerMenu() {
               <li
                 className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque">
-                <Link to="/blog">
+                <Link to="/Reports">
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
                       <span
-                        data-text="Blog"
+                        data-text="Reports"
                         className="nav-link-hover menu-list-item fw-bold"
                         data-movement="0.2">
-                        Blog
+                        Reports
                       </span>
                     </em>
                   </span>

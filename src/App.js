@@ -7,7 +7,7 @@ import NewBlog from './Screens/New Blog Page/NewBlog';
 import Dashboard from './Screens/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
 import TeamPage from './Screens/Team Page/TeamPage';
-import Blog from './Screens/Blog/Blog';
+import Reports from './Screens/Reports/Reports';
 import Fundalysis from './Screens/Fundalysis/Fundalysis';
 import AgencyHome from './Screens/Agency Home/AgencyHome';
 import BlogFooter from './Components/Blog Footer/BlogFooter';
@@ -271,7 +271,7 @@ function App(props) {
 
               {/* <Route exact={true} key={6} path="/new-blog" component={NewBlog} /> */}
               <Route exact={true} key={7} path="/dashboard" component={Dashboard} />
-              <Route exact={true} key={8} path="/blog" component={Blog} />
+              <Route exact={true} key={8} path="/reports" component={Reports} />
               <Route exact={true} key={9} path="/fundalysis" component={Fundalysis} />
               <Route exact={true} key={9} path="/Faq" component={Faq} />
               <Route exact={true} key={20} path="/" component={AgencyHome} />
