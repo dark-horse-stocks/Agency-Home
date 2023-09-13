@@ -254,7 +254,7 @@ li {
 
 // .light-mode .nav-link-hover::before,
 .light-mode .nav-link-hover::after {
-  color: black;
+  color: black !important;
   font-weight: 100;
 }
 
@@ -1408,7 +1408,20 @@ li {
 
 .menu-list-item {
   font-weight: 500 !important;
+  .light-mode & {
+    color: black !important;
+  }
 }
+.light-mode .social-menu-item {
+  color: black !important;
+}
+
 .menu-color-title {
   font-weight: 500 !important;
+  .light-mode & {
+    color: black !important;
+  }
+}
+
+.dark-mode {
 }
