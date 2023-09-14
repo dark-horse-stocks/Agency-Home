@@ -580,3 +580,63 @@ body {
     overflow: unset !important;
   }
 }
+
+@media (max-width: 767.98px) {
+  .text-slide-up-animation-wrapper-2,
+  .text-slide-up-animation-content-2,
+  .text-slide-up-animation-wrapper-3,
+  .text-slide-up-animation-text-1,
+  .text-slide-up-animation-text-2,
+  .text-slide-up-animation-text-3,
+  .img-slide-up-animation-img-1,
+  .img-slide-up-animation-content-1,
+  .text-slide-up-animation-content-1,
+  .text-slide-up-animation-content-3,
+  .text-slide-up-animation-wrapper-1,
+  .text-slide-up-animation-wrapper-3,
+  .img-slide-up-animation-wrapper-1,
+  .text-slide-up-animation-2 {
+    opacity: 1 !important;
+    transition: transform 0.3s ease 0s !important;
+    transform: translate(0, 0) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .light-mode .text-slide-up-animation-wrapper-2,
+  .light-mode .text-slide-up-animation-content-2,
+  .light-mode .text-slide-up-animation-text-2,
+  .light-mode .text-slide-up-animation-wrapper-3,
+  .light-mode .text-slide-up-animation-text-1,
+  .light-mode .text-slide-up-animation-text-2,
+  .light-mode .text-slide-up-animation-text-3,
+  .light-mode .img-slide-up-animation-img-1,
+  .light-mode .text-slide-up-animation-content-1,
+  .light-mode .text-slide-up-animation-content-3,
+  .light-mode .img-slide-up-animation-content-1,
+  .light-mode .text-slide-up-animation-wrapper-1,
+  .light-mode .text-slide-up-animation-wrapper-2,
+  .light-mode .text-slide-up-animation-wrapper-3,
+  .light-mode .img-slide-up-animation-wrapper-1 {
+    color: #000 !important;
+    // transform: translate(0, 0);
+  }
+  .light-mode .text-slide-up-animation-wrapper-2 > *,
+  .light-mode .text-slide-up-animation-content-2 > *,
+  .light-mode .text-slide-up-animation-text-2 > *,
+  .light-mode .text-slide-up-animation-wrapper-3 > *,
+  .light-mode .text-slide-up-animation-text-1 > *,
+  .light-mode .text-slide-up-animation-text-2 > *,
+  .light-mode .text-slide-up-animation-text-3 > *,
+  .light-mode .img-slide-up-animation-img-1 > *,
+  .light-mode .text-slide-up-animation-content-1 > *,
+  .light-mode .text-slide-up-animation-content-3 > *,
+  .light-mode .img-slide-up-animation-content-1 > *,
+  .light-mode .text-slide-up-animation-wrapper-1 > *,
+  .light-mode .text-slide-up-animation-wrapper-2 > *,
+  .light-mode .text-slide-up-animation-wrapper-3 > *,
+  .light-mode .img-slide-up-animation-wrapper- > * {
+    color: #000 !important;
+    // transform: translate(0, 0);
+  }
+}
