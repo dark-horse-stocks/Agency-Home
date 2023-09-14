@@ -101,56 +101,54 @@ function App(props) {
       img.innerHTML += imgAnimateTemplate1;
     });
 
-    window.addEventListener('load', () => {
-      // Text animation 1
-      gsap.fromTo(
-        '.text-slide-up-animation-text-1',
-        { skewY: '20deg' },
-        {
-          translateY: '-200%',
-          skewY: '0deg',
-          duration: 1,
-          ease: 'power4.out',
-          stagger: 0.2,
-        },
-      );
+    // Text animation 1
+    gsap.fromTo(
+      '.text-slide-up-animation-text-1',
+      { skewY: '20deg' },
+      {
+        translateY: '-200%',
+        skewY: '0deg',
+        duration: 1,
+        ease: 'power4.out',
+        stagger: 0.2,
+      },
+    );
 
-      // Text animation 2
-      gsap.fromTo(
-        '.text-slide-up-animation-text-2',
-        { rotateX: '-40deg', opacity: 0 },
-        {
-          translateY: '-130%',
-          rotateX: '0deg',
-          opacity: 1,
-          duration: 1.5,
-          ease: 'power4.out',
-          stagger: 0.1,
-        },
-      );
+    // Text animation 2
+    gsap.fromTo(
+      '.text-slide-up-animation-text-2',
+      { rotateX: '-40deg', opacity: 0 },
+      {
+        translateY: '-130%',
+        rotateX: '0deg',
+        opacity: 1,
+        duration: 1.5,
+        ease: 'power4.out',
+        stagger: 0.1,
+      },
+    );
 
-      // Text animation 3
-      gsap.utils.toArray('.text-slide-up-animation-3').forEach((elem) => {
-        const txtAnimate3Wrappers = elem.querySelectorAll('.text-slide-up-animation-wrapper-3');
-        const txtAnimate3Text = elem.querySelectorAll('.text-slide-up-animation-text-3');
-        const tl = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: txtAnimate3Wrappers,
-              start: 'top 100%',
-            },
-          })
-          .fromTo(
-            txtAnimate3Text,
-            { skewY: '2deg' },
-            {
-              translateY: '-200%',
-              skewY: '0deg',
-              duration: 1.5,
-              ease: 'power4.out',
-            },
-          );
-      });
+    // Text animation 3
+    gsap.utils.toArray('.text-slide-up-animation-3').forEach((elem) => {
+      const txtAnimate3Wrappers = elem.querySelectorAll('.text-slide-up-animation-wrapper-3');
+      const txtAnimate3Text = elem.querySelectorAll('.text-slide-up-animation-text-3');
+      const tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: txtAnimate3Wrappers,
+            start: 'top 100%',
+          },
+        })
+        .fromTo(
+          txtAnimate3Text,
+          { skewY: '2deg' },
+          {
+            translateY: '-200%',
+            skewY: '0deg',
+            duration: 1.5,
+            ease: 'power4.out',
+          },
+        );
 
       // Image animation 1
       gsap.utils.toArray('.img-slide-up-animation-1').forEach((elem) => {
@@ -175,14 +173,6 @@ function App(props) {
           );
       });
     });
-
-    // // Delegating click event
-    // const allMagneticAreaElem = document.querySelectorAll(".magnetic-area");
-    // allMagneticAreaElem.forEach((elem) => {
-    //   elem.addEventListener("click", (e) => {
-    //     elem.nextElementSibling.click();
-    //   });
-    // });
   }, []);
 
   function parallaxIt(e, wrap) {
