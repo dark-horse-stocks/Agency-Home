@@ -254,14 +254,14 @@ li {
 
 // .light-mode .nav-link-hover::before,
 .light-mode .nav-link-hover::after {
-  color: black !important;
-  font-weight: 100;
+  color: #000 !important;
+  font-weight: 500;
 }
 
 // .dark-mode .nav-link-hover::before,
 .dark-mode .nav-link-hover::after {
-  color: var(--Colour-1);
-  font-weight: 100;
+  color: #fff;
+  font-weight: 500 !important;
 }
 // .dark-mode .nav-link-hover::before {
 //   //  top: 5px;
@@ -307,7 +307,7 @@ li {
 }
 
 .menu-color {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0);
   cursor: text;
   font-family: AvertaCY, sans-serif !important;
   font-size: 16px !important;
