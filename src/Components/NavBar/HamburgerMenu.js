@@ -540,7 +540,7 @@ function HamburgerMenu() {
               <li
                 className="content__item magnetic-wrap menu-item nav-link-wrapper"
                 data-cursor="-opaque">
-                <Link to="/faq">
+                <a href="https://company.darkhorsestocks.in/faq" target="_blank">
                   <div className="magnetic-area"></div>
                   <span className="nav-link magnetic-content">
                     <em className="nav-link-hover-wrapper">
@@ -552,7 +552,7 @@ function HamburgerMenu() {
                       </span>
                     </em>
                   </span>
-                </Link>
+                </a>
               </li>
             </List>
           </div>
