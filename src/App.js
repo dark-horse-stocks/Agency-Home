@@ -22,7 +22,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import CustomTable from './Components/NewComponents/CustomTable';
 import PhilosophyPage from './Screens/Philosophy Page/PhilosophyPage';
-import PMS from './Screens/pms/Blog';
+import PMS from './Screens/PMS/Blog';
 
 // Registering ScrollTrigger for smooth scrolling
 gsap.registerPlugin(ScrollTrigger);
