@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
 function App(props) {
   const [darkMode, setDarkMode] = useState(getInitialMode());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     localStorage.setItem('dark', JSON.stringify(darkMode));
   }, [darkMode]);
 
