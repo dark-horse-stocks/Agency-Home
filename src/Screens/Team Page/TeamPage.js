@@ -1,6 +1,10 @@
-import React from "react";
-import Teamimg from "../../Assets/Group 290.png";
-import "./style.scss";
+import React from 'react';
+import Teamimg from '../../Assets/Group 290.png';
+import './style.scss';
+
+import TextAnimation2 from '../../Components/Animation/TextAnimation2';
+import TextAnimation3 from '../../Components/Animation/TextAnimation3';
+import ImageAnimation from '../../Components/Animation/ImageAnimation';
 
 function TeamPage() {
   const team = [
@@ -38,24 +42,13 @@ function TeamPage() {
   return (
     <div className="container">
       <div className=" mt-header common-mt-header">
-        {" "}
-        <p className=" fs-30 text-slide-up-animation-2">Team </p>{" "}
+        <TextAnimation2 Tag="p" className="fs-30">
+          Team
+        </TextAnimation2>
         <div className=" common-main-header">
           <h1 className="container fs-75 ">
-            <div className="text-slide-up-animation-wrapper-2">
-              <div className="text-slide-up-animation-content-2">
-                <span className="text-slide-up-animation-text-2">
-                  Best in industry team of analysts
-                </span>
-              </div>
-            </div>
-            <div className="text-slide-up-animation-wrapper-2">
-              <div className="text-slide-up-animation-content-2">
-                <span className="text-slide-up-animation-text-2">
-                  of analysts
-                </span>
-              </div>
-            </div>
+            <TextAnimation2>Best in industry team of analysts</TextAnimation2>
+            <TextAnimation2>of analysts</TextAnimation2>
           </h1>
         </div>
       </div>
@@ -64,15 +57,13 @@ function TeamPage() {
         {team.map((item) => (
           <div
             className="d-flex justify-content-center team-img img-slide-up-animation-1"
-            style={{ margin: "80px 0" }}
-          >
+            style={{ margin: '80px 0' }}>
             <svg
               width="134"
               height="134"
               viewBox="0 0 134 134"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M20.3398 28.1149V67C20.3398 85.8633 51.8661 121.429 66.9998 121.438C82.1334 121.446 113.66 85.8633 113.66 67V28.1149C113.66 13.132 83.1412 12.5625 66.9998 12.5625C50.8583 12.5625 20.3398 13.132 20.3398 28.1149V28.1149Z"
                 stroke="black"
@@ -91,10 +82,15 @@ function TeamPage() {
         ))}
       </div>
 
-      <div className="container mt-section fs-30 text-slide-up-animation-3 common-txt-300">
-        We understand that confidentiality is paramount in the world of finance, which is why we prioritize the privacy of our analysts. Our team is comprised of experts who may have associations with major investment firms such as JP Morgan, HDFC AMC, Goldman Sachs, Morgan Stanley, Mirae AMC, ICICI Securities, ITI Mutual Fund, Kotak Securities, and many more. However, due to the sensitive nature of their roles, our analysts have requested to remain anonymous to maintain confidentiality.We kindly ask our clients to respect their privacy by refraining from asking for their identities.
-        {/* <p className="mt-15">Therefore please do not ask for the same.</p> */}
-      </div>
+      <TextAnimation3 Tag="p" className="container mt-section fs-30 common-txt-300">
+        We understand that confidentiality is paramount in the world of finance, which is why we
+        prioritize the privacy of our analysts. Our team is comprised of experts who may have
+        associations with major investment firms such as JP Morgan, HDFC AMC, Goldman Sachs, Morgan
+        Stanley, Mirae AMC, ICICI Securities, ITI Mutual Fund, Kotak Securities, and many more.
+        However, due to the sensitive nature of their roles, our analysts have requested to remain
+        anonymous to maintain confidentiality.We kindly ask our clients to respect their privacy by
+        refraining from asking for their identities.
+      </TextAnimation3>
     </div>
   );
 }
