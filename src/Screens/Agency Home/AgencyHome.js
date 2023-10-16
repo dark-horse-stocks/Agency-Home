@@ -2,6 +2,11 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './style.scss';
 
+import TextAnimation1 from '../../Components/Animation/TextAnimation1';
+import TextAnimation2 from '../../Components/Animation/TextAnimation2';
+import TextAnimation3 from '../../Components/Animation/TextAnimation3';
+import ImageAnimation from '../../Components/Animation/ImageAnimation';
+
 // Importing a dummy image and a dummy video for hover animation
 import hoverVideo from '../../Assets/Blog/Final/LogoAnimationDarkhorsestocks.mp4';
 
@@ -11,38 +16,39 @@ export default function AgencyHome() {
     <div className="home-page-container">
       <div className="container ">
         <div className="mt-header home-agency-page">
-          <p className="fs-30 mb-3 text-slide-up-animation-3">Always trying to be contrarian</p>
-
+          <TextAnimation3 className="fs-30 mb-3" Tag="p">
+            Always trying to be contrarian
+          </TextAnimation3>
           <div className="d-flex flex-column-tablet " data-cursor="-media-blend">
             <a
               href="/"
-              className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
+              className="outlined fs-95 home-border mb-30 ml-4"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <h1 className="fs-95">Reports</h1>
+              <TextAnimation2 Tag="h1">Reports</TextAnimation2>
             </a>
             <a
               href="https://dashboard.darkhorsestocks.in/"
-              className="text-slide-up-animation-1 outlined fs-95 home-border mb-30 ml-4"
+              className="outlined fs-95 home-border mb-30 ml-4"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <h1 className="fs-95">Dashboard</h1>
+              <TextAnimation2 Tag="h1">Dashboard</TextAnimation2>
             </a>
             <a
               href="https://fundalysis.darkhorsestocks.in/"
-              className="text-slide-up-animation-1 outlined  fs-95 home-border"
+              className="outlined  fs-95 home-border"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <h1 className="mb-30 fs-95">Fundalysis</h1>
+              <TextAnimation2 Tag="h1">Fundalysis</TextAnimation2>
             </a>
           </div>
         </div>
         <div className=" mt-section">
-          <p className=" fs-30 home-text text-slide-up-animation-3">
+          <TextAnimation3 Tag="p" className="fs-30 home-text">
             Darkhorsestocks, is committed to delivering amazing returns by identifying fundamentally
             strong companies. We conduct extensive research and analysis to carefully select and
             present amazing companies which we feel are worth exploring.
-          </p>
+          </TextAnimation3>
         </div>
       </div>
     </div>

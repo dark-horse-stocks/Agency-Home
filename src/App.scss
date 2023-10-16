@@ -580,3 +580,50 @@ body {
     overflow: unset !important;
   }
 }
+
+.dashbord-image {
+  display: grid;
+  gap: 280px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 180px;
+  margin-bottom: 180px;
+
+  @media (max-width: 1440px) {
+    gap: 200px;
+  }
+  @media (max-width: 1024px) {
+    gap: 140px;
+  }
+  @media (max-width: 768px) {
+    gap: 80px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 425px) {
+    gap: 40px;
+  }
+  &__item {
+    span {
+      width: 100%;
+      height: 100%;
+    }
+    & .img-slide-up-animation-img-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__first-img {
+    & img {
+      transform: translateY(-100px);
+      @media (max-width: 768px) {
+        transform: translateY(0);
+      }
+    }
+  }
+}
