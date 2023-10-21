@@ -25,21 +25,21 @@ export default function AgencyHome() {
               className="outlined fs-95 home-border mb-30 ml-4"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <TextAnimation2 Tag="h1">Reports</TextAnimation2>
+              <TextAnimation2 Tag="h4">Reports</TextAnimation2>
             </a>
             <a
               href="https://dashboard.darkhorsestocks.in/"
               className="outlined fs-95 home-border mb-30 ml-4"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <TextAnimation2 Tag="h1">Dashboard</TextAnimation2>
+              <TextAnimation2 Tag="h4">Dashboard</TextAnimation2>
             </a>
             <a
               href="https://fundalysis.darkhorsestocks.in/"
               className="outlined  fs-95 home-border"
               style={{ borderBottom: 'none' }}
               data-cursor-video={hoverVideo}>
-              <TextAnimation2 Tag="h1">Fundalysis</TextAnimation2>
+              <TextAnimation2 Tag="h4">Fundalysis</TextAnimation2>
             </a>
           </div>
         </div>
