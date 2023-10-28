@@ -56,7 +56,7 @@ function TeamPage() {
       <div className="container d-flex flex-wrap team-container-svg">
         {team.map((item) => (
           <div
-            className="d-flex justify-content-center team-img img-slide-up-animation-1"
+            className="d-flex teme-page-item-body justify-content-center team-img img-slide-up-animation-1"
             style={{ margin: '80px 0' }}>
             <svg
               width="134"
