@@ -7,41 +7,46 @@
     width: 45%;
   }
 }
-.team-container-svg{
+.team-container-svg {
   @media only screen and (max-width: 600px) {
     justify-content: space-between;
-    }
-  .anonumusttxt{
-    font-family: "Averta CY";
+  }
+  .anonumusttxt {
+    font-family: 'Averta CY';
     font-weight: 300;
     font-size: 24px;
   }
-  svg{
-
+  svg {
     @media only screen and (max-width: 600px) {
-     width: 75px;
-     height: 75px;
-     display: block;
-     margin-left: auto;;
-     margin-right: auto;
+      width: 75px;
+      height: 75px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-  .anonumusttxt{
+  .anonumusttxt {
     @media only screen and (max-width: 600px) {
-     font-size: 18px;
-     }
+      font-size: 18px;
+    }
   }
-  >div{
+  > div {
     @media only screen and (max-width: 600px) {
       margin: 50px 0 !important;
-      }
+    }
   }
 }
 
-.dark-mode{
-  svg{
-    >path{
+.dark-mode {
+  svg {
+    > path {
       stroke: #fff;
     }
   }
+}
+.teme-page-item-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
