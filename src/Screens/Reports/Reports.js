@@ -1,17 +1,17 @@
-import React from 'react';
-import Image1 from '../../Assets/Blog/Final/ex-1.png';
-import Image2 from '../../Assets/Blog/Final/ex-2.png';
-import Image3 from '../../Assets/Blog/Final/ex-3.png';
-import Image4 from '../../Assets/Blog/Final/ex-4.png';
-import Button from '../../Components/Button/Button';
-import SecImage from '../../Assets/Blog/Final/2.jpg';
-import SecImage1 from '../../Assets/Blog/Final/4.jpg';
-import logo from '../../Assets/logo.mp4';
-import './style.scss';
+import React from "react";
+import Image1 from "../../Assets/Blog/Final/ex-1.png";
+import Image2 from "../../Assets/Blog/Final/ex-2.png";
+import Image3 from "../../Assets/Blog/Final/ex-3.png";
+import Image4 from "../../Assets/Blog/Final/ex-4.png";
+import Button from "../../Components/Button/Button";
+import SecImage from "../../Assets/Blog/Final/2.jpg";
+import SecImage1 from "../../Assets/Blog/Final/4.jpg";
+import logo from "../../Assets/logo.mp4";
+import "./style.scss";
 
-import TextAnimation2 from '../../Components/Animation/TextAnimation2';
-import TextAnimation3 from '../../Components/Animation/TextAnimation3';
-import ImageAnimation from '../../Components/Animation/ImageAnimation';
+import TextAnimation2 from "../../Components/Animation/TextAnimation2";
+import TextAnimation3 from "../../Components/Animation/TextAnimation3";
+import ImageAnimation from "../../Components/Animation/ImageAnimation";
 
 export default function Blog() {
   return (
@@ -35,19 +35,22 @@ export default function Blog() {
       <div className=" mt-section container common-mt-section">
         <div className="w-70 dashbord-section">
           <TextAnimation3 Tag="p" className="fs-30">
-            Darkhorsestock reports feature a weekly presentation of a fundamentally strong company,
-            accompanied by a detailed research report about the company. Our reports offer a
-            comprehensive analysis of each company, concluding with a concise summary at the end of
-            each report. We are committed to providing our readers with valuable insights and
-            knowledge to help them make informed investment decisions. So far majority of the
-            companies suggested have delivered a stellar performance post suggestion with almost 30%
-            of companies up 100% since suggested.
+            Darkhorsestock reports feature a weekly presentation of a
+            fundamentally strong company, accompanied by a detailed research
+            report about the company. Our reports offer a comprehensive analysis
+            of each company, concluding with a concise summary at the end of
+            each report. We are committed to providing our readers with valuable
+            insights and knowledge to help them make informed investment
+            decisions. So far majority of the companies suggested have delivered
+            a stellar performance post suggestion with almost 30% of companies
+            up 100% since suggested.
           </TextAnimation3>
           <div className="d-flex justify-content-center dashbord-btn">
             <a
-              href="https://reports.darkhorsestocks.in/"
+              href="https://www.darkhorsestocks.in/"
               className="magnetic-wrap button-animation-1 "
-              style={{ display: 'inline-block', cursor: 'pointer' }}>
+              style={{ display: "inline-block", cursor: "pointer" }}
+            >
               <div className="magnetic-area"></div>
               <button className="btn-component magnetic-content btn-animate btn">
                 <span className="btn-animate__filler"></span>
@@ -70,17 +73,20 @@ export default function Blog() {
         </div>
         <div>
           <TextAnimation3 Tag="p" className="overview-content">
-            Darkhorsestock reports provide information about companies that may have been overlooked
-            by the majority of analysts or broking houses, but possess great potential. Most of
-            these companies may not be well-known to the general public. Our aim is to offer our
-            readers access to valuable insights and knowledge to help them make informed decisions.
+            Darkhorsestock reports provide information about companies that may
+            have been overlooked by the majority of analysts or broking houses,
+            but possess great potential. Most of these companies may not be
+            well-known to the general public. Our aim is to offer our readers
+            access to valuable insights and knowledge to help them make informed
+            decisions.
           </TextAnimation3>
           <br />
           <div className="overview-content">
             <a
-              href="https://reports.darkhorsestocks.in/philosophy-Page"
+              href="https://www.darkhorsestocks.in/philosophy-Page"
               className="magnetic-wrap button-animation-1 "
-              style={{ display: 'inline-block', cursor: 'pointer' }}>
+              style={{ display: "inline-block", cursor: "pointer" }}
+            >
               <div className="magnetic-area"></div>
               <button className="btn-component magnetic-content btn-animate btn">
                 <span className="btn-animate__filler"></span>
@@ -113,13 +119,15 @@ export default function Blog() {
           <TextAnimation3 Tag="h4">can one expect ?</TextAnimation3>
         </div>
         <TextAnimation3 Tag="p" className="overview-content">
-          Darkhorsestock reports feature a weekly presentation of a fundamentally strong company,
-          accompanied by a detailed research report about the company. Our reports offer a
-          comprehensive analysis of each company, concluding with a concise summary at the end of
-          each report. We are committed to providing our readers with valuable insights and
-          knowledge to help them make informed investment decisions. So far majority of the
-          companies suggested have delivered a stellar performance post suggestion with almost 30%
-          of companies up 100% since suggested.
+          Darkhorsestock reports feature a weekly presentation of a
+          fundamentally strong company, accompanied by a detailed research
+          report about the company. Our reports offer a comprehensive analysis
+          of each company, concluding with a concise summary at the end of each
+          report. We are committed to providing our readers with valuable
+          insights and knowledge to help them make informed investment
+          decisions. So far majority of the companies suggested have delivered a
+          stellar performance post suggestion with almost 30% of companies up
+          100% since suggested.
         </TextAnimation3>
       </div>
 
@@ -133,17 +141,19 @@ export default function Blog() {
             In the end ✨
           </TextAnimation3>
           <TextAnimation3 Tag="p" className="fs-30">
-            The ❤️ of our investment strategy is centred on producing consistent alpha and, more
-            crucially, identifying companies that are not on the radar of most analysts. To do so,
-            we supplement our in-depth industry expertise with rigorous primary research,
-            cutting-edge technology, and in-house unique tools to uncover insights and provide
-            value.
+            The ❤️ of our investment strategy is centred on producing consistent
+            alpha and, more crucially, identifying companies that are not on the
+            radar of most analysts. To do so, we supplement our in-depth
+            industry expertise with rigorous primary research, cutting-edge
+            technology, and in-house unique tools to uncover insights and
+            provide value.
           </TextAnimation3>
           <TextAnimation3 Tag="p" className="fs-30 end-secend">
-            Our team includes some of the most prestigious research analysts, fund managers /
-            portfolio managers, and other professionals, making it the most effective team of its
-            kind in the Industry. In order to uncover the best stocks for our users, our team
-            carries out its own independent and bottom-up analysis, which includes studying business
+            Our team includes some of the most prestigious research analysts,
+            fund managers / portfolio managers, and other professionals, making
+            it the most effective team of its kind in the Industry. In order to
+            uncover the best stocks for our users, our team carries out its own
+            independent and bottom-up analysis, which includes studying business
             annual reports and analysing them in depth. 😊
           </TextAnimation3>
         </div>

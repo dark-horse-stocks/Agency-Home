@@ -4,11 +4,11 @@ WORKDIR /app
 
 COPY package.json  ./
 
-RUN npm install --legacy-peer-deps
+RUN yarn --legacy-peer-deps
 
 COPY . .
 
-RUN npm run build
+RUN yarn build
 
 
 FROM nginx:alpine
