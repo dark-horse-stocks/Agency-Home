@@ -1,41 +1,118 @@
-import React from 'react';
-import Teamimg from '../../Assets/Group 290.png';
-import './style.scss';
+import React from "react";
+import Teamimg from "../../Assets/Group 290.png";
+import "./style.scss";
 
-import TextAnimation2 from '../../Components/Animation/TextAnimation2';
-import TextAnimation3 from '../../Components/Animation/TextAnimation3';
-import ImageAnimation from '../../Components/Animation/ImageAnimation';
+import TextAnimation2 from "../../Components/Animation/TextAnimation2";
+import TextAnimation3 from "../../Components/Animation/TextAnimation3";
 
 function TeamPage() {
   const team = [
     {
+      memberName: "Founder, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Analyst, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Analyst, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Analyst, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Analyst, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Analyst, Anonymous",
       img: Teamimg,
     },
     {
+      memberName: "Nizar, Developer",
       img: Teamimg,
     },
     {
+      memberName: "Mahdi, Developer",
       img: Teamimg,
     },
     {
+      memberName: "Shripal, Developer",
       img: Teamimg,
     },
     {
+      memberName: "Krunal, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Samkit, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Nesreena, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Palak, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Ekaksher, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Shiven, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Dhruv, Developer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Bhavik, Analyst",
+      img: Teamimg,
+    },
+    {
+      memberName: "Niyam, Analyst",
+      img: Teamimg,
+    },
+    {
+      memberName: "Shreeya, Designer",
+      img: Teamimg,
+    },
+    {
+      memberName: "Thao, UI/UX",
+      img: Teamimg,
+    },
+    {
+      memberName: "Trusha, Legal",
+      img: Teamimg,
+    },
+    {
+      memberName: "Aayush, Trademark",
+      img: Teamimg,
+    },
+    {
+      memberName: "Jayraj, Operations",
+      img: Teamimg,
+    },
+    {
+      memberName: "Harsh, Sound",
+      img: Teamimg,
+    },
+    {
+      memberName: "Anurag, Video",
+      img: Teamimg,
+    },
+    {
+      memberName: "Tanvi, Marketing",
+      img: Teamimg,
+    },
+    {
+      memberName: "Yash, Assistanc",
       img: Teamimg,
     },
   ];
@@ -57,13 +134,15 @@ function TeamPage() {
         {team.map((item) => (
           <div
             className="d-flex teme-page-item-body justify-content-center team-img img-slide-up-animation-1"
-            style={{ margin: '80px 0' }}>
+            style={{ margin: "80px 0" }}
+          >
             <svg
               width="134"
               height="134"
               viewBox="0 0 134 134"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M20.3398 28.1149V67C20.3398 85.8633 51.8661 121.429 66.9998 121.438C82.1334 121.446 113.66 85.8633 113.66 67V28.1149C113.66 13.132 83.1412 12.5625 66.9998 12.5625C50.8583 12.5625 20.3398 13.132 20.3398 28.1149V28.1149Z"
                 stroke="black"
@@ -77,20 +156,28 @@ function TeamPage() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p className="txtcntr anonumusttxt">Anonymous</p>
+            <p className="txtcntr anonumusttxt">{item.memberName}</p>
           </div>
         ))}
       </div>
 
-      <TextAnimation3 Tag="p" className="container mt-section fs-30 common-txt-300">
-        We understand that confidentiality is paramount in the world of finance, which is why we
-        prioritize the privacy of our analysts. Our team is comprised of experts who may have
-        associations with major investment firms such as JP Morgan, HDFC AMC, Goldman Sachs, Morgan
-        Stanley, Mirae AMC, ICICI Securities, ITI Mutual Fund, Kotak Securities, and many more.
-        However, due to the sensitive nature of their roles, our analysts have requested to remain
-        anonymous to maintain confidentiality.We kindly ask our clients to respect their privacy by
-        refraining from asking for their identities.
-      </TextAnimation3>
+      <div style={{ width: "100%" }} className="feature-section-common">
+        <TextAnimation3
+          Tag="p"
+          className="container mt-section w-100 overview-content"
+        >
+          We recognise the critical importance of confidentiality in the
+          financial sector. As such, we are committed to safeguarding the
+          privacy of our analysts. Our skilled team includes professionals
+          possibly linked to leading investment firms, including JP Morgan, HDFC
+          AMC, Goldman Sachs, Morgan Stanley, Mirae AMC, ICICI Securities, ITI
+          Mutual Fund, Kotak Securities, among others. Given the delicate nature
+          of their positions, our analysts prefer anonymity to preserve the
+          integrity of their work and ensure confidentiality. We respectfully
+          request our clients to honor this confidentiality and refrain from
+          inquiring about the identities of our analysts.
+        </TextAnimation3>
+      </div>
     </div>
   );
 }

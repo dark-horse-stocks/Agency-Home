@@ -21,22 +21,22 @@
 
 @font-face {
   font-family: AvertaBold;
-  src: url('./Assets/Font/Averta\ Bold.otf');
+  src: url("./Assets/Font/Averta\ Bold.otf");
 }
 
 @font-face {
   font-family: AvertLight;
-  src: url('./Assets/Font/AvertaCY-Light.otf');
+  src: url("./Assets/Font/AvertaCY-Light.otf");
 }
 
 @font-face {
   font-family: Averta;
-  src: url('./Assets/Font/Averta\ Light.otf');
+  src: url("./Assets/Font/Averta\ Light.otf");
 }
 
 @font-face {
   font-family: AvertaSemi;
-  src: url('./Assets/Font/Averta\ Semibold.otf');
+  src: url("./Assets/Font/Averta\ Semibold.otf");
 }
 
 .test {
@@ -262,7 +262,7 @@ a {
 }
 
 .link::before {
-  content: '';
+  content: "";
 }
 
 .link--metis {
@@ -304,25 +304,6 @@ ul li:hover ~ .cursor {
 .slick-slider {
   width: 90%;
   margin: 0 auto;
-}
-
-@media only screen and (min-width: 1000px) {
-  .outlined {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000,
-      0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .dark-mode .stroked {
-    color: white;
-    -webkit-text-stroke: 1px black;
-  }
-
-  .dark-mode .outlined {
-    color: #000;
-    text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff,
-      0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -528,10 +509,6 @@ rect[Attributes] {
 }
 
 // }
-
-.light-mode .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
-  // border-bottom: 1px solid #ababab !important;
-}
 
 .dark-mode .AccordionDetails,
 .dark-mode .AccordionSummary {
