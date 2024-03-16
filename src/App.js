@@ -172,31 +172,7 @@ function App(props) {
           <div className="blog-mode">
             <BlogFooter />
             <div className="d-flex justify-content-between sub-footer">
-              <ul className="d-flex footer-list flex-column-tablet">
-                <li className="line-animation-3">
-                  <a href="https://www.darkhorsestocks.in/privacy-policy.php">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li className="line-animation-3">
-                  <a href="https://www.darkhorsestocks.in/terms-conditions.php">
-                    {" "}
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li className="line-animation-3">
-                  <a href="https://www.darkhorsestocks.in/disclaimer.php">
-                    {" "}
-                    Disclaimer
-                  </a>
-                </li>
-                <li className="line-animation-3">
-                  <a href="https://www.darkhorsestocks.in/refund-policy.php">
-                    {" "}
-                    Refund policy
-                  </a>
-                </li>
-              </ul>
+              <Footer></Footer>
 
               <div className="toggle-container mt-section d-flex w-100">
                 <span>Night Mode</span>
