@@ -28,7 +28,7 @@ export default function Footer() {
       </Grid>
       <Grid item zIndex={5}>
         <a
-          href="https://old.darkhorsestocks.in/privacy-policy.php"
+          href="https://darkhorsestocks.com/archives/10704"
           target="_blank"
           rel="noopener noreferrer"
           className="line-animation-3"
@@ -39,7 +39,7 @@ export default function Footer() {
       </Grid>
       <Grid item zIndex={5}>
         <a
-          href="https://old.darkhorsestocks.in/terms-conditions.php"
+          href="https://darkhorsestocks.com/archives/10707"
           target="_blank"
           rel="noopener noreferrer"
           className="line-animation-3"
@@ -50,7 +50,7 @@ export default function Footer() {
       </Grid>
       <Grid item zIndex={5}>
         <a
-          href="https://old.darkhorsestocks.in/refund-policy.php"
+          href="https://darkhorsestocks.com/archives/10708"
           target="_blank"
           rel="noopener noreferrer"
           className="line-animation-3"
@@ -61,7 +61,7 @@ export default function Footer() {
       </Grid>
       <Grid item zIndex={5}>
         <a
-          href="https://old.darkhorsestocks.in/disclaimer.php"
+          href="https://darkhorsestocks.com/archives/10709"
           target="_blank"
           rel="noopener noreferrer"
           className="line-animation-3"
@@ -72,7 +72,7 @@ export default function Footer() {
       </Grid>
       <Grid item zIndex={5}>
         <a
-          href="https://www.darkhorsestocks.in/mutual-fund/about-us"
+          href="https://company.darkhorsestocks.in/team"
           target="_blank"
           rel="noopener noreferrer"
           className="line-animation-3"
