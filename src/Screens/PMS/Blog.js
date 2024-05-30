@@ -58,7 +58,7 @@ export default function PMS() {
           justifyContent={"center"}
         >
           <Grid item display={"flex"} justifyContent={"start"} xs={12} lg={3}>
-            <TextAnimation3 Tag="h4">
+            <TextAnimation3 className="title-padding" Tag="h4">
               What will differentiate darkhorsestocks?
             </TextAnimation3>
           </Grid>
@@ -98,7 +98,9 @@ export default function PMS() {
           justifyContent={"center"}
         >
           <Grid item display={"flex"} justifyContent={"start"} xs={12} lg={3}>
-            <TextAnimation3 Tag="h4">Our Strategy</TextAnimation3>
+            <TextAnimation3 className="title-padding" Tag="h4">
+              Our Strategy
+            </TextAnimation3>
           </Grid>
           <Grid item display={"flex"} justifyContent={"start"} xs={12} lg={9}>
             <Grid
@@ -141,7 +143,7 @@ export default function PMS() {
       <div className="container end-wrapper mt-section end-section-common">
         <div className="d-flex justify-content-center dashbord-btn">
           <a
-            href="https://wa.me/917874999975?text=Subscribe"
+            href="https://linktr.ee/darkhorsestocks"
             className="magnetic-wrap button-animation-1 "
             style={{ display: "inline-block", cursor: "pointer" }}
           >

@@ -67,9 +67,15 @@ export default function Blog() {
 
       <div className="container reports d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
-          <TextAnimation3 Tag="h4">7+ years</TextAnimation3>
-          <TextAnimation3 Tag="h4">of</TextAnimation3>
-          <TextAnimation3 Tag="h4">experience</TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            7+ years
+          </TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            of
+          </TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            experience
+          </TextAnimation3>
         </div>
         <div>
           <TextAnimation3 Tag="p" className="overview-content">
@@ -99,24 +105,30 @@ export default function Blog() {
 
       <div className="mt-section d-flex container dashbord-image flex-column-tablet">
         <ImageAnimation className="dashbord-image__item dashbord-image__first-img">
-          <img src={Image1} alt="Image" />
+          <img src={Image1} alt="Image1" />
         </ImageAnimation>
         <ImageAnimation className="dashbord-image__item dashbord-image__secend-img">
-          <img src={Image2} alt="Image" />
+          <img src={Image2} alt="Image2" />
         </ImageAnimation>
         <ImageAnimation className="dashbord-image__item dashbord-image__first-img">
-          <img src={Image3} alt="Image" />
+          <img src={Image3} alt="Image3" />
         </ImageAnimation>
         <ImageAnimation className="dashbord-image__item dashbord-image__second-img">
-          <img src={Image4} alt="Image" />
+          <img src={Image4} alt="Image4" />
         </ImageAnimation>
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
-          <TextAnimation3 Tag="h4">How much</TextAnimation3>
-          <TextAnimation3 Tag="h4">returns</TextAnimation3>
-          <TextAnimation3 Tag="h4">can one expect ?</TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            How much
+          </TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            returns
+          </TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            can one expect ?
+          </TextAnimation3>
         </div>
         <TextAnimation3 Tag="p" className="overview-content">
           Darkhorsestock reports feature a weekly presentation of a

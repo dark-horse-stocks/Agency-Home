@@ -169,10 +169,10 @@ function TeamPage() {
           We recognise the critical importance of confidentiality in the
           financial sector. As such, we are committed to safeguarding the
           privacy of our analysts. Our skilled team includes professionals
-          possibly linked to leading investment firms, including JP Morgan, HDFC
-          AMC, Goldman Sachs, Morgan Stanley, Mirae AMC, ICICI Securities, ITI
-          Mutual Fund, Kotak Securities, among others. Given the delicate nature
-          of their positions, our analysts prefer anonymity to preserve the
+          linked to leading investment firms, including JP Morgan, HDFC AMC,
+          Goldman Sachs, Morgan Stanley, Mirae AMC, ICICI Securities, ITI Mutual
+          Fund, Kotak Securities, among others. Given the delicate nature of
+          their positions, most of our analysts prefer anonymity to preserve the
           integrity of their work and ensure confidentiality. We respectfully
           request our clients to honor this confidentiality and refrain from
           inquiring about the identities of our analysts.

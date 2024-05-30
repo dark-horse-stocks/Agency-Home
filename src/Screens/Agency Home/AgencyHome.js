@@ -47,10 +47,11 @@ export default function AgencyHome() {
         </div>
         <div className=" mt-section">
           <TextAnimation3 Tag="p" className="fs-30 home-text">
-            Darkhorsestocks, is committed to delivering amazing returns by
-            identifying fundamentally strong companies. We conduct extensive
-            research and analysis to carefully select and present amazing
-            companies which we feel are worth exploring.
+            Darkhorsestocks, is a data driven analytics platform that helps in
+            finding amazing fundamentally strong companies. Besides that we also
+            conduct extensive research and analysis to carefully select and
+            present amazing small and microcap companies every week which we
+            feel are worth exploring.
           </TextAnimation3>
         </div>
       </div>

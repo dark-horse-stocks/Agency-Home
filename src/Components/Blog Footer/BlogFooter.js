@@ -21,21 +21,20 @@ export default function BlogFooter() {
               - 837 Garden street, Milpitas California 95035, USA
             </p>
             <p className="gray-color mt-1">
-             
               - Parimit Apartment, Besides parth hospital, Anjali cross road,
               Bhatta 380007, Ahmedabad, India.
             </p>
-
           </ul>
-
           <div className="footer-social">
             <ul className="blog-footer-list d-flex justify-content-between">
-
-            <li
+              <li
                 className="nav-link-wrapper facebookIcon"
                 data-cursor="-menu -icon-blend"
               >
-                <a href="https://www.facebook.com/DARKHORSESTOCKS" className="nav-link magnetic-content">
+                <a
+                  href="https://www.facebook.com/DARKHORSESTOCKS"
+                  className="nav-link magnetic-content"
+                >
                   <em className="nav-link-hover-wrapper">
                     <span
                       data-text="Facebook"
@@ -86,7 +85,10 @@ export default function BlogFooter() {
                 className="nav-link-wrapper linkedinIcon"
                 data-cursor="-menu -icon-blend"
               >
-                <a href="https://www.linkedin.com/company/darkhorsestocks/" className="nav-link magnetic-content">
+                <a
+                  href="https://www.linkedin.com/company/darkhorsestocks/"
+                  className="nav-link magnetic-content"
+                >
                   <em className="nav-link-hover-wrapper">
                     <span
                       data-text="Linkedin"
@@ -106,18 +108,22 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-             
-              
             </ul>
 
             <ul className="blog-footer-list d-flex justify-content-between">
-            <li className="nav-link-wrapper instagramicon" data-cursor="-menu -icon-blend">
+              <li
+                className="nav-link-wrapper instagramicon"
+                data-cursor="-menu -icon-blend"
+              >
                 <a
                   href="https://www.instagram.com/darkhorse_stocks/"
                   className="nav-link magnetic-content"
                 >
                   <em className="nav-link-hover-wrapper">
-                    <span data-text="Instagram" className="nav-link-hover spaniconfooter">
+                    <span
+                      data-text="Instagram"
+                      className="nav-link-hover spaniconfooter"
+                    >
                       Instagram
                     </span>
                     <div className="magnetic-wrap mobile-icon-menu">
@@ -132,14 +138,20 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-             
-              <li className="nav-link-wrapper youtubeicon" data-cursor="-menu -icon-blend">
+
+              <li
+                className="nav-link-wrapper youtubeicon"
+                data-cursor="-menu -icon-blend"
+              >
                 <a
                   href="https://www.youtube.com/channel/UCKNoxoowoWYZEfKk8zIe8vQ"
                   className="nav-link magnetic-content"
                 >
                   <em className="nav-link-hover-wrapper">
-                    <span data-text="Youtube" className="nav-link-hover spaniconfooter">
+                    <span
+                      data-text="Youtube"
+                      className="nav-link-hover spaniconfooter"
+                    >
                       Youtube
                     </span>
                     <div className="magnetic-wrap mobile-icon-menu">
@@ -154,10 +166,19 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-              <li className="nav-link-wrapper whatsAppIcon" data-cursor = "-menu -icon-blend">
-                <a href="https://api.whatsapp.com/send/?phone=917874999975" className="nav-link magnetic-content">
+              <li
+                className="nav-link-wrapper whatsAppIcon"
+                data-cursor="-menu -icon-blend"
+              >
+                <a
+                  href="https://api.whatsapp.com/send/?phone=917874999975"
+                  className="nav-link magnetic-content"
+                >
                   <em className="nav-link-hover-wrapper">
-                    <span data-text="WhatsApp" className="nav-link-hover spaniconfooter">
+                    <span
+                      data-text="WhatsApp"
+                      className="nav-link-hover spaniconfooter"
+                    >
                       WhatsApp
                     </span>
                     <div className="magnetic-wrap mobile-icon-menu">
@@ -172,18 +193,21 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-             
-           
-            
             </ul>
             <ul className="blog-footer-list d-flex justify-content-between">
-            <li className="nav-link-wrapper substackicon" data-cursor="-menu -icon-blend">
+              <li
+                className="nav-link-wrapper substackicon"
+                data-cursor="-menu -icon-blend"
+              >
                 <a
                   href="https://darkhorsestocks.substack.com/"
                   className="nav-link magnetic-content"
                 >
                   <em className="nav-link-hover-wrapper">
-                    <span data-text="Substack" className="nav-link-hover spaniconfooter">
+                    <span
+                      data-text="Substack"
+                      className="nav-link-hover spaniconfooter"
+                    >
                       Substack
                     </span>
                     <div className="magnetic-wrap mobile-icon-menu">
@@ -198,11 +222,20 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-              <li className="nav-link-wrapper telegramIcon" data-cursor = "-menu -icon-blend">
-                <a href="https://t.me/joinchat/Qe-V-o7Lpbk0Jcwd" className="nav-link magnetic-content">
+              <li
+                className="nav-link-wrapper telegramIcon"
+                data-cursor="-menu -icon-blend"
+              >
+                <a
+                  href="https://t.me/joinchat/Qe-V-o7Lpbk0Jcwd"
+                  className="nav-link magnetic-content"
+                >
                   <em className="nav-link-hover-wrapper">
-                    <span data-text="Telegram" className="nav-link-hover spaniconfooter">
-                    Telegram
+                    <span
+                      data-text="Telegram"
+                      className="nav-link-hover spaniconfooter"
+                    >
+                      Telegram
                     </span>
                     <div className="magnetic-wrap mobile-icon-menu">
                       <div className="magnetic-area"></div>
@@ -216,9 +249,32 @@ export default function BlogFooter() {
                   </em>
                 </a>
               </li>
-          
-            
-              <li className="nav-link-wrapper qouraicon" data-cursor="-menu -icon-blend">
+              <li
+                className="nav-link-wrapper link-tr"
+                data-cursor="-menu -icon-blend"
+              >
+                <a
+                  href="https://linktr.ee/darkhorsestocks"
+                  className="nav-link magnetic-content"
+                >
+                  <em className="nav-link-hover-wrapper">
+                    <span
+                      data-text="Linktree"
+                      className="nav-link-hover spaniconfooter"
+                    >
+                      Linktree
+                    </span>
+                    <div className="magnetic-wrap mobile-icon-menu">
+                      <div className="magnetic-area"></div>
+                      <span
+                        className="nav-link-hover magnetic-content"
+                        data-movement="0.2"
+                      >
+                        <span className="spanSvg"></span>
+                      </span>
+                    </div>
+                  </em>
+                </a>
               </li>
             </ul>
           </div>

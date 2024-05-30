@@ -61,7 +61,7 @@ export default function Dashboard() {
       </div>
 
       <div className="container d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common mobile-screen">
-        <TextAnimation3 Tag="h4" className="head-font">
+        <TextAnimation3 className="title-padding head-font" Tag="h4">
           Features
         </TextAnimation3>
         <TextAnimation3 Tag="p" className="overview-content">
@@ -95,8 +95,12 @@ export default function Dashboard() {
 
       <div className="container dashboard d-flex mt-section fs-30 feature-section flex-column-tablet feature-section-common">
         <div>
-          <TextAnimation3 Tag="h4">Why others</TextAnimation3>
-          <TextAnimation3 Tag="h4">don't provide?</TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            Why others
+          </TextAnimation3>
+          <TextAnimation3 className="title-padding" Tag="h4">
+            don't provide?
+          </TextAnimation3>
         </div>
         <TextAnimation3 Tag="p" className="overview-content mt-3">
           Developing and maintaining a dashboard of this nature, complete with a

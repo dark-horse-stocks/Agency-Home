@@ -643,11 +643,10 @@ rect[Attributes] {
   }
   padding: 150px 0;
   .fs-30.text-slide-up-animation-3 {
+    overflow-y: visible;
     @media only screen and (min-width: 1921px) {
       line-height: normal;
-      color: #fff;
     }
-
     font-weight: 300;
     line-height: 32px;
   }
@@ -656,14 +655,13 @@ rect[Attributes] {
     .fs-30.text-slide-up-animation-3 {
       font-weight: 300;
       // line-height: 23px;
-      color: #fff;
     }
   }
   .dashbord-btn {
     @media only screen and (max-width: 500px) {
       width: 100%;
       .btn-component {
-        font-size: 15px;
+        font-size: 12px;
       }
     }
   }
