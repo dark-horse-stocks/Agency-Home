@@ -112,7 +112,11 @@ function TeamPage() {
       img: Teamimg,
     },
     {
-      memberName: "Yash, Assistanc",
+      memberName: "Pham Van Anh, Marketing",
+      img: Teamimg,
+    },
+    {
+      memberName: "Yash, Assistance",
       img: Teamimg,
     },
   ];
