@@ -116,6 +116,10 @@ function TeamPage() {
       img: Teamimg,
     },
     {
+      memberName: "Ngô Huệ Nhàn, Marketing",
+      img: Teamimg,
+    },
+    {
       memberName: "Yash, Assistance",
       img: Teamimg,
     },
